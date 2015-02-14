@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95DA939B1A8F219200E006AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA939A1A8F219200E006AD /* main.m */; };
+		95DA939E1A8F219200E006AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA939D1A8F219200E006AD /* AppDelegate.m */; };
+		95DA93A11A8F219200E006AD /* MTG_Recognizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95DA939F1A8F219200E006AD /* MTG_Recognizer.xcdatamodeld */; };
+		95DA93A41A8F219200E006AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93A31A8F219200E006AD /* ViewController.m */; };
+		95DA93A71A8F219200E006AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93A51A8F219200E006AD /* Main.storyboard */; };
+		95DA93A91A8F219200E006AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93A81A8F219200E006AD /* Images.xcassets */; };
+		95DA93AC1A8F219200E006AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93AA1A8F219200E006AD /* LaunchScreen.xib */; };
+		95DA93B81A8F219300E006AD /* MTG_RecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93B71A8F219300E006AD /* MTG_RecognizerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95DA93B21A8F219300E006AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DA938D1A8F219200E006AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DA93941A8F219200E006AD;
+			remoteInfo = "MTG Recognizer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95DA93951A8F219200E006AD /* MTG Recognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG Recognizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DA93991A8F219200E006AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DA939A1A8F219200E006AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95DA939C1A8F219200E006AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95DA939D1A8F219200E006AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95DA93A01A8F219200E006AD /* MTG_Recognizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTG_Recognizer.xcdatamodel; sourceTree = "<group>"; };
+		95DA93A21A8F219200E006AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95DA93A31A8F219200E006AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95DA93A61A8F219200E006AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95DA93A81A8F219200E006AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95DA93AB1A8F219200E006AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		95DA93B11A8F219300E006AD /* MTG RecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTG RecognizerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DA93B61A8F219300E006AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DA93B71A8F219300E006AD /* MTG_RecognizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTG_RecognizerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95DA93921A8F219200E006AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA93AE1A8F219300E006AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95DA938C1A8F219200E006AD = {
+			isa = PBXGroup;
+			children = (
+				95DA93971A8F219200E006AD /* MTG Recognizer */,
+				95DA93B41A8F219300E006AD /* MTG RecognizerTests */,
+				95DA93961A8F219200E006AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95DA93961A8F219200E006AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95DA93951A8F219200E006AD /* MTG Recognizer.app */,
+				95DA93B11A8F219300E006AD /* MTG RecognizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95DA93971A8F219200E006AD /* MTG Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				95DA939C1A8F219200E006AD /* AppDelegate.h */,
+				95DA939D1A8F219200E006AD /* AppDelegate.m */,
+				95DA93A21A8F219200E006AD /* ViewController.h */,
+				95DA93A31A8F219200E006AD /* ViewController.m */,
+				95DA93A51A8F219200E006AD /* Main.storyboard */,
+				95DA93A81A8F219200E006AD /* Images.xcassets */,
+				95DA93AA1A8F219200E006AD /* LaunchScreen.xib */,
+				95DA939F1A8F219200E006AD /* MTG_Recognizer.xcdatamodeld */,
+				95DA93981A8F219200E006AD /* Supporting Files */,
+			);
+			path = "MTG Recognizer";
+			sourceTree = "<group>";
+		};
+		95DA93981A8F219200E006AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DA93991A8F219200E006AD /* Info.plist */,
+				95DA939A1A8F219200E006AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DA93B41A8F219300E006AD /* MTG RecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				95DA93B71A8F219300E006AD /* MTG_RecognizerTests.m */,
+				95DA93B51A8F219300E006AD /* Supporting Files */,
+			);
+			path = "MTG RecognizerTests";
+			sourceTree = "<group>";
+		};
+		95DA93B51A8F219300E006AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DA93B61A8F219300E006AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95DA93941A8F219200E006AD /* MTG Recognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DA93BB1A8F219300E006AD /* Build configuration list for PBXNativeTarget "MTG Recognizer" */;
+			buildPhases = (
+				95DA93911A8F219200E006AD /* Sources */,
+				95DA93921A8F219200E006AD /* Frameworks */,
+				95DA93931A8F219200E006AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTG Recognizer";
+			productName = "MTG Recognizer";
+			productReference = 95DA93951A8F219200E006AD /* MTG Recognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95DA93B01A8F219300E006AD /* MTG RecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DA93BE1A8F219300E006AD /* Build configuration list for PBXNativeTarget "MTG RecognizerTests" */;
+			buildPhases = (
+				95DA93AD1A8F219300E006AD /* Sources */,
+				95DA93AE1A8F219300E006AD /* Frameworks */,
+				95DA93AF1A8F219300E006AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DA93B31A8F219300E006AD /* PBXTargetDependency */,
+			);
+			name = "MTG RecognizerTests";
+			productName = "MTG RecognizerTests";
+			productReference = 95DA93B11A8F219300E006AD /* MTG RecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95DA938D1A8F219200E006AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "TTU Software Engineering";
+				TargetAttributes = {
+					95DA93941A8F219200E006AD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					95DA93B01A8F219300E006AD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 95DA93941A8F219200E006AD;
+					};
+				};
+			};
+			buildConfigurationList = 95DA93901A8F219200E006AD /* Build configuration list for PBXProject "MTG Recognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95DA938C1A8F219200E006AD;
+			productRefGroup = 95DA93961A8F219200E006AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95DA93941A8F219200E006AD /* MTG Recognizer */,
+				95DA93B01A8F219300E006AD /* MTG RecognizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95DA93931A8F219200E006AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA93A71A8F219200E006AD /* Main.storyboard in Resources */,
+				95DA93AC1A8F219200E006AD /* LaunchScreen.xib in Resources */,
+				95DA93A91A8F219200E006AD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA93AF1A8F219300E006AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95DA93911A8F219200E006AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA939E1A8F219200E006AD /* AppDelegate.m in Sources */,
+				95DA93A11A8F219200E006AD /* MTG_Recognizer.xcdatamodeld in Sources */,
+				95DA93A41A8F219200E006AD /* ViewController.m in Sources */,
+				95DA939B1A8F219200E006AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA93AD1A8F219300E006AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA93B81A8F219300E006AD /* MTG_RecognizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95DA93B31A8F219300E006AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DA93941A8F219200E006AD /* MTG Recognizer */;
+			targetProxy = 95DA93B21A8F219300E006AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95DA93A51A8F219200E006AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DA93A61A8F219200E006AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95DA93AA1A8F219200E006AD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DA93AB1A8F219200E006AD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95DA93B91A8F219300E006AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95DA93BA1A8F219300E006AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95DA93BC1A8F219300E006AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MTG Recognizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95DA93BD1A8F219300E006AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MTG Recognizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95DA93BF1A8F219300E006AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MTG RecognizerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG Recognizer.app/MTG Recognizer";
+			};
+			name = Debug;
+		};
+		95DA93C01A8F219300E006AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MTG RecognizerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG Recognizer.app/MTG Recognizer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95DA93901A8F219200E006AD /* Build configuration list for PBXProject "MTG Recognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA93B91A8F219300E006AD /* Debug */,
+				95DA93BA1A8F219300E006AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DA93BB1A8F219300E006AD /* Build configuration list for PBXNativeTarget "MTG Recognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA93BC1A8F219300E006AD /* Debug */,
+				95DA93BD1A8F219300E006AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95DA93BE1A8F219300E006AD /* Build configuration list for PBXNativeTarget "MTG RecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA93BF1A8F219300E006AD /* Debug */,
+				95DA93C01A8F219300E006AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95DA939F1A8F219200E006AD /* MTG_Recognizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95DA93A01A8F219200E006AD /* MTG_Recognizer.xcdatamodel */,
+			);
+			currentVersion = 95DA93A01A8F219200E006AD /* MTG_Recognizer.xcdatamodel */;
+			path = MTG_Recognizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 95DA938D1A8F219200E006AD /* Project object */;
+}
