@@ -234,6 +234,7 @@
 				TargetAttributes = {
 					95DA93941A8F219200E006AD = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8UYXQCQT7A;
 					};
 				};
 			};
@@ -425,6 +426,8 @@
 			baseConfigurationReference = 6D253DCADF370F31B711AA62 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -436,6 +439,7 @@
 					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/TesseractOCR/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -444,6 +448,8 @@
 			baseConfigurationReference = 01812EE5102F138C28A2B3B2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -455,6 +461,7 @@
 					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/TesseractOCR/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
