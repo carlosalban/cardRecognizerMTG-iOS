@@ -54,109 +54,119 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view.
-    self.operationQueue = [[NSOperationQueue alloc] init];
-    AVCaptureSession *session = [[AVCaptureSession alloc] init];
-    session.sessionPreset = AVCaptureSessionPreset1280x720; //Or other preset supported by the input device
-    
-    AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
-    //previewLayer.frame = CGRectMake(0.0, 0.0, self.previewView.frame.size.width, self.previewView.frame.size.height);
-    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    //previewLayer.frame = self.previewView.bounds;
-    //previewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
-    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    NSLog(@"1: The previewLayer frame has width %f and height %f", previewLayer.frame.size.width, previewLayer.frame.size.height);
-    NSLog(@"1: The UIScreenSize has width %f and height %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
-    UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(20, 80, 280, 35)];
-    rectangle.backgroundColor = [UIColor colorWithRed:10.0 green:230.0 blue:50.0 alpha:0.7f];
-    [self.previewView addSubview:rectangle];
-    [self.previewView.layer addSublayer:previewLayer];
-    
-    //PageContentViewController *pcVC;
-    //CGRect parentbounds = pcVC.view.bounds;
-    //self.previewView.bounds = parentbounds;
-    
-    // Setup the preview view
-    [[self previewView] setSession:session];
-    
     // Check for device authorization
     [self checkDeviceAuthorizationStatus];
     
-    // In general it is not safe to mutate an AVCaptureSession or any of its inputs, outputs, or connections from multiple threads at the same time.
-    // Why not do all of this on the main queue?
-    // -[AVCaptureSession startRunning] is a blocking call which can take a long time. We dispatch session setup to the sessionQueue so that the main queue isn't blocked (which keeps the UI responsive).
-    
-    dispatch_queue_t sessionQueue = dispatch_queue_create("session queue", DISPATCH_QUEUE_SERIAL);
-    [self setSessionQueue:sessionQueue];
-    
-    dispatch_async(sessionQueue, ^{
-        [self setBackgroundRecordingID:UIBackgroundTaskInvalid];
-        
-        NSError *error = nil;
-        
-        AVCaptureDevice *photoDevice = [mainVC deviceWithMediaType:AVMediaTypeVideo preferringPosition:AVCaptureDevicePositionBack];
-        AVCaptureDeviceInput *photoDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:photoDevice error:&error];
-        
-        if (error)
-        {
-            NSLog(@"%@", error);
-        }
-        if ([session canAddInput:photoDeviceInput])
-        {
-            [session addInput:photoDeviceInput];
-            [self setVideoDeviceInput:photoDeviceInput];
-            
-            /*dispatch_async(dispatch_get_main_queue(), ^{
-                // Why are we dispatching this to the main queue?
-                // Because AVCaptureVideoPreviewLayer is the backing layer for AVCamPreviewView and UIView can only be manipulated on main thread.
-                // Note: As an exception to the above rule, it is not necessary to serialize video orientation changes on the AVCaptureVideoPreviewLayer’s connection with other session manipulation.
-                
-                [[(AVCaptureVideoPreviewLayer *)[[self previewView] layer] connection] setVideoOrientation:(AVCaptureVideoOrientation)[self interfaceOrientation]];
-            });*/
-        }
-        
-        
-        AVCaptureStillImageOutput *stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
-        if ([session canAddOutput:stillImageOutput])
-        {
-            //NSLog(@"Made it inside add Output.");
-            [stillImageOutput setOutputSettings:@{AVVideoCodecKey : AVVideoCodecJPEG}];
-            [session addOutput:stillImageOutput];
-            [self setStillImageOutput:stillImageOutput];
-            
-            [session startRunning];
-        }
-    });
-    
-    
-    //AVCaptureOutput *output = [[AVCaptureStillImageOutput alloc] init];
-    //[session addOutput:output];
-    
-    
 
-    /*UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                    //Added code here:
+                    // Do any additional setup after loading the view.
+                    self.operationQueue = [[NSOperationQueue alloc] init];
+                    AVCaptureSession *session = [[AVCaptureSession alloc] init];
+                    session.sessionPreset = AVCaptureSessionPreset1280x720; //Or other preset supported by the input device
+                    
+                    AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
+                    //previewLayer.frame = CGRectMake(0.0, 0.0, self.previewView.frame.size.width, self.previewView.frame.size.height);
+                    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                    //previewLayer.frame = self.previewView.bounds;
+                    //previewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+                    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                    NSLog(@"1: The previewLayer frame has width %f and height %f", previewLayer.frame.size.width, previewLayer.frame.size.height);
+                    NSLog(@"1: The UIScreenSize has width %f and height %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+                    UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width*(20.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(80.0f/568.0f), [[UIScreen mainScreen] bounds].size.width*(280.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(35.0f/568.0f))];
+    NSLog(@"1: The RECTANGLE SIZE has width %f and height %f", rectangle.frame.size.width, rectangle.frame.size.height);
+    NSLog(@"1: The RECTANGLE ORIGIN has x %f and y %f", rectangle.frame.origin.x, rectangle.frame.origin.y);
+                    rectangle.backgroundColor = [UIColor colorWithRed:10.0 green:230.0 blue:50.0 alpha:0.7f];
+                    [self.previewView addSubview:rectangle];
+                    [self.previewView.layer addSublayer:previewLayer];
+                    
+                    //PageContentViewController *pcVC;
+                    //CGRect parentbounds = pcVC.view.bounds;
+                    //self.previewView.bounds = parentbounds;
+                    
+                    // Setup the preview view
+                    [[self previewView] setSession:session];
+                    
+    
+                    
+                    // In general it is not safe to mutate an AVCaptureSession or any of its inputs, outputs, or connections from multiple threads at the same time.
+                    // Why not do all of this on the main queue?
+                    // -[AVCaptureSession startRunning] is a blocking call which can take a long time. We dispatch session setup to the sessionQueue so that the main queue isn't blocked (which keeps the UI responsive).
+                    
+                    dispatch_queue_t sessionQueue = dispatch_queue_create("session queue", DISPATCH_QUEUE_SERIAL);
+                    [self setSessionQueue:sessionQueue];
+                    
+                    dispatch_async(sessionQueue, ^{
+                        [self setBackgroundRecordingID:UIBackgroundTaskInvalid];
+                        
+                        NSError *error = nil;
+                        
+                        AVCaptureDevice *photoDevice = [mainVC deviceWithMediaType:AVMediaTypeVideo preferringPosition:AVCaptureDevicePositionBack];
+                        AVCaptureDeviceInput *photoDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:photoDevice error:&error];
+                        
+                        if (error)
+                        {
+                            NSLog(@"%@", error);
+                        }
+                        if ([session canAddInput:photoDeviceInput])
+                        {
+                            [session addInput:photoDeviceInput];
+                            [self setVideoDeviceInput:photoDeviceInput];
+                            
+                            /*dispatch_async(dispatch_get_main_queue(), ^{
+                             // Why are we dispatching this to the main queue?
+                             // Because AVCaptureVideoPreviewLayer is the backing layer for AVCamPreviewView and UIView can only be manipulated on main thread.
+                             // Note: As an exception to the above rule, it is not necessary to serialize video orientation changes on the AVCaptureVideoPreviewLayer’s connection with other session manipulation.
+                             
+                             [[(AVCaptureVideoPreviewLayer *)[[self previewView] layer] connection] setVideoOrientation:(AVCaptureVideoOrientation)[self interfaceOrientation]];
+                             });*/
+                        }
+                        
+                        
+                        AVCaptureStillImageOutput *stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
+                        if ([session canAddOutput:stillImageOutput])
+                        {
+                            //NSLog(@"Made it inside add Output.");
+                            [stillImageOutput setOutputSettings:@{AVVideoCodecKey : AVVideoCodecJPEG}];
+                            [session addOutput:stillImageOutput];
+                            [self setStillImageOutput:stillImageOutput];
+                            
+                            [session startRunning];
+                        }
+                    });
+                    
+                    
+                    //AVCaptureOutput *output = [[AVCaptureStillImageOutput alloc] init];
+                    //[session addOutput:output];
+                    
+                    
+                    
+                    /*UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                     
+                     //Error for simulator when testing
+                     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+                     
+                     UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                     message:@"Device has no camera"
+                     delegate:nil
+                     cancelButtonTitle:@"OK"
+                     otherButtonTitles: nil];
+                     
+                     [myAlertView show];
+                     
+                     }
+                     else {
+                     picker.delegate = self;
+                     picker.allowsEditing = NO;
+                     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+                     [self presentViewController:picker animated:YES completion:NULL];
+                     //[self.view addSubview:picker.view];
+                     
+                     }*/
+                    //end moved code
 
-    //Error for simulator when testing
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"OK"
-                                                    otherButtonTitles: nil];
-     
-        [myAlertView show];
-        
-    }
-    else {
-         picker.delegate = self;
-         picker.allowsEditing = NO;
-         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-         [self presentViewController:picker animated:YES completion:NULL];
-         //[self.view addSubview:picker.view];
-        
-    }*/
+
+    
+    
     
 }
 
@@ -262,92 +272,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 #pragma mark Actions
 
-/*- (IBAction)toggleMovieRecording:(id)sender
-{
-    //[[self recordButton] setEnabled:NO];
-    
-    dispatch_async([self sessionQueue], ^{
-        if (![[self movieFileOutput] isRecording])
-        {
-            [self setLockInterfaceRotation:YES];
-            
-            if ([[UIDevice currentDevice] isMultitaskingSupported])
-            {
-                // Setup background task. This is needed because the captureOutput:didFinishRecordingToOutputFileAtURL: callback is not received until AVCam returns to the foreground unless you request background execution time. This also ensures that there will be time to write the file to the assets library when AVCam is backgrounded. To conclude this background execution, -endBackgroundTask is called in -recorder:recordingDidFinishToOutputFileURL:error: after the recorded file has been saved.
-                [self setBackgroundRecordingID:[[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil]];
-            }
-            
-            // Update the orientation on the movie file output video connection before starting recording.
-            [[[self movieFileOutput] connectionWithMediaType:AVMediaTypeVideo] setVideoOrientation:[[(AVCaptureVideoPreviewLayer *)[[self previewView] layer] connection] videoOrientation]];
-            
-            // Turning OFF flash for video recording
-            [mainVC setFlashMode:AVCaptureFlashModeOff forDevice:[[self videoDeviceInput] device]];
-            
-            // Start recording to a temporary file.
-            NSString *outputFilePath = [NSTemporaryDirectory() stringByAppendingPathComponent:[@"movie" stringByAppendingPathExtension:@"mov"]];
-            [[self movieFileOutput] startRecordingToOutputFileURL:[NSURL fileURLWithPath:outputFilePath] recordingDelegate:self];
-        }
-        else
-        {
-            [[self movieFileOutput] stopRecording];
-        }
-    });
-}*/
-
-/*- (IBAction)changeCamera:(id)sender
-{
-    //[[self cameraButton] setEnabled:NO];
-    //[[self recordButton] setEnabled:NO];
-    [[self stillButton] setEnabled:NO];
-    
-    dispatch_async([self sessionQueue], ^{
-        AVCaptureDevice *currentVideoDevice = [[self videoDeviceInput] device];
-        AVCaptureDevicePosition preferredPosition = AVCaptureDevicePositionUnspecified;
-        AVCaptureDevicePosition currentPosition = [currentVideoDevice position];
-        
-        switch (currentPosition)
-        {
-            case AVCaptureDevicePositionUnspecified:
-                preferredPosition = AVCaptureDevicePositionBack;
-                break;
-            case AVCaptureDevicePositionBack:
-                preferredPosition = AVCaptureDevicePositionFront;
-                break;
-            case AVCaptureDevicePositionFront:
-                preferredPosition = AVCaptureDevicePositionBack;
-                break;
-        }
-        
-        AVCaptureDevice *videoDevice = [mainVC deviceWithMediaType:AVMediaTypeVideo preferringPosition:preferredPosition];
-        AVCaptureDeviceInput *videoDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:videoDevice error:nil];
-        
-        [[self session] beginConfiguration];
-        
-        [[self session] removeInput:[self videoDeviceInput]];
-        if ([[self session] canAddInput:videoDeviceInput])
-        {
-            [[NSNotificationCenter defaultCenter] removeObserver:self name:AVCaptureDeviceSubjectAreaDidChangeNotification object:currentVideoDevice];
-            
-            [mainVC setFlashMode:AVCaptureFlashModeAuto forDevice:videoDevice];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(subjectAreaDidChange:) name:AVCaptureDeviceSubjectAreaDidChangeNotification object:videoDevice];
-            
-            [[self session] addInput:videoDeviceInput];
-            [self setVideoDeviceInput:videoDeviceInput];
-        }
-        else
-        {
-            [[self session] addInput:[self videoDeviceInput]];
-        }
-        
-        [[self session] commitConfiguration];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //[[self cameraButton] setEnabled:YES];
-            //[[self recordButton] setEnabled:YES];
-            [[self stillButton] setEnabled:YES];
-        });
-    });
-}*/
 
 - (IBAction)snapStillImage:(id)sender
 {
@@ -555,7 +479,8 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                 }*/
                 
             } failure:^(AFHTTPRequestOperation *AFoperation, NSError *error) {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:[NSString stringWithFormat:@"Please try again. Error: %@",error] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bad Photo" message:[NSString //stringWithFormat:@"Please try again. Error: %@",error] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                        stringWithFormat:@"Unable to recognize text. Please try again."] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                     [alert show];
                     NSLog(@"Network Error: %@", error);
             }];
