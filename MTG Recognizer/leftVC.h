@@ -7,6 +7,7 @@
 //
 
 #import "PageContentViewController.h"
+#import "cardDetailVC.h"
 
 @interface leftVC : PageContentViewController <UITableViewDelegate, UITableViewDataSource>
 

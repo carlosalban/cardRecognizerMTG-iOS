@@ -12,11 +12,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import <TesseractOCR/TesseractOCR.h>
 #import "cardDetailVC.h"
+#import <UIKit/UIKit.h>
 
 @interface mainVC : PageContentViewController <G8TesseractDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureFileOutputRecordingDelegate>
 //@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (weak, nonatomic) IBOutlet UIImageView *imageToRecognize;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 
 

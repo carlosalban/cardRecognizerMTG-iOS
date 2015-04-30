@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PageContentViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B3C4CC8F91BD4DCFFFCC9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F490CC914904910FC2BA65 /* libPods.a */; };
+		95074A081AEEDF3500D9CF30 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95074A071AEEDF3500D9CF30 /* PageContentViewController.m */; };
+		952040971AF26D09003374E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952040961AF26D09003374E5 /* LaunchScreen.xib */; };
 		9548C9A51A9EE1E800261CAC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9548C9A41A9EE1E800261CAC /* AssetsLibrary.framework */; };
 		9548C9A71A9EE1F000261CAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9548C9A61A9EE1F000261CAC /* AVFoundation.framework */; };
 		9548C9A91A9EE1F700261CAC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9548C9A81A9EE1F700261CAC /* CoreMedia.framework */; };
@@ -24,8 +26,6 @@
 		95DA93A41A8F219200E006AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93A31A8F219200E006AD /* ViewController.m */; };
 		95DA93A71A8F219200E006AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93A51A8F219200E006AD /* Main.storyboard */; };
 		95DA93A91A8F219200E006AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93A81A8F219200E006AD /* Images.xcassets */; };
-		95DA93AC1A8F219200E006AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DA93AA1A8F219200E006AD /* LaunchScreen.xib */; };
-		95DA93C71A8F227200E006AD /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93C61A8F227200E006AD /* PageContentViewController.m */; };
 		95DA93CF1A8FE45D00E006AD /* rightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93CE1A8FE45D00E006AD /* rightVC.m */; };
 		95DA93D31A8FE8C200E006AD /* mainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA93D21A8FE8C200E006AD /* mainVC.m */; };
 		95DDAD541ACD19E10049744A /* cardDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DDAD531ACD19E10049744A /* cardDetailVC.m */; };
@@ -37,6 +37,9 @@
 /* Begin PBXFileReference section */
 		01812EE5102F138C28A2B3B2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6D253DCADF370F31B711AA62 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		95074A061AEEDF3500D9CF30 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		95074A071AEEDF3500D9CF30 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		952040961AF26D09003374E5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		9548C9A41A9EE1E800261CAC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		9548C9A61A9EE1F000261CAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9548C9A81A9EE1F700261CAC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -61,11 +64,8 @@
 		95DA93A31A8F219200E006AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		95DA93A61A8F219200E006AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95DA93A81A8F219200E006AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		95DA93AB1A8F219200E006AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		95DA93B61A8F219300E006AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95DA93B71A8F219300E006AD /* MTG_RecognizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTG_RecognizerTests.m; sourceTree = "<group>"; };
-		95DA93C51A8F227200E006AD /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageContentViewController.h; path = ../PageContentViewController.h; sourceTree = "<group>"; };
-		95DA93C61A8F227200E006AD /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PageContentViewController.m; path = ../PageContentViewController.m; sourceTree = "<group>"; };
 		95DA93CD1A8FE45D00E006AD /* rightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightVC.h; sourceTree = "<group>"; };
 		95DA93CE1A8FE45D00E006AD /* rightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightVC.m; sourceTree = "<group>"; };
 		95DA93D11A8FE8C200E006AD /* mainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainVC.h; sourceTree = "<group>"; };
@@ -140,8 +140,8 @@
 				95F91E2C1ACA52FE00E90BE6 /* tessdata */,
 				95DA939C1A8F219200E006AD /* AppDelegate.h */,
 				95DA939D1A8F219200E006AD /* AppDelegate.m */,
-				95DA93C51A8F227200E006AD /* PageContentViewController.h */,
-				95DA93C61A8F227200E006AD /* PageContentViewController.m */,
+				95074A061AEEDF3500D9CF30 /* PageContentViewController.h */,
+				95074A071AEEDF3500D9CF30 /* PageContentViewController.m */,
 				95DA93A21A8F219200E006AD /* ViewController.h */,
 				95DA93A31A8F219200E006AD /* ViewController.m */,
 				95DA93A51A8F219200E006AD /* Main.storyboard */,
@@ -159,7 +159,6 @@
 				959A276B1A9EECE40084F6F1 /* AVCamPreviewView.m */,
 				95AE73A11ACB3A9E007FA382 /* sample1.jpg */,
 				95DA93A81A8F219200E006AD /* Images.xcassets */,
-				95DA93AA1A8F219200E006AD /* LaunchScreen.xib */,
 				95DA939F1A8F219200E006AD /* MTG_Recognizer.xcdatamodeld */,
 				95DA93981A8F219200E006AD /* Supporting Files */,
 			);
@@ -170,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				95DA93991A8F219200E006AD /* Info.plist */,
+				952040961AF26D09003374E5 /* LaunchScreen.xib */,
 				95DA939A1A8F219200E006AD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -261,9 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952040971AF26D09003374E5 /* LaunchScreen.xib in Resources */,
 				95DA93A71A8F219200E006AD /* Main.storyboard in Resources */,
 				95F91E2D1ACA52FE00E90BE6 /* tessdata in Resources */,
-				95DA93AC1A8F219200E006AD /* LaunchScreen.xib in Resources */,
 				95AE73A21ACB3A9E007FA382 /* sample1.jpg in Resources */,
 				95DA93A91A8F219200E006AD /* Images.xcassets in Resources */,
 			);
@@ -311,10 +311,10 @@
 			files = (
 				95DA939E1A8F219200E006AD /* AppDelegate.m in Sources */,
 				95DA93D31A8FE8C200E006AD /* mainVC.m in Sources */,
+				95074A081AEEDF3500D9CF30 /* PageContentViewController.m in Sources */,
 				95DA93A11A8F219200E006AD /* MTG_Recognizer.xcdatamodeld in Sources */,
 				95DA93CF1A8FE45D00E006AD /* rightVC.m in Sources */,
 				959A276C1A9EECE40084F6F1 /* AVCamPreviewView.m in Sources */,
-				95DA93C71A8F227200E006AD /* PageContentViewController.m in Sources */,
 				95DDAD541ACD19E10049744A /* cardDetailVC.m in Sources */,
 				957296B81A9695E200E8F3D4 /* CustomTableViewCell.m in Sources */,
 				95DA93A41A8F219200E006AD /* ViewController.m in Sources */,
@@ -332,14 +332,6 @@
 				95DA93A61A8F219200E006AD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		95DA93AA1A8F219200E006AD /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95DA93AB1A8F219200E006AD /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

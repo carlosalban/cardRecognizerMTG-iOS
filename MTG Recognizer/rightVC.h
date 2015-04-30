@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PageContentViewController.h"
 
-@interface rightVC : PageContentViewController
+@interface rightVC : PageContentViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIPickerView *maxScans;
 
 @end

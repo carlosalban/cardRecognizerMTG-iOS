@@ -39,7 +39,10 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 @end
 
-@implementation mainVC
+@implementation mainVC{
+    
+    NSDictionary *updatedetailsDictionary;
+}
 
 - (BOOL)isSessionRunningAndDeviceAuthorized
 {
@@ -54,8 +57,9 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Check for device authorization
-    [self checkDeviceAuthorizationStatus];
+    
+    //[self checkDeviceAuthorizationStatus]; // Check for device authorization
+    [self setDeviceAuthorized:YES];
     
 
                     //Added code here:
@@ -70,11 +74,11 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                     //previewLayer.frame = self.previewView.bounds;
                     //previewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
                     //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                    NSLog(@"1: The previewLayer frame has width %f and height %f", previewLayer.frame.size.width, previewLayer.frame.size.height);
-                    NSLog(@"1: The UIScreenSize has width %f and height %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+                    //NSLog(@"1: The previewLayer frame has width %f and height %f", previewLayer.frame.size.width, previewLayer.frame.size.height);
+                    //NSLog(@"1: The UIScreenSize has width %f and height %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
                     UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width*(20.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(80.0f/568.0f), [[UIScreen mainScreen] bounds].size.width*(280.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(35.0f/568.0f))];
-    NSLog(@"1: The RECTANGLE SIZE has width %f and height %f", rectangle.frame.size.width, rectangle.frame.size.height);
-    NSLog(@"1: The RECTANGLE ORIGIN has x %f and y %f", rectangle.frame.origin.x, rectangle.frame.origin.y);
+                    //NSLog(@"1: The RECTANGLE SIZE has width %f and height %f", rectangle.frame.size.width, rectangle.frame.size.height);
+                    //NSLog(@"1: The RECTANGLE ORIGIN has x %f and y %f", rectangle.frame.origin.x, rectangle.frame.origin.y);
                     rectangle.backgroundColor = [UIColor colorWithRed:10.0 green:230.0 blue:50.0 alpha:0.7f];
                     [self.previewView addSubview:rectangle];
                     [self.previewView.layer addSublayer:previewLayer];
@@ -289,15 +293,16 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             
             if (imageDataSampleBuffer)
             {
-                NSLog(@"CAPTURE BUTTON WAS PUSHED!!\n");
+                //NSLog(@"CAPTURE BUTTON WAS PUSHED!!\n");
                 NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
                 UIImage *image = [[UIImage alloc] initWithData:imageData];
                 image = [self toGrayscale:image];
-                NSLog(@"The actual image has width %f and height %f", image.size.width, image.size.height);
+                //NSLog(@"The actual image has width %f and height %f", image.size.width, image.size.height);
                 image = [self customResize:image];
-                [[[ALAssetsLibrary alloc] init] writeImageToSavedPhotosAlbum:[image CGImage] orientation:(ALAssetOrientation)[image imageOrientation] completionBlock:nil];
+                //NSLog(@"The resized image has has width %f and height %f", image.size.width, image.size.height);
+                //[[[ALAssetsLibrary alloc] init] writeImageToSavedPhotosAlbum:[image CGImage] orientation:(ALAssetOrientation)[image imageOrientation] completionBlock:nil];
                 [self recognizeImageWithTesseract:image];
-                NSLog(@"The resized image has width %f and height %f", image.size.width, image.size.height);
+                //NSLog(@"The image after recognizeImageWithTesseract has width %f and height %f", image.size.width, image.size.height);
                 //[self recognizeImageWithTesseract:[UIImage imageNamed:@"sample1.jpg"]];
             }
         }];
@@ -307,18 +312,18 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 -(UIImage *)customResize:(UIImage *)image{
     
     CGSize size = image.size;
-    UIGraphicsBeginImageContext(CGSizeMake(size.height, size.width));
-    [[UIImage imageWithCGImage:[image CGImage] scale:2.25 orientation:UIImageOrientationRight] drawInRect:CGRectMake(0,0,size.height ,size.width)];
+    UIGraphicsBeginImageContext(CGSizeMake(size.width, size.height));
+    [[UIImage imageWithCGImage:[image CGImage] scale:1.0 orientation:UIImageOrientationRight] drawInRect:CGRectMake(0,0,size.width ,size.height)];
     UIImage* newimage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    NSLog(@"The new image has width %f and height %f", newimage.size.width, newimage.size.height);
+    //NSLog(@"The new image has width %f and height %f", newimage.size.width, newimage.size.height);
     
-    //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+  
     CGRect cropRect = CGRectMake((float)newimage.size.width*(20.0f/320.0f), (float)newimage.size.height*(80.0f/568.0f), (float)newimage.size.width*(280.0f/320.0f), (float)newimage.size.height*(35.0f/568.0f));
-    //CGRect cropRect = CGRectMake(20, 80, 280, 35);
     
     CGImageRef imageRef = CGImageCreateWithImageInRect(newimage.CGImage, cropRect);
     UIImage *result = [UIImage imageWithCGImage:imageRef scale:newimage.scale orientation:newimage.imageOrientation];
+    //NSLog(@"The result image in customRisze has width %f and height %f", result.size.width, result.size.height);
     CGImageRelease(imageRef);
     
     return result;
@@ -392,10 +397,10 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     UIImage *bwImage = [image g8_blackAndWhite];
     
     // Animate a progress activity indicator
-    //[self.activityIndicator startAnimating];
+    [self.activityIndicator startAnimating];
     
     // Display the preprocessed image to be recognized in the view
-    self.imageToRecognize.image = bwImage;
+    //self.imageToRecognize.image = bwImage;
     
     // Create a new `G8RecognitionOperation` to perform the OCR asynchronously
     // It is assumed that there is a .traineddata file for the language pack
@@ -406,12 +411,15 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
     // Use the original Tesseract engine mode in performing the recognition
     // (see G8Constants.h) for other engine mode options
-    operation.tesseract.engineMode = G8OCREngineModeTesseractOnly;
+    //operation.tesseract.engineMode = G8OCREngineModeTesseractOnly;
+    //operation.tesseract.engineMode = G8OCREngineModeCubeOnly;
+    operation.tesseract.engineMode = G8OCREngineModeTesseractCubeCombined;
     
     // Let Tesseract automatically segment the page into blocks of text
     // based on its analysis (see G8Constants.h) for other page segmentation
     // mode options
-    operation.tesseract.pageSegmentationMode = G8PageSegmentationModeAutoOnly;
+    //operation.tesseract.pageSegmentationMode = G8PageSegmentationModeAutoOnly;
+    operation.tesseract.pageSegmentationMode = G8PageSegmentationModeSingleLine;
     
     // Optionally limit the time Tesseract should spend performing the
     // recognition
@@ -424,7 +432,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
     // Optionally limit Tesseract's recognition to the following whitelist
     // and blacklist of characters
-    //operation.tesseract.charWhitelist = @"01234";
+    operation.tesseract.charWhitelist = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZR";
     //operation.tesseract.charBlacklist = @"56789";
     
     // Set the image on which Tesseract should perform recognition
@@ -432,6 +440,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
     // Optionally limit the region in the image on which Tesseract should
     // perform recognition to a rectangle
+    operation.tesseract.rect = CGRectMake(10, 0, bwImage.size.width, bwImage.size.height);
     //operation.tesseract.rect = CGRectMake(20, 20, 100, 100);
     
     // Specify the function block that should be executed when Tesseract
@@ -442,7 +451,8 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         NSCharacterSet *charactersToRemove = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
         NSString *trimmedReplacement = [[recognizedText componentsSeparatedByCharactersInSet:charactersToRemove] componentsJoinedByString:@""];
         
-        NSLog(@"%@", trimmedReplacement);
+        
+        NSLog(@"Trimmed replacelment: %@", trimmedReplacement);
         
         if (![trimmedReplacement isEqualToString:@""] && ![trimmedReplacement isEqualToString:nil]){
             NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/search/%@?start=0&limit=1",trimmedReplacement];
@@ -455,18 +465,62 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             //AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
             //[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             [AFoperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFoperation, id responseObject) {
-                
+                //NSLog(@"Inside AF Operation completion block");
                 NSDictionary *jsonResults = (NSDictionary *)responseObject;
                 if ([jsonResults count]>0){
-                
-                //NSLog(@"cardID value is %@", cardID);
-                NSLog(@"JSON: %@", jsonResults);
-                cardDetailVC *cardDetailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"cardDetailVC"];
-                [self showCardDetailsVC:cardDetailVC andCardDetails:jsonResults];
-    
-                }
+                    
+                    //NSLog(@"cardID value is %@", cardID);
+                    NSLog(@"JSON: %@", jsonResults);
+                    cardDetailVC *cardDetailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"cardDetailVC"];
+                    [cardDetailVC view];
+                    cardDetailVC.cardTitle.text = [[jsonResults valueForKey:@"name"] objectAtIndex:0];
+                    cardDetailVC.cardDetails.text = [[jsonResults valueForKey:@"description"] objectAtIndex:0];
+                    //UIImage *cardImg = [self apiRequestCardImage:[[jsonResults valueForKey:@"id"] objectAtIndex:0]];
+                    
+                    NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/content/hi_res_card_images/%@.jpg",[[jsonResults valueForKey:@"id"] objectAtIndex:0]];
+                    NSURL *url = [NSURL URLWithString:urlstring];
+                    NSURLRequest *requestImage = [NSURLRequest requestWithURL:url];
+                    
+                    
+                    AFHTTPRequestOperation *AFgetImage = [[AFHTTPRequestOperation alloc] initWithRequest:requestImage];
+                    AFgetImage.responseSerializer = [AFImageResponseSerializer serializer];
+                    
+                    [AFgetImage setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFgetImage, id responseObject) {
+                        //NSLog(@"Inside get image success block");
+                        //NSLog(@"responseObject is %@", responseObject);
+                        UIImage *cardImage = responseObject;
+                        cardDetailVC.cardImage.image = cardImage;
+                        
+                        updatedetailsDictionary = @{@"name" : [[jsonResults valueForKey:@"name"] objectAtIndex:0], @"description" : [[jsonResults valueForKey:@"description"] objectAtIndex:0], @"image" : cardImage};
+                        
+                        NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
+                        NSInteger index = [cardScans integerForKey:@"cardIndex"];
+                        index++;
+                        
+                        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:updatedetailsDictionary];
+                        
+                        [cardScans setObject:data forKey:[NSString stringWithFormat:@"%ld", index]]; //put data in UserDefaults
+                        [cardScans setInteger:index forKey:@"cardIndex"]; //update cardCount
+                        [cardScans synchronize];
+                        
+                    } failure:^(AFHTTPRequestOperation *AFgetImage, NSError *error) {
+                        NSLog(@"Network Error while grabbing image: %@", error);
+                    }];
+                    [AFgetImage start];
+                    
+                    [self presentViewController:cardDetailVC animated:YES completion:nil];
+                    
+                        
+                        //retrieve
+                            NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
+                            NSInteger index = [cardScans integerForKey:@"cardIndex"];
+                            NSData *dataRetrieved = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", index]];
+                            NSDictionary *storedResults = [NSKeyedUnarchiver unarchiveObjectWithData:dataRetrieved];
+                        
+                            NSLog(@"stored Results are %@", storedResults);
+                    }
                 else {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Results Found" message:@"Lighting can affect the results of the search." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Card not found." message:@"Please try your scan again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
                     [alert show];
                 }
                 /*if ([responseObject isKindOfClass:[NSDictionary class]]){
@@ -479,54 +533,73 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                 }*/
                 
             } failure:^(AFHTTPRequestOperation *AFoperation, NSError *error) {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bad Photo" message:[NSString //stringWithFormat:@"Please try again. Error: %@",error] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-                        stringWithFormat:@"Unable to recognize text. Please try again."] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    NSLog(@"AFHTTPReuqest failed with error %@", error);
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:[NSString //stringWithFormat:@"Please try again. Error: %@",error] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                        stringWithFormat:@"Please check your connection and try again."] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                     [alert show];
-                    NSLog(@"Network Error: %@", error);
+                
             }];
+           
             [AFoperation start];
         }
         // Remove the animated progress activity indicator
-        //[self.activityIndicator stopAnimating];
+        [self.activityIndicator stopAnimating];
         
         
         // Spawn an alert with the recognized text
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OCR Result"
+        /*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OCR Result"
                                                         message:trimmedReplacement
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
-        [alert show];
+        [alert show];*/
     };
     
     // Finally, add the recognition operation to the queue
     [self.operationQueue addOperation:operation];
 }
 
--(void)showCardDetailsVC:(cardDetailVC *)viewController andCardDetails: (NSDictionary *)detailsDictionary{
+
+/*-(UIImage *)apiRequestCardImage:(NSString *)cardID{
     
-    
-    NSString *cardID = [[detailsDictionary valueForKey:@"id"] objectAtIndex:0];
-    
+    NSLog(@"cardID is %@", cardID);
     NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/content/hi_res_card_images/%@.jpg",cardID];
+    NSLog(@"urlstring is %@", urlstring);
     NSURL *url = [NSURL URLWithString:urlstring];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    AFHTTPRequestOperation *AFoperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    AFoperation.responseSerializer = [AFImageResponseSerializer serializer];
+    __block UIImage *cardImage = nil;
 
-    [AFoperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFoperation, id responseObject) {
+    
+    AFHTTPRequestOperation *AFgetImage = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    AFgetImage.responseSerializer = [AFImageResponseSerializer serializer];
+    
+    [AFgetImage setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFgetImage, id responseObject) {
+        NSLog(@"Inside get image success block");
+        NSLog(@"responseObject is %@", responseObject);
+        cardImage = responseObject;
         
-        UIImage *cardImage = responseObject;
-        viewController.cardTitle.text = [[detailsDictionary valueForKey:@"name"] objectAtIndex:0];
-        viewController.cardDetails.text = [[detailsDictionary valueForKey:@"description"] objectAtIndex:0];
-        viewController.cardImage.image = cardImage;
-        
-        
-    } failure:^(AFHTTPRequestOperation *AFoperation, NSError *error) {
+ 
+    } failure:^(AFHTTPRequestOperation *AFgetImage, NSError *error) {
         NSLog(@"Network Error while grabbing image: %@", error);
     }];
-    [AFoperation start];
+    [AFgetImage start];
+    
+    NSLog(@"return cardImage is %@", cardImage);
+    return cardImage;
+    
+}*/
+
+-(void)showCardDetailsVC:(cardDetailVC *)viewController andCardDetails: (NSDictionary *)detailsDictionary{
+    
+    //NSLog(@"inside showCardDetailsVC");
+    //NSLog(@"Title of card is %@", [[detailsDictionary valueForKey:@"name"] objectAtIndex:0]);
+    //NSLog(@"details Dictionary is: %@", detailsDictionary);
+    //viewController.cardTitle.text = [[detailsDictionary valueForKey:@"name"] objectAtIndex:0];
+    //viewController.cardDetails.text = [[detailsDictionary valueForKey:@"description"] objectAtIndex:0];
+    //viewController.cardImage.image = [self apiRequestCardImage:[detailsDictionary valueForKey:@"id"]];
+    
+
+    
     [self presentViewController:viewController animated:YES completion:nil];
     
 }
@@ -669,27 +742,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 
 
-/*-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    //self.imageView.image = chosenImage;
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    NSLog(@"User finished taking photo");
-}
 
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    NSLog(@"User hit cancel.");
-}*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

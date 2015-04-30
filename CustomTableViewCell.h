@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "leftVC.h"
+#import "cardDetailVC.h"
 
 @interface CustomTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UITextView *descriptionText;
+@property (strong, nonatomic) IBOutlet UIImageView *imagePreview;
+
 
 @end

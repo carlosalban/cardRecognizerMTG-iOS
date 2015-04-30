@@ -12,13 +12,32 @@
 
 @end
 
-@implementation ViewController
-
+@implementation ViewController //THIS IS INITIAL VC
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *mediaType = AVMediaTypeVideo;
+    
+    [AVCaptureDevice requestAccessForMediaType:mediaType completionHandler:^(BOOL granted) {
+        if (granted)
+        {
+            //Granted access to mediaType
+        }
+        else
+        {
+            //Not granted access to mediaType
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[[UIAlertView alloc] initWithTitle:@"MTG Recognizer"
+                                            message:@"MTG Recognizer doesn't have permission to use Camera, please change privacy settings"
+                                           delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil] show];
+            });
+        }
+    }];
+
     
     UIPageControl *pageControl = [UIPageControl appearance];
     //pageControl.currentPage = 1;
