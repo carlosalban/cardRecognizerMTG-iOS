@@ -34,7 +34,7 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -62,7 +62,7 @@
                                                 <userLayoutGuide location="582" affinity="minX"/>
                                             </userGuides>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pia-jE-zFu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pia-jE-zFu">
                                                     <rect key="frame" x="8" y="2" width="567" height="24"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -95,7 +95,7 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxl-nJ-dMb">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxl-nJ-dMb">
                                                     <rect key="frame" x="6" y="22" width="280" height="56"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="56" id="Ghx-Vy-QH6"/>
@@ -246,14 +246,14 @@
                                 <exclude reference="bTm-Ri-CqY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4Tq-Jx-LNl"/>
+                                <exclude reference="cRm-oG-loU"/>
+                                <exclude reference="r9k-hi-8bV"/>
                                 <exclude reference="4QA-aF-gzL"/>
                                 <exclude reference="5qy-UD-73D"/>
                                 <exclude reference="cKC-S1-UP7"/>
                                 <exclude reference="dHM-Yy-J63"/>
                                 <exclude reference="mha-kq-6Ee"/>
-                                <exclude reference="4Tq-Jx-LNl"/>
-                                <exclude reference="cRm-oG-loU"/>
-                                <exclude reference="r9k-hi-8bV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -261,6 +261,9 @@
                                 <include reference="bTm-Ri-CqY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4Tq-Jx-LNl"/>
+                                <include reference="cRm-oG-loU"/>
+                                <include reference="r9k-hi-8bV"/>
                                 <include reference="4QA-aF-gzL"/>
                                 <include reference="5qy-UD-73D"/>
                                 <exclude reference="D5U-lq-MVu"/>
@@ -270,9 +273,6 @@
                                 <exclude reference="jPj-rd-CC7"/>
                                 <include reference="mha-kq-6Ee"/>
                                 <exclude reference="oGC-jg-KtH"/>
-                                <include reference="4Tq-Jx-LNl"/>
-                                <include reference="cRm-oG-loU"/>
-                                <include reference="r9k-hi-8bV"/>
                             </mask>
                         </variation>
                     </view>
@@ -518,7 +518,7 @@
                                                     <constraint firstAttribute="width" constant="295" id="qsd-go-WfQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="jtH-de-kk7">
@@ -534,7 +534,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="rhU-BU-bK9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="467" y="18" width="52" height="50"/>
@@ -583,7 +583,7 @@
                                     <constraint firstAttribute="width" constant="117" id="vcp-Sh-zRm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

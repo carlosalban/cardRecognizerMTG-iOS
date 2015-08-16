@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B3C4CC8F91BD4DCFFFCC9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F490CC914904910FC2BA65 /* libPods.a */; };
+		435A1CAD1132F3554B0716EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F490CC914904910FC2BA65 /* libPods.a */; };
 		95074A081AEEDF3500D9CF30 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95074A071AEEDF3500D9CF30 /* PageContentViewController.m */; };
 		952040971AF26D09003374E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952040961AF26D09003374E5 /* LaunchScreen.xib */; };
 		9548C9A51A9EE1E800261CAC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9548C9A41A9EE1E800261CAC /* AssetsLibrary.framework */; };
@@ -91,7 +91,7 @@
 				9548C9A91A9EE1F700261CAC /* CoreMedia.framework in Frameworks */,
 				9548C9A71A9EE1F000261CAC /* AVFoundation.framework in Frameworks */,
 				9548C9A51A9EE1E800261CAC /* AssetsLibrary.framework in Frameworks */,
-				4B3C4CC8F91BD4DCFFFCC9A3 /* libPods.a in Frameworks */,
+				435A1CAD1132F3554B0716EA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

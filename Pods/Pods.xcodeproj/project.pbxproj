@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00018E97C3E85C17FDBADF4FA744E2E9 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 628CB62ACEC04561E355113701D16024 /* AFSecurityPolicy.h */; };
 		0039D5434EDA35D18D1634714E2CAF29 /* mathfix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1C50DE8CCA88B4FD21B5887AF781CA /* mathfix.h */; };
 		0179AE679BFD9E0D09DF96CC618B7E32 /* textord.h in Headers */ = {isa = PBXBuildFile; fileRef = 718DCCC7A3DB13AEE4E87A5884391CCE /* textord.h */; };
-		01B645F5688D123908DA09A5F35174D7 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0029DD524D6B346628B60ACB2AF98538 /* AFHTTPRequestOperation.h */; };
 		01FD0F8A0F8DBAE1DF404A4252C0D23A /* degradeimage.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B85DDF484D7E4A64FA97D84703AB25 /* degradeimage.h */; };
 		02C6FA58592BA0A93E777D9716B06D3D /* shapeclassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 9903DF10DCD524D95F13421410507938 /* shapeclassifier.h */; };
 		02FCA38EA814A49D7D0D3764EDD38312 /* tablefind.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AE0CBDAF59C5BD82D6CCF3B02C6955 /* tablefind.h */; };
 		034391AA5A760017A0431F22F007789A /* word_altlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F91656E0C62D66B07E3FCB4E4D7DD7 /* word_altlist.h */; };
+		0375372E3FA105098566832105949E59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092076739DB9293374614B12867254CB /* Foundation.framework */; };
 		042B2BD25F4E62DCC29BD8A86913A1E9 /* points.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C8BF87E20F22D228DB099F13858F4D /* points.h */; };
-		05EF9F34E3436D51D3DD4EF1B3AE1244 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D77F8D6F8BC4F4910BB7109E747E27 /* AFNetworkActivityIndicatorManager.m */; };
+		05446357C5E2D29B6B81DDFB9AF4069F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 76194BAC729366D4B4D1BF9643CD2800 /* UIWebView+AFNetworking.m */; };
 		06D4A86FFBF6991C9C360A58B4F80D91 /* olutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BF7CA0130AA89865F0032FB5921592 /* olutil.h */; };
 		06ECD3BB2311F3BCA8837EF91E56974E /* chop.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2AAB5E8F807DA9FC8C5CFA14A5F79 /* chop.h */; };
 		0788CE4466B6B860B8A02879812FE1E7 /* ligature_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B4155AE50F249C8A7A6B479FB36D83 /* ligature_table.h */; };
 		07DD41A4CB65C9F4F41FEF226A29549E /* altlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 757B7ECCF9A3FBDC8F528D906D28F7B0 /* altlist.h */; };
 		080EBF5E821C5B77468CAEDB11AE3E0D /* basedir.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA392589D88255F505784097482EAC2 /* basedir.h */; };
 		082555455EEBDF4D33A250CA748FB111 /* normfeat.h in Headers */ = {isa = PBXBuildFile; fileRef = D10E11C9FAA8DB20069B3D1B8DFE2F8C /* normfeat.h */; };
-		08A42253984CCA9C3E703ECCC3E5E715 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31279AA696A5990AC3FBEFB63E58AA /* AFSecurityPolicy.m */; };
 		0B08AC8E1A4845CB9874F22985B1FC61 /* clusttool.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA9EDE46D3885B8FD5570ABDD059E24 /* clusttool.h */; };
 		0B92EBD883B6FF09A72A7E6ADD94D368 /* picofeat.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F66648156092A78CAE0793835B39AE /* picofeat.h */; };
+		0BAFD9679174D120F878975AC881E41B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BFE7DAF2636D061608B4B84D084D47 /* AFNetworkReachabilityManager.m */; };
+		0C667E2368C2AB33A3F845BA4C11CF0D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B240B741B0B02C4ED1A7839D181CE /* AFSecurityPolicy.m */; };
 		0CE33C136171E400BB133E90363590F3 /* drawedg.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EF2B6311E5A6936C7DED3B39978C4B /* drawedg.h */; };
 		0CEE21B1EE32C4DC3189AEE61B74B3A6 /* sampleiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCCDC708187F01B30415B6192E349BF /* sampleiterator.h */; };
 		0DAC072DFEA460C13FDB1B76AFF79340 /* efio.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FCE052F1926B3D52B731B27CB2DBCC /* efio.h */; };
+		0DCC9359D3895DE4BA378EEFAFA9B771 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF678B52A8DCCE6DE260044A56E05CCB /* CoreGraphics.framework */; };
 		0F145F1632C5D551D90FFD7AC63FF098 /* globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F012C10BDD92836EEA31A7C9CF92343 /* globals.h */; };
 		10EECC2351B9E85EC4544DB2E0BAECB7 /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8A1C995B7C122ED772D2ED34B4542C /* bmp.h */; };
 		1124CB4C3AFCC52CB2CA5F0B8F829724 /* stringrenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1B793E8A641A050DEC4A9660E6E56F /* stringrenderer.h */; };
 		11654E72B9080D1A4D343799FECD263A /* lm_consistency.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F26DC85420A423BB99D824BFB8E80B /* lm_consistency.h */; };
+		118B8D6F144918900564B702C991B11D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9D82A7E6B824CF1316DBE1060C9CE /* Security.framework */; };
 		11A4B7DBEC7E2F0EE1C7184B4F6EE33D /* dppoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C16CEDC3461039B1368FA4A62351468 /* dppoint.h */; };
 		125FDA6BE8052FBA35C4CAB2281F4D0E /* fileerr.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A9FB9830D67D2F4B07AE257EBD8D88 /* fileerr.h */; };
 		1269B1BFDEE82F8C17708DE3CA142C3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092076739DB9293374614B12867254CB /* Foundation.framework */; };
@@ -40,16 +44,18 @@
 		13068C21428F09C1E15CC23F5480266B /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CC269399E431843FD89773B51C7CAF /* renderer.h */; };
 		143E84E2879E5FD25BC4BF4C3F0F1082 /* strokewidth.h in Headers */ = {isa = PBXBuildFile; fileRef = 98CF0BFF38FBAF2CDED8D3DB35F4AE78 /* strokewidth.h */; };
 		14C1ED6D4AF1FED7FFC1AD166AA3F36C /* trainingsampleset.h in Headers */ = {isa = PBXBuildFile; fileRef = E01A855B983CF6186DEE907EA6E686BE /* trainingsampleset.h */; };
+		158A28415DD3C7A167509ADF94830357 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC71B0D41ED0B45AEDE067C96C3FB92 /* UIProgressView+AFNetworking.m */; };
 		16111BE0A80623E3097B962284C1A4E2 /* params_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 3216285C7B68372053BAFAEAC44812A2 /* params_model.h */; };
+		16A8E95459939AB6F1C042FCAAB13C0E /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF51DBC886DD475486836E42375BA61 /* AFHTTPSessionManager.h */; };
 		16D2667D4B056FD09ABC8EC4E87E62BA /* UIImage+G8Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = 62800A4C4C8A0ACBBB67C790A5C579AD /* UIImage+G8Filters.h */; };
 		174614FABEAABA57AF57524ED98E4ACC /* G8TesseractParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820EFDEBF45240A7F230461A9981480 /* G8TesseractParameters.m */; };
 		17E53E50D36636D3059E4FC4952085E4 /* rejctmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C86579AC4535ABCC568D9CEB25F1DFD /* rejctmap.h */; };
 		1879DD5F0E00BB33327A4F713AF8C160 /* fpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6AE92DB8F995E63B7E5E3419940076 /* fpoint.h */; };
 		18800D3DBC8CB850107F99FCD38501DF /* pithsync.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C357611310E5C882A6819962E4A7E80 /* pithsync.h */; };
+		197353D27E153C5EAB8E3B177B6A06DC /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B9671FA99673EF4880851BDF66F816 /* AFHTTPRequestOperationManager.m */; };
 		1A07C06822024DA64DE962C71B0CD0DA /* tesscallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEDC6339C93BDA948303CE8642DFDC8 /* tesscallback.h */; };
 		1B0823BEDB5EBEEC916B125C1C684477 /* mf.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AF86EAF3DB77927DB5C36B683C5601 /* mf.h */; };
 		1C1A541785C492A37D0372C1143D757F /* sortflts.h in Headers */ = {isa = PBXBuildFile; fileRef = B356F9D81AFEAD585D7FE5C88D14ACD5 /* sortflts.h */; };
-		1C35A6A374907F5C309321B67D6ACB5A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09AF3B47DA08E56CB9D96B45AC1490F9 /* AFURLSessionManager.h */; };
 		20730B1561200A51BCC6009F725C3C20 /* feature_hybrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 85AC413FC548594DFCA1F4CD381C7264 /* feature_hybrid.h */; };
 		20CEFE32369466823570FC9B1FAD8DE7 /* bbgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 257955D5B56434F12FEC387E68451B60 /* bbgrid.h */; };
 		212E272C24718B3FD2CA45D619CED6C4 /* helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BCC0B8E90D2A42E26A01BBFEFF3AC6 /* helpers.h */; };
@@ -60,41 +66,40 @@
 		23B71A2F43718D9FC00804050266835A /* elst.h in Headers */ = {isa = PBXBuildFile; fileRef = 268A5434D9C6DE4579EB1F8FFC0842BF /* elst.h */; };
 		25E219FAFBC89D9363E38118E1B68304 /* secname.h in Headers */ = {isa = PBXBuildFile; fileRef = EACC0463181D87885AB7F11F2AB9FDEB /* secname.h */; };
 		2693351F46541D8BE29D6297DD11567F /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A10C52721AAFF25C7A9C4B1812642B /* osdetect.h */; };
-		26CC134097F3EFCECBD7B061F001B82D /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EA598CCC434F2602D1F8BC4FC41A9706 /* UIImageView+AFNetworking.h */; };
 		26D3BE536B6ECBF9954F2212C633DB0E /* tessclassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A03DAEF59A30674AC654513FCA2460B /* tessclassifier.h */; };
 		276E02985AB3F72085299F37B9C849F2 /* UIImage+G8FixOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3381B8D57B823A12D7D496781719DC21 /* UIImage+G8FixOrientation.h */; };
 		2815AB01AFE36C50B83C769B147E7F7D /* G8RecognizedBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E001095AA8954BB1FF210059C3C801C /* G8RecognizedBlock.h */; };
 		286C154887DCA06E37E4952A2CE57F5A /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6D5E2AFD03EC55F91DC07E804D642 /* ccbord.h */; };
-		2A27E1A951E44E0447555DD07A5F57C4 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A301E89F23C3C6ACAB4A2519966638B1 /* UIRefreshControl+AFNetworking.h */; };
+		29AFFFFAC783B78016DD0E26DEB88A00 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FE2E3FBCD60DE0CE6EF013E972A4EB /* UIActivityIndicatorView+AFNetworking.h */; };
 		2CE3FD81F6DC1D3A33B78844A89A5888 /* cached_file.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB26C1271EE542CA940F4E14CE55C1D /* cached_file.h */; };
 		2D9850ACC5BAFE722B97AD784015F85F /* scanutils.h in Headers */ = {isa = PBXBuildFile; fileRef = E361BD39B1033265EA7F52381878A734 /* scanutils.h */; };
 		2DB5AEF3D1303CFA59BA26DE9497E5F7 /* mfoutline.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A4B7D8BACB6A4FB9903044EF40B106 /* mfoutline.h */; };
 		2E57234F67C000F179306436656294EE /* G8Tesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = FCF7AD444074D26F422054C7B19333D1 /* G8Tesseract.mm */; };
 		2F71788B9CAB1992B5745D231AAF5D48 /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E3017CA1514B154141C8187549E1F6 /* pix.h */; };
 		3040EC333D92AF97FA5BF27ED8165849 /* serialis.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AB278D97F53006393A96C0FFBFDE7A /* serialis.h */; };
+		30CAD4E065F4C0DB0AB88D967274C3A8 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 59700AF49CBE6C01FBD063A26FE8F83E /* UIKit+AFNetworking.h */; };
+		31E1208056CB1267114A0037B377E9A0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1789019BB9B9D4047F4B976C147D6E /* AFNetworkActivityIndicatorManager.m */; };
+		324D7A486525FCF278ECF63DDDEE13E3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 021750F5825230C91B84B554EC123B79 /* AFURLRequestSerialization.m */; };
 		326759645A48A557A1030D0E636BE430 /* quspline.h in Headers */ = {isa = PBXBuildFile; fileRef = A67FF8E70857AF95D890F48578CF7752 /* quspline.h */; };
-		327EB445EAFBBC2D9C2DFCD9BB2151AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7C370F9E8BC599899B1181D126BFDE /* CoreGraphics.framework */; };
 		3374D157C114232331F964CD611AD7AD /* word_list_lang_model.h in Headers */ = {isa = PBXBuildFile; fileRef = AD304DC72F157C2E9F99CD9F812854B6 /* word_list_lang_model.h */; };
 		33CFF53FD88D8D5DB718791BF278608F /* char_bigrams.h in Headers */ = {isa = PBXBuildFile; fileRef = F84231D6593855B647B452946D882FB8 /* char_bigrams.h */; };
 		340710C6FBC592F837323DD455FF287E /* linlsq.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F261C84B94E533A2315412E2D2EA0C /* linlsq.h */; };
 		34AD11C32B7F582E990E8F6AFD520FB9 /* polyblk.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D2FBC08474293FA20B0356D952C856 /* polyblk.h */; };
-		34CB96159E539C0F87E121630C9D9A12 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 051A457A5282CEF9D2074ACDFACFADF9 /* AFURLRequestSerialization.h */; };
 		3573A2EC9C9FBD99FEA0B7A541935C22 /* split.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B66DEF1A0BECC33241611B1D315F2E /* split.h */; };
 		35F064FDEA06AB657062A83F6C261247 /* kdpair.h in Headers */ = {isa = PBXBuildFile; fileRef = 13913335552D75CCCF45BC44ECD2CD06 /* kdpair.h */; };
 		36445679649796E156341719CDFC254E /* makechop.h in Headers */ = {isa = PBXBuildFile; fileRef = 277D3574CB5A94C41F92AF7B35ED4B69 /* makechop.h */; };
 		367432E571087902E460626B7891E8B0 /* cutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 253074D8BC433A69A6C321B14339E0F7 /* cutil.h */; };
 		37B64189C33F9EA204F887D89557051D /* tovars.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AB7CCC35CE733EE8C4650F7665D60A /* tovars.h */; };
 		3834B15BC85BDB605D1896DDDFE49B38 /* colpartitionset.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE9CA1F94BF0587B4ADF1DCD62D37DC /* colpartitionset.h */; };
+		3B02322B6481E78272A1DD30ADC9310D /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 392A3A8087ACD9963454BBA49E4C2517 /* UIActivityIndicatorView+AFNetworking.m */; };
 		3B17CF9007AFDA65262EC2DD7668A832 /* callcpp.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BB8BD7D40D82CE5ABEFF40776185BE /* callcpp.h */; };
 		3C6744B1074AC69A0A21C05209F0A992 /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4E057CF197C9268A196DDDCF4B6B82 /* recog.h */; };
 		3CB3B5E1D278E3B9FF462153EC16AD8E /* seam.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CE58E5CB0953C5CEB0B39ED910FFBE /* seam.h */; };
 		3D4D1560BAB53EF3A6AAFD84C182B177 /* search_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC94C1CC0529638167BF1AF4EFDB62F /* search_node.h */; };
 		3D8A72B7E5524E47250D35F5F5E22585 /* G8RecognizedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B2272CC63D96EBA3D640264FF40C06 /* G8RecognizedBlock.m */; };
-		3D99E602AC6BD3768EC91490E4BC5A03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0E2A82F3A182A3A871C9216298800C /* SystemConfiguration.framework */; };
 		3DEEFBDE5AE45634CBBF1FEF0ACBA255 /* gettimeofday.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9BA32FF0044DFCC60FC9175E05744 /* gettimeofday.h */; };
 		3E2F8013D54FFC34C41E99EC53C941D1 /* blamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E65097DF7620A3E3FD640C75EDBCD98 /* blamer.h */; };
 		3E5F0CD7C9FDF017E334C5623F986095 /* input_file_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB0D18ACFB8FCF3269A113A4DF4FDFD /* input_file_buffer.h */; };
-		3E6D77E213AFBF2BC8B08FF37EC12C5D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 747F7AF6BD45A9A36CD185C7028B2911 /* AFHTTPSessionManager.m */; };
 		3F357431FFA4136F89195D9DD05630BE /* kdtree.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA9C4D5C8778E6ECF13C2C840921845 /* kdtree.h */; };
 		3FA533AA9E6EDFB41D4038AD57DA3070 /* ccnontextdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = E97737DA1779A2A960B7953836B148ED /* ccnontextdetect.h */; };
 		40049AD3FB5317147671059F8E3F0098 /* scanedg.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C0B7527A48053E0B22D7222107C04B /* scanedg.h */; };
@@ -103,17 +108,16 @@
 		4222903F901F683C6E72E4254F2FA1D1 /* tessbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA1192A02A9A0050F4F068400AAD8F3 /* tessbox.h */; };
 		42623755853EE84345B99D1F7481980D /* blobbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECFB29C7C34AC22B0D2B00F05144203 /* blobbox.h */; };
 		426E951CA6E82A852FCDB777BBBE207F /* classifier_factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FA230BD6056D844B5255746B647889 /* classifier_factory.h */; };
+		42B44D1B3147DF7A282D2F1B2A6FD9E8 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AEABDFA041D2BF2CF4A1D9EED95AAF /* AFNetworking.h */; };
 		42B55C84E863E5BEFB3E638C67313B45 /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 580F5D24CF73D49DD907120F86B2A9C1 /* jbclass.h */; };
 		4335C1D8C184502499C112F21EEDBCF5 /* ambigs.h in Headers */ = {isa = PBXBuildFile; fileRef = C44E130C7F02AFB9C7C2967602232729 /* ambigs.h */; };
 		4348C8CAC5A79AE04AA9F0F53A6FAC0D /* cube_reco_context.h in Headers */ = {isa = PBXBuildFile; fileRef = 36974D0A4A046B155BA203E73AF419BC /* cube_reco_context.h */; };
-		4388ED3B62F931F2207B8FE309E69A4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EE8EFDA9BA000FC5BDB119DF87F571 /* Security.framework */; };
 		439F7D085AF14F6B6706232029C359AC /* plotedges.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA4604223EE2C4AFBB158828607FDBA /* plotedges.h */; };
 		441129039097336AA12FAFD67DE08655 /* mastertrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 139191D3FE0BB5DF1BA528C69C50B0D7 /* mastertrainer.h */; };
 		44797B940BC7F2EDFF8DA10EC17A1F1D /* stopper.h in Headers */ = {isa = PBXBuildFile; fileRef = 659959B584D8B8EC69543F27D8A4968A /* stopper.h */; };
 		4505056C67968D4FA3112CE641EA8FA4 /* freetype.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CDF28CC9C8FFAB5D22D6FB58DD8ECAE /* freetype.h */; };
 		459AD3F7B2683AE463638C577199A648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB49A20BD41A2B6738BB78914B877C8 /* UIKit.framework */; };
-		459D32D61084183A67DADD7B2FCF41FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD97EF004C5B660A13ABDE6F2D875E0 /* MobileCoreServices.framework */; };
-		45A04F8CA9A028723B4B4A4A570269ED /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9273E7F80B5858FBF123FF7613B047EF /* AFNetworkReachabilityManager.h */; };
+		46CC7F55DDB88D02283D08C434B2F784 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEAFA644267B93A6EA6CBB243144AED /* AFNetworkActivityIndicatorManager.h */; };
 		47C0B1376F88817775733178B4D75F04 /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B371A17C529B26E69AD81C809302B71A /* publictypes.h */; };
 		47D2DAACA4D305BD7620BC7E75DF5F65 /* ipoints.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A6FB2CD8E3A10508EAE9C6D9703956 /* ipoints.h */; };
 		4A31944D8A1AAE25D39EFD2E89141C0D /* G8RecognitionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FE363F29D04805E42E904D1C5977F3AE /* G8RecognitionOperation.h */; };
@@ -146,13 +150,15 @@
 		560F57097E79A83BC4FF17E5B0569A3F /* findseam.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA011EC17AA3F77C68FCB543BED6AA6 /* findseam.h */; };
 		56D7CCCD39F59DC5712A7B6626D182E5 /* cube_search_object.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8929C4DD1BA106A431F5C5842ABE47 /* cube_search_object.h */; };
 		57FBF121621289B69925B35813F4E0B7 /* hpdsizes.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A708DD4C9CFD2D4FDC781B713CEA7A /* hpdsizes.h */; };
+		58937D44AC295247EC9C2E59907ECBDB /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5793F817C141EBE4E7BBB8A5FE1FF5DF /* AFURLRequestSerialization.h */; };
 		59CF3C654C61FA476B89E5AF9D1B5C09 /* char_samp_enum.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A4E558B857C931D5FE10D8514F14E7 /* char_samp_enum.h */; };
 		5A767A2ADFA31D6979B1F3D624520F2A /* globaloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A62A79E3E3A659FD06C64322177216 /* globaloc.h */; };
-		5BAD633A14E1C6732C7976D50A2C0311 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CD598E2E0D2FBD2CC747B5034AD73A34 /* UIButton+AFNetworking.h */; };
 		5CF4B1722224F6805BD3B5E771158081 /* edgblob.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F92B18717E71FC758BE1B492711F48 /* edgblob.h */; };
-		5E6D9A1973F40D98F54DE40EACD258E3 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EA85934C22288589E9F4C94B371ED67 /* AFHTTPRequestOperationManager.h */; };
+		5DA4A8772A0B7B2A21E489E9CA578553 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E38A4741DB404F28267D5C50F8D7CE /* AFURLSessionManager.m */; };
+		5DEB2033BC41EAD335F91F98946008E5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 078077385C36FE30B70726A059CF4238 /* AFHTTPSessionManager.m */; };
 		5EA4FBFEAE620FC04F4C18B54208DECE /* beam_search.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D3F4F0AEF952663D3E53889B594A06 /* beam_search.h */; };
 		5F0FC8937B54F6D16CB0198D857B1D71 /* blobclass.h in Headers */ = {isa = PBXBuildFile; fileRef = E742F198322A56FC6BC5D3038F7C6491 /* blobclass.h */; };
+		5F62D58ED27E48B07366797C6A9C35EA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A42745DFE8041F8D23A8130067FF47 /* AFURLConnectionOperation.m */; };
 		5FA51D6E59DFAA605F16ECE2399F5481 /* output.h in Headers */ = {isa = PBXBuildFile; fileRef = 077CFA0A2B661A252AB0D54A4284F5F6 /* output.h */; };
 		60B18E76AA848042A26849D948760DAE /* hybrid_neural_net_classifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5CD8A04E37D2154B6BD34B51A2B516 /* hybrid_neural_net_classifier.h */; };
 		622C20FE1A40DD263BE6E08D42428729 /* colpartitiongrid.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F11DFDE33184FDF96458A00A857E24 /* colpartitiongrid.h */; };
@@ -174,23 +180,22 @@
 		6C03D35E38FD5F69E4FDF1DD1B882CD2 /* bitvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8617E20206BC9E61C6DD5B1BD646DB58 /* bitvector.h */; };
 		6CE00EA44EAA2181A2DFC5E5AB542FD4 /* thresholder.h in Headers */ = {isa = PBXBuildFile; fileRef = B521FB8872C4D010E643C70BA95F5C7D /* thresholder.h */; };
 		6D0687BCA99503565FD71104C42931B3 /* TesseractOCRiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D36DC6EB06132F3CE8E366EDBC8DDD /* TesseractOCRiOS-dummy.m */; };
+		6D34BB848B788061074A10A383E17000 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7EBD24EFF2614F76C7B98444B445C6 /* AFURLResponseSerialization.h */; };
 		6D3845FED31F7CEC61E3E42B319F1F0A /* object_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BA7A5E54E9304609E4257D57C80791 /* object_cache.h */; };
 		6DC6A6AC9E1E08AF9C55EDA09FA8004E /* blread.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE6039293C2098D2833CF24088B342B /* blread.h */; };
 		6DD8B90E846C9EC6438D5590890CBBFC /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = CF196ECFEE2BB9825E4DA8EE841CDE5F /* stack.h */; };
-		6E6E46E9494D08334F365E1F17104849 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EFEDB348DB773B7D2802947C4B05D7 /* AFHTTPRequestOperationManager.m */; };
 		6EAC1CB1B968A63A773965A7DC2AC1AF /* danerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDD8295CBE1BB489A0114E7938E20FD /* danerror.h */; };
 		70DC82708BC8F0BD72357C3C06A8E0F3 /* quadratc.h in Headers */ = {isa = PBXBuildFile; fileRef = 00435F10E2294314B61751FE37F6118C /* quadratc.h */; };
 		7101152C1E99558B2CC4D3B0861B2597 /* neuron.h in Headers */ = {isa = PBXBuildFile; fileRef = C64F18C3F653EFD932BBD248A721A6A2 /* neuron.h */; };
 		7199EEF3C0243A21D3AF36484D624DCE /* normalis.h in Headers */ = {isa = PBXBuildFile; fileRef = D515D0AF2BD2A45FE4FFD5E3E122C7B7 /* normalis.h */; };
-		71E402EFD3ACCB4A8428A1428EBD93D1 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 847BA73BA35D69A6B454AC0D293F0BCC /* UIButton+AFNetworking.m */; };
 		73B0C8D2B2C8BA0A229E790627CE0CB9 /* G8Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD46A681A83A41F9CDA611AB7AFE503 /* G8Constants.h */; };
+		74DEB99674F76F0C1940E0276E565867 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4180FD52ACE43BAD5C646216A1BC9E /* UIAlertView+AFNetworking.m */; };
 		7522C2A054978050FBEA78600193B5EC /* intfeaturespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C757012CBB4D01B74BBEE2ECB850B4E /* intfeaturespace.h */; };
+		75EA90281BC45C3D3390241B78255D5E /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0A823E51C4315DD2B75A9A94C39D2B /* AFHTTPRequestOperation.h */; };
 		761EE3290D50EED8D9A9E853A4246B12 /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 2429C6DB2E3A42F1B3103388B5514C8D /* watershed.h */; };
 		76B9985EB5BC447AEA79CD0CB63C33CA /* shapetable.h in Headers */ = {isa = PBXBuildFile; fileRef = E58BFAB6C43D2073E13FEEA230EB07AC /* shapetable.h */; };
 		77F7D45B2B90F9271D986CDF33C67D90 /* config_auto.h in Headers */ = {isa = PBXBuildFile; fileRef = 7391232EC88DEB2091FB671495C5234D /* config_auto.h */; };
-		77FA5ED966AFE2BE4431C39797AD312C /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18F96B969BECCF3BAF9C5B28D65B23 /* UIAlertView+AFNetworking.m */; };
 		7867B6FE5E2BA4AA86B57AE48A3F80FB /* featdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2800FFCC7BD6795356F3250746DF2E4B /* featdefs.h */; };
-		78CA813B9D0DA58F192BB8BC672DD6E7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500BA6EF110DB05A62441490FA874BF /* AFURLSessionManager.m */; };
 		78D4CC0627A7455209A5DC225BFB99CE /* extract.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F34AD7A70DEF328465013C7C99FC3FB /* extract.h */; };
 		7A2AC533C579BDD00431399AADD0D922 /* apitypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFE57939A6B443C64620B2DEA3E3347 /* apitypes.h */; };
 		7AC18349FE279CEF577BF6B554B79251 /* cutil_class.h in Headers */ = {isa = PBXBuildFile; fileRef = F2771191331F02ADDF6192ACAC400788 /* cutil_class.h */; };
@@ -199,7 +204,6 @@
 		7B85CAF807FAC60078775C36F8B8846F /* con_comp.h in Headers */ = {isa = PBXBuildFile; fileRef = E75E0994C9C100432D1EAADEFF5B010C /* con_comp.h */; };
 		7E2F7A64DF81DFEEE8C08B98051EC35C /* svmnode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6667955D9609D1F48DD051C20D561EF6 /* svmnode.h */; };
 		7E517C1DC6856951A02A1A2825E302A2 /* unicharset.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DE592D59B1F1C4E6ABB02A9D40E517 /* unicharset.h */; };
-		7E710E986240569F30A51109D004DE3E /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEEE2359228087E58CCDE54F300C250 /* UIWebView+AFNetworking.m */; };
 		7F7A7B747473E77A4FB286ECD98741FD /* fixspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F090F596889A8E82584E4DE2F434DD8 /* fixspace.h */; };
 		7FCAB0AD601677A54A5DFC178E0E5BE2 /* word_unigrams.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2516752E639971B86E356A49FBDB8F /* word_unigrams.h */; };
 		81022F8DC5F6CDFE356AA73DADD8FD58 /* boxread.h in Headers */ = {isa = PBXBuildFile; fileRef = 46640E1DCD37E6FB55975D201845B687 /* boxread.h */; };
@@ -209,22 +213,18 @@
 		826CC179C445A02F0247BF39DAEC4AFD /* mergenf.h in Headers */ = {isa = PBXBuildFile; fileRef = 516521B3B1C5CA32562D6F1C93D7491D /* mergenf.h */; };
 		832B8B567EB096902250EBD7D1AFFF08 /* mutableiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C57525780D0098465A52E8F439A686A /* mutableiterator.h */; };
 		84FAC6178A76C3942D34B14A7ABBCB00 /* char_samp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C39B22D2041ABC497EAF1800875D076 /* char_samp.h */; };
-		85F4F7AE3D156733039577FE69090E1C /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C31C2EC809A41AC86E189E69917E35A /* AFURLConnectionOperation.h */; };
 		86EEA1DCC9E4E1BBFEC06CF031F331AA /* equationdetectbase.h in Headers */ = {isa = PBXBuildFile; fileRef = 357FF0556590C279824052FAA3CAC86C /* equationdetectbase.h */; };
 		8782041659CC877C31CB9BBD9FCC6F87 /* paramsd.h in Headers */ = {isa = PBXBuildFile; fileRef = CECE6DD5B7B6DFC760C08CD3F24A81A7 /* paramsd.h */; };
 		881CFE7754E184CEC94E2A9CAE18266A /* mod128.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C9ED22D4185F10C8469EAEBA3E8D7B /* mod128.h */; };
 		8933AAE814E55B7C44263DDE974719AE /* ratngs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AACA23DB28DB6EC433C5F5A8A5CED21 /* ratngs.h */; };
 		8992AF33D20BC9C6B3F7B57C31C15FC1 /* pitsync1.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C8B0CAB79EC6347B12180CB7F869E5 /* pitsync1.h */; };
 		89A40B6EDDF5FCEF7BE5DB1C63D81F48 /* search_object.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C44014DB8FCE8C8EBC72E98638000F7 /* search_object.h */; };
-		8A125E9E73CB233F495D5982C1CB5329 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 465FE682DAA7B1DAE5313F49EF9BEC75 /* AFHTTPSessionManager.h */; };
-		8A3207B65E0D1E599D054EAB1B0A5F2B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB014E6FC02CA768EDA6346349C1D /* UIProgressView+AFNetworking.m */; };
 		8AD628AD371B7875E5DDF93E70D20578 /* outfeat.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3B805B5AF9021CD9BA4F2AACAC9280 /* outfeat.h */; };
 		8B16D333B5301F9D41643FB136178B27 /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D2C2CAE72B47565AA03E9706BB10C2 /* bbuffer.h */; };
 		8BF5A53C3800B69F6F39C15AAD904D74 /* equationdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = FF07B3FC58C5B4967EE181504A90F66D /* equationdetect.h */; };
 		8D03FA5C595C3C61FD194CFAFCD2997D /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = 066774631196BB01A98959A2BDE3C60D /* environ.h */; };
-		8D192C1CAEE8965B4B48A2B53518EC32 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F75F0957DC369F2805F962F62239A /* AFURLRequestSerialization.m */; };
+		8DC48F5BB67DC0FC1343AA94BC9F175F /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 886176E7C1F2C69CD2A6C212CDD6312F /* AFNetworking-dummy.m */; };
 		8E4CF0CCDA189C03B72852DB7ABD3FE9 /* pgedit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBE80E101F51BB1CC23D3D2268D49DA /* pgedit.h */; };
-		8E894D5C6851231A040A48D0C328A450 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6294DF51738458364A74E073B8F165 /* UIActivityIndicatorView+AFNetworking.h */; };
 		8FB2EABEB0451366C1CEC1F6EDD78A35 /* flexfx.h in Headers */ = {isa = PBXBuildFile; fileRef = A0960AB17BA9638F676C063CFEAB0899 /* flexfx.h */; };
 		901D9DFE3C1BFD69F157FC2E69724497 /* tordmain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF0F2506121258C332EEAFDDBCDC6F9 /* tordmain.h */; };
 		91167E89D487A337F3A6C468A39F1B3C /* coutln.h in Headers */ = {isa = PBXBuildFile; fileRef = BC41DFBD6D34B0123E9A2FC7E219976B /* coutln.h */; };
@@ -248,8 +248,9 @@
 		9AD52B3E72F28B4A6EE73DF5A37FF18B /* ccstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9B1B4BB7549108683FC84CF80A1D78 /* ccstruct.h */; };
 		9C56F4F9D971C307E1E87C85E8778F42 /* bits16.h in Headers */ = {isa = PBXBuildFile; fileRef = 69BB2BEDA71C1A7833C700A2A8007606 /* bits16.h */; };
 		9D0374E89B8A41AD6077ADC2FA94743F /* reject.h in Headers */ = {isa = PBXBuildFile; fileRef = A81F61AFE34EFFE24924CAE2174BA721 /* reject.h */; };
-		9D88DE8FB3F90CC2BB2C340278D081FB /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 300872A22426116C3ECCDD80AE5DB930 /* AFURLConnectionOperation.m */; };
+		9D13D27174191CBC5586DB7BC1AE1D0A /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F65B0638426F82802E69C2225AF3EA6 /* UIProgressView+AFNetworking.h */; };
 		9E03B29001729973FEE6FD0E9B2A3EE9 /* pango_font_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 312826FD88CA0C8705B88D3F25CF1B10 /* pango_font_info.h */; };
+		9EB2EE71CC123992B3AA70F5AB838556 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C5858DE9B08055A061CFB2C1EDFF36 /* AFURLResponseSerialization.m */; };
 		9EF2C04DC0A8EBE7D752870648A012DB /* genericheap.h in Headers */ = {isa = PBXBuildFile; fileRef = A280AC213684CB601432256D106503E8 /* genericheap.h */; };
 		9F159E51B5CBD77697D37B33AEBBC29C /* edgloop.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2DBCA3F0C4A006A0CA2987D55BC05A /* edgloop.h */; };
 		9F30208A589391A525F70CA1C201E56F /* alignedblob.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB5134B7C13B309776B05537707F462 /* alignedblob.h */; };
@@ -263,16 +264,15 @@
 		A3BEB3BD8B33B69B99B35A7AB3949C81 /* TesseractOCR.h in Headers */ = {isa = PBXBuildFile; fileRef = A54047C5DAC43EB7A5557F5B5F30919F /* TesseractOCR.h */; };
 		A3BEF9F8EC14D634A83676F85D10502B /* ocrfeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB3A79EC0A723DD026EFF8A78EAE331 /* ocrfeatures.h */; };
 		A3E3ECCB1A47D249AA827DDA81E1574F /* unicharmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 42291F617476B69D737BC2DBC11DC6D7 /* unicharmap.h */; };
-		A675A1EB95768D1B85A078842F6AEFE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092076739DB9293374614B12867254CB /* Foundation.framework */; };
+		A58CC12E3AEF838BA3BCE303E4A19764 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 649E23DEFA2198E97F83377BDE8E6DED /* UIAlertView+AFNetworking.h */; };
 		A6AC49041607DB360206C3F734DEF48B /* hashfn.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE5E07F6EFD717C550DC5B3F2A408CE /* hashfn.h */; };
 		A6F2F0EA9B2351B0B5EAE529C591CDD1 /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = FA190D1690E732295B288D044D4E4550 /* baseapi.h */; };
 		A772EACE9ECCBA60824383DD929D9297 /* crakedge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3463E6F9AEA99E0E4DB1C69CC29C1185 /* crakedge.h */; };
 		A8E28E4F49AE0A874E4770DF185CFC08 /* ocrpara.h in Headers */ = {isa = PBXBuildFile; fileRef = 64C0A6F9E6F97016B2385A5B5881BCCC /* ocrpara.h */; };
-		A8F14237C1036125187E5F46DD7536A7 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 449D15961CD2662802C78DCA9D2298DC /* AFSecurityPolicy.h */; };
 		A98FF254054C3CE9AD35214527ED1D05 /* gradechop.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F01B03526D337BA66F96AB053C73AF /* gradechop.h */; };
 		AA348D0A5DA0E0B50B8A6ABA218538D4 /* fpchop.h in Headers */ = {isa = PBXBuildFile; fileRef = 32330AC7CC68AECCEBB0B679A671EF7C /* fpchop.h */; };
+		AAD9626CD05EA1031F54D1383C08C828 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CD1B607BE58622CEC94255BDAD38D4 /* UIButton+AFNetworking.m */; };
 		AAEE805C1A93C589F848EF31D648DF8C /* freelist.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0609E252614F0B230617E87EF81B17 /* freelist.h */; };
-		AB46EC24A5CCC82D267C7A07656D0508 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F668D4A28C44D1A56A54AD9CB22E1842 /* AFNetworkActivityIndicatorManager.h */; };
 		AB68F116434B3D7534BB9CC32783ED62 /* strtok_r.h in Headers */ = {isa = PBXBuildFile; fileRef = A72215E4F4864110460A58BC01DE3A31 /* strtok_r.h */; };
 		AC277D83EDBE9234B5CAAAEC306B533C /* tessdatamanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3EBC91BAE8647374BE78F332D54AF2 /* tessdatamanager.h */; };
 		ACA7408F9F7C501B5C7487C96CBEF037 /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE37F42D9BF6E6BF2B344DACC44C077 /* capi.h */; };
@@ -281,6 +281,7 @@
 		AE1983726CE91B1DF8A97F039D676C53 /* char_altlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BD8DA97B5B16C09ED7D9F3729A981B /* char_altlist.h */; };
 		AE2F47A7DE9BC2010504167D52CCBFFE /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5F3A797BED8579BE25F5B0091002DF /* readbarcode.h */; };
 		AE500B52BF2664941E121B24957FCE8B /* indexmapbidi.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC8D01FA3844CAF08BB8195EB0AC8F /* indexmapbidi.h */; };
+		B0E0BD92C61E175BFAAF5C36BFA64409 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F379CCF9CB0CDABAE51BCD86BCAB794 /* SystemConfiguration.framework */; };
 		B1B49CD533D97AB27021DF8FD3D33D0E /* topitch.h in Headers */ = {isa = PBXBuildFile; fileRef = F577EC13D2F68341A857B4E1DB0B3304 /* topitch.h */; };
 		B1EBA5F320A49AEA2F2940E451165445 /* dawg_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = FD24A33319F2380DE42EADD53AF18FAF /* dawg_cache.h */; };
 		B2C4574F6314C4895C28EDFCCDF19DAF /* G8TesseractParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 0973ED16C4FB04F9403284840B37F809 /* G8TesseractParameters.h */; };
@@ -292,17 +293,17 @@
 		B4BFB099D716DA822D21B3DADBD23CA9 /* openclwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E751B543641423FCCC2FBF87435942 /* openclwrapper.h */; };
 		B4F80227CEA05A536B158E2E8BD6D4C8 /* structures.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ECB8D4B46AFA3C24275E603BB7F0547 /* structures.h */; };
 		B5092CA2BCF86BE313C25CA4A8800476 /* normstrngs.h in Headers */ = {isa = PBXBuildFile; fileRef = B89DEBD64EEB95773E31CDD5E35CA7EE /* normstrngs.h */; };
+		B67535F21E9958CA8040197578052C09 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1017F2F95F75A016623D8DE279DBA /* AFHTTPRequestOperation.m */; };
 		B6C6F7BECCF46945ECDF93A62D12A673 /* neural_net.h in Headers */ = {isa = PBXBuildFile; fileRef = 6469062098A95666CEC1E418D0B5CF57 /* neural_net.h */; };
 		B6DFF1E1025552065D392E6E3EEC5E3D /* werd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4D8CB71FD06A9EDF3FBDA67A701871 /* werd.h */; };
 		B75A2B1A2354CD53CA46DCC7B06CC8D8 /* cjkpitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE6E57076C6EA1FDF98F6FE7C65271D /* cjkpitch.h */; };
 		B7760FA3E6765B1A0C186A23625E07D6 /* qrsequence.h in Headers */ = {isa = PBXBuildFile; fileRef = C22A58B4D1C410A987C06B6D50A7110F /* qrsequence.h */; };
 		B90062BC8CA84C831DD475F45D80A899 /* devanagari_processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1680DBD2943FB27759E89B79B9A589BB /* devanagari_processing.h */; };
 		B9C4F46C6AD04D916B330539BE8685E2 /* cube_tuning_params.h in Headers */ = {isa = PBXBuildFile; fileRef = 7337227E6C9A99BD1AF83E0DCCE070D3 /* cube_tuning_params.h */; };
+		BA43E4650A5E753A534C4E3E1E5374FD /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BD6F958B99AA9719488FC056E21855 /* UIWebView+AFNetworking.h */; };
 		BBF4D6F2809970D0AEEC65C45BB41604 /* commandlineflags.h in Headers */ = {isa = PBXBuildFile; fileRef = 100A34439960E24A7C0202DDD5B3C1E2 /* commandlineflags.h */; };
 		BC644B9C16D2E49B2BE5AF47CA8685B0 /* boxchar.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AC2E9B620D2CB2A1839462AB83675B /* boxchar.h */; };
 		BD54594239581A89A0410912AA4E828B /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3B1B3FC3CB5E0EAA1AB8C1FF5C3F9B /* list.h */; };
-		BEC1DC30EC3F9E7E7DAE7068BB8ED2ED /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C864F42387E13B49574257522C76400 /* UIActivityIndicatorView+AFNetworking.m */; };
-		BEFF6DA5258CC9E7A12FEF172561DB05 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4000CAD9AC9F0045D5410441915F6E /* UIAlertView+AFNetworking.h */; };
 		BF2488E2E54F1B515F356808A0F1AA31 /* feature_bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE8ADAF3B1FD8D1755A2721B2F176BB /* feature_bmp.h */; };
 		BF8A8D06531E225D67D2A31DBA2AF887 /* pageres.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5E52AA7D82F54F3391DBEB337FD843 /* pageres.h */; };
 		C17B64EA45FB1D92A11A8790A8CCD661 /* blobs.h in Headers */ = {isa = PBXBuildFile; fileRef = 822434C1F057C62555E0BFF60D9DACCD /* blobs.h */; };
@@ -311,8 +312,6 @@
 		C2CC47553F3B05B4A6F7106E9E509E8D /* intmatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 71850AFEC7276EC8397D2A01FC5FD660 /* intmatcher.h */; };
 		C3EB07842B563F18F8CFBEEB090265A1 /* bmp_8.h in Headers */ = {isa = PBXBuildFile; fileRef = 935F4B9FA684B64740C1D52D1C62D852 /* bmp_8.h */; };
 		C4FA8124D3E964F08BE468EEE21F81F2 /* cube_line_object.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB1ED1C9D5D6D8525602A8AF685FDC0 /* cube_line_object.h */; };
-		C60996711F78C47F45F156A798711E40 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26DC1DE16A4FBE1979BCE981229D2F /* UIImageView+AFNetworking.m */; };
-		C62AF971C9DFE38240D121894CCF27C2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBCDE329987C080F0A43146CC9DB007 /* AFHTTPRequestOperation.m */; };
 		C6B07CC2D3E679B67778C7167E1F4AE4 /* normmatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 24736F16D694F07421CA17EEC60FF051 /* normmatch.h */; };
 		C712BC46870A7D83AA8CB8115BC45F9C /* wordseg.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB0948996D06BAEA64BCEF2B596BF92 /* wordseg.h */; };
 		C8A75FC90C202E02F14E5073AFF900F5 /* string_32.h in Headers */ = {isa = PBXBuildFile; fileRef = D392F1A86240FBF7CEBF42F6E6E9ED8C /* string_32.h */; };
@@ -321,7 +320,6 @@
 		CB569D56E9B5428236A205AE406394FA /* emalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7050F9BB7C7556B37F0B033AAAD372F7 /* emalloc.h */; };
 		CB59BFE2BDA519756474100782E67DDB /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7931E8BCED735B9754386F910DDC22E0 /* alltypes.h */; };
 		CB9A003A40ACC282AB41CB83313631CE /* lang_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 07221764F01A389BEE73BE35998A4DD6 /* lang_model.h */; };
-		CC1187FFFE65FB1B8665F35F07705DFD /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D3219F7CB61E30E0D7D47BB4BC12F776 /* AFNetworking.h */; };
 		CC19FEC3E1C3FBE4443F755E70762814 /* const.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7A2D492ED34E6BA27E5C5437E3824C /* const.h */; };
 		CCE1438ACBC73F36FECECB065E0E9DE5 /* oclkernels.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D8AC8F43D88C9BF40720570BA0B569 /* oclkernels.h */; };
 		CCFB09EEED13869D5A4FDF5D59AAF2E1 /* clst.h in Headers */ = {isa = PBXBuildFile; fileRef = 535E718D55A18B562D6014593302C980 /* clst.h */; };
@@ -331,17 +329,18 @@
 		CF2A5F4A9622F8A8D86146894F7DFB9D /* universalambigs.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBAA5D4256588A8A27300FE53AAAA /* universalambigs.h */; };
 		CFBF89C234077DD0407D72B541454B4D /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A945156BFBE14955A6C97BFB6DD763 /* leptwin.h */; };
 		D083A72905E9D97DAE2AAF00222930EF /* language_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD182DF2CE00EACF9B1382D1071B795 /* language_model.h */; };
+		D097B622C717AFB69365585275DCA3DF /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 637CC3B085F0D7145C336936566587FE /* AFURLConnectionOperation.h */; };
 		D0D9DC1490BEB5F1F01C4508DB03709A /* unicity_table.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA0E38AA589343372B619F9432C5D30 /* unicity_table.h */; };
 		D0DF45F8C1E40E99784ACFCBCB7F59E6 /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = 400BE78047F47126814D505BEF6924AC /* gplot.h */; };
 		D114F3523B325900A755BBD0D7485702 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3200A0574AC27F1AC018E8FCDDDD1FB3 /* matrix.h */; };
 		D29823A1575CD369CD91B74515AFCB6C /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DBE9E22BCABE6074967CE0FA9ECF8B2 /* heap.h */; };
-		D2F6077B41691E490DDE95FF48A0CF81 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B8EFEEBDC86DC6CA4A492E46AE177E /* AFNetworkReachabilityManager.m */; };
 		D3B879783BB25C4A6579459E1F12FFEC /* word_size_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D75758B0717386A3B1C2B88DDC90F /* word_size_model.h */; };
+		D3D4356975A828FB5B103E84CE5AC041 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2365D6A4A737276467F8E7B0EC9C1D4E /* UIRefreshControl+AFNetworking.h */; };
 		D52BBDF242443044CF8836FE6EF051FC /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB2B6ADCC7E7FC4DD430C728D6361A8 /* allheaders.h */; };
 		D549968F7DC4464EC3BEDDBB81D70BD7 /* UIImage+G8Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = D6294E6EBB04DFBFD7D8A0B0BD431156 /* UIImage+G8Filters.m */; };
 		D5558D98E183E5C0AEC5DD7FB2303436 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 186222156A5C423DB1CF96BB5F280EA9 /* ltrresultiterator.h */; };
-		D559F774EF9AD1CA12E3AEFDEC448E84 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E561836B9B7A47CD054A0B0975B4B92 /* AFURLResponseSerialization.h */; };
 		D5AB2443682375EDCDA8A0AEC81564A7 /* cube_line_segmenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 161742BEEEBF9F7B7D7574D62CD59965 /* cube_line_segmenter.h */; };
+		D5DE426D65678CD90742E0903B2B6A76 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 290C93B195BA6D4DD1062D315069AF63 /* UIButton+AFNetworking.h */; };
 		D703D76F9FAECD62EFE26D12F17B5291 /* params.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9FA36544DB8143274625F5A60A17D0 /* params.h */; };
 		D8B81E3237F9D176536B45427FA5D6CF /* unicodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 256526F6401FD1AAA51F328498DE0622 /* unicodes.h */; };
 		DB4013D05B2280A7D44631CDDE7636AD /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3158FB5D400E3F650C50BD33E1EBCE /* bmf.h */; };
@@ -365,64 +364,64 @@
 		E7451ED3ED2547CE1B09AA1644433733 /* doubleptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4706A0088A8CBC81DD32A7401597B2CE /* doubleptr.h */; };
 		E84944C8331C6FC0497620D2E2D2255F /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = 143F7BF995BF2D3934FDD01CB508B99A /* ptra.h */; };
 		EA56698398C487A343AEF12D9DD3CC69 /* vecfuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = 230F493A64715212C30D40C8A7B4118A /* vecfuncs.h */; };
-		EB21198BDBB09A27C854A4B18D6F4A93 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A4521C005D48C198D6978085DFDF2269 /* UIRefreshControl+AFNetworking.m */; };
 		EB6FBDB7EB3E9F7B83B45A2CF4E888A2 /* cube_const.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BAE575562D46FDA182B81551AF60F0 /* cube_const.h */; };
 		EC7DFCCEB611A94BD7B09B5BE8EF9138 /* blobgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = AF86BB8217A77E4B6DD60EC55A1A018A /* blobgrid.h */; };
 		ECACE04342851C343DC11266B12CB365 /* measure.h in Headers */ = {isa = PBXBuildFile; fileRef = 42755C080E98EB1BBD48A02A4F5EE07A /* measure.h */; };
+		ED3D60AE0C9981DC3BDB51673D29BE01 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BE9E7422F4E52187F267408E1CE9F2 /* UIRefreshControl+AFNetworking.m */; };
 		EF634F3A00B8D96FE9A6C4C340D0CEC9 /* textlineprojection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1A457115AA43EFA578171192A18F32 /* textlineprojection.h */; };
 		EFE3A97CED8F7E8AA182B9F2BAD384AA /* char_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 3953B435A52D27C1DC6F24E37F0B1E09 /* char_set.h */; };
-		F0D47AC09FA94452D050958618AA5F5C /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AD951F02AE3CA68F422DA08C4719893E /* UIWebView+AFNetworking.h */; };
 		F0F4F8B8E2FEA9583AF3D64388838E80 /* imagefind.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B031A53739C1CD5FF86A7EB2D5D47E0 /* imagefind.h */; };
+		F1047EF6B1A307AD47A07823BE18D3E9 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AD18A217FFC7A44013BF4A4C0EAF964F /* AFHTTPRequestOperationManager.h */; };
 		F17C49D107D83164AF2D34677102958A /* genericvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 952558CEEC8BD3863BF505502875ACBB /* genericvector.h */; };
 		F1DCB9A01200BB88508F75CF6BA336D2 /* statistc.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC0BC86DB86EBC448136D54A4FBBF8 /* statistc.h */; };
+		F24D600BE281585A2E9C404A3512E03B /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E5BCA2641115D12F7FB21BEC7207C8 /* AFURLSessionManager.h */; };
 		F257A5E1877ED62CFD1F49911D2BCD7B /* intproto.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF2C0A40259F90E35943AE70E83165A /* intproto.h */; };
 		F2FECC9E27823EEAE0F9061118BAE556 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F5946DB1A4F46DC708834639B64355 /* queue.h */; };
 		F3028D0298FD86B9DEA504A2364E8165 /* intfeaturemap.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F86EB1AB001038E87F087469F5999E /* intfeaturemap.h */; };
-		F3068A882A5527589E0B5EC48D275ADC /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 141626EA5AD660D092F81FAD18285AB2 /* AFNetworking-dummy.m */; };
+		F30516A7C9D437AEC42F8D3C22B251FE /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9942A390633AE34628D1ECAAB443E40D /* UIImageView+AFNetworking.h */; };
+		F3460CF5FBA1D695679DBCAE154AE232 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E4EC1B3CEC7DB1452A1A0092801A63 /* UIImageView+AFNetworking.m */; };
 		F48993D78F059FD42490FE6B71C40C11 /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FC93114E921562770E4D6CE181E97D /* imageio.h */; };
 		F4AB4EC6BCD68AD1F749B572C450DA48 /* xform2d.h in Headers */ = {isa = PBXBuildFile; fileRef = A7762562CA26A4C4DC5088EF58C6BBA9 /* xform2d.h */; };
 		F62306883706F6524C939188A8539BE2 /* cutoffs.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D3567875126A7D016A8050F95FA030 /* cutoffs.h */; };
 		F6C62F434F7133AF4F24866CA112CEBC /* svutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 08592F8A38B42F0D9470E0FA70AFBE53 /* svutil.h */; };
 		F77FACE95818B46990BD729EFBA7455F /* blkocc.h in Headers */ = {isa = PBXBuildFile; fileRef = A5702474899B6842BB4ED5CE75F45A3B /* blkocc.h */; };
-		F80D620CAD0F8830405736944B501CBC /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7C808B766EE18CB44F3956D60957BB /* UIProgressView+AFNetworking.h */; };
 		F87E2AA80BB286B82ECF1710BE8D68CA /* elst2.h in Headers */ = {isa = PBXBuildFile; fileRef = FD7766713F8AB3CDC6741B628B27C938 /* elst2.h */; };
 		F893257E1E7DA9010C844A169811197D /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9B790DDE3F1DE42C22AC79AADFD5D8 /* ocrclass.h */; };
-		F89AAB20A91CCBB2D701D5ABFE480CE6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AD325578DBB04E51DD25F93F68FBF62D /* AFURLResponseSerialization.m */; };
 		F9B73151DB37BB3A1F5F3938A77B3B19 /* listio.h in Headers */ = {isa = PBXBuildFile; fileRef = A82DAB1D6B2241CBD892BB1B78269CCC /* listio.h */; };
 		F9E6DABDF0640220199D055B60CA4439 /* adaptive.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF9D51B2172F0421A3F42E6053DD50 /* adaptive.h */; };
 		FA4DE04C8A722D68F7FA34C905CE59E1 /* lm_pain_points.h in Headers */ = {isa = PBXBuildFile; fileRef = 158744F55BCD61FA75AFECDA097591BD /* lm_pain_points.h */; };
+		FAA302F9DA4560C128FE7D21EFBC757D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CF2119A8AB99F20D9B6C4B37C049FD /* MobileCoreServices.framework */; };
 		FADF29A63B0020540D55AC6001C998DF /* blckerr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6906E234D2DCF16E049F47CB7F9D0C /* blckerr.h */; };
+		FB71B023680317983EA5AD2064181A0D /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6A8C892A35BC1D71CA3C37D53F31FF /* AFNetworkReachabilityManager.h */; };
 		FB86BD16436425EEE3E66BF133954810 /* tessedit.h in Headers */ = {isa = PBXBuildFile; fileRef = B2501D1EEFD3819F291E23A64393410A /* tessedit.h */; };
 		FB8A12798955A93C49D599A21DDE06F2 /* colfind.h in Headers */ = {isa = PBXBuildFile; fileRef = FDAE2A97055C673748A8A887F49F9B77 /* colfind.h */; };
-		FD99A4352D54962EE3744D640936AE76 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA417514961CEED96A0576B5CD54276 /* UIKit+AFNetworking.h */; };
 		FDA6807E81BFD648666BA125CBEFA588 /* scrollview.h in Headers */ = {isa = PBXBuildFile; fileRef = 421462DBA0C65B7EA43385537C09553A /* scrollview.h */; };
 		FE4318074F4BD3103285754B78C1069C /* baselinedetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C55709BCF6F8AE1FD35184CACC5ED6 /* baselinedetect.h */; };
 		FFC530901E4552895285BF3217652EEA /* tprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = DB38AB59516FBB782434514C80318412 /* tprintf.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		577D7EEE443116819391681AE34FF578 /* PBXContainerItemProxy */ = {
+		1E65F720B3E5799D2572F2399CA86642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA22A47E23827169AD294B51A5FBAA82;
+			remoteInfo = AFNetworking;
+		};
+		BAB88742415F63C2688F03BCAB54368C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 767A8F62EE74321E0B51ABCDFAC31DE6;
 			remoteInfo = TesseractOCRiOS;
 		};
-		7CD24B7D647C596CFF4BCE97455C7999 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95BD61F1B65F5EFFC0E8F03107A42BE6;
-			remoteInfo = AFNetworking;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0029DD524D6B346628B60ACB2AF98538 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		00435F10E2294314B61751FE37F6118C /* quadratc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = quadratc.h; path = TesseractOCR/include/tesseract/quadratc.h; sourceTree = "<group>"; };
 		01153A6E282A0C320B8443A58978840B /* ocrrow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrrow.h; path = TesseractOCR/include/tesseract/ocrrow.h; sourceTree = "<group>"; };
+		021750F5825230C91B84B554EC123B79 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		04A9FB9830D67D2F4B07AE257EBD8D88 /* fileerr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileerr.h; path = TesseractOCR/include/tesseract/fileerr.h; sourceTree = "<group>"; };
-		051A457A5282CEF9D2074ACDFACFADF9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		051E702915AC6BC32E44A11D60B8E181 /* extern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = extern.h; path = TesseractOCR/include/tesseract/extern.h; sourceTree = "<group>"; };
 		059A3F211879458C1C069B5D0CE45E01 /* errorcounter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errorcounter.h; path = TesseractOCR/include/tesseract/errorcounter.h; sourceTree = "<group>"; };
 		064C0880542E42D6E25D22DDB8930BB0 /* errcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errcode.h; path = TesseractOCR/include/tesseract/errcode.h; sourceTree = "<group>"; };
@@ -430,22 +429,22 @@
 		07066999D61649EDD16CDC324AFE43E9 /* TesseractOCRiOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TesseractOCRiOS-prefix.pch"; sourceTree = "<group>"; };
 		07221764F01A389BEE73BE35998A4DD6 /* lang_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lang_model.h; path = TesseractOCR/include/tesseract/lang_model.h; sourceTree = "<group>"; };
 		077CFA0A2B661A252AB0D54A4284F5F6 /* output.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = output.h; path = TesseractOCR/include/tesseract/output.h; sourceTree = "<group>"; };
+		078077385C36FE30B70726A059CF4238 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		08592F8A38B42F0D9470E0FA70AFBE53 /* svutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = svutil.h; path = TesseractOCR/include/tesseract/svutil.h; sourceTree = "<group>"; };
 		08A20E22FDAA1237E4AF1C2486D0EA82 /* bilateral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bilateral.h; path = TesseractOCR/include/leptonica/bilateral.h; sourceTree = "<group>"; };
+		08CD1B607BE58622CEC94255BDAD38D4 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		092076739DB9293374614B12867254CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0973ED16C4FB04F9403284840B37F809 /* G8TesseractParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8TesseractParameters.h; path = TesseractOCR/G8TesseractParameters.h; sourceTree = "<group>"; };
-		09AF3B47DA08E56CB9D96B45AC1490F9 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		09CE58E5CB0953C5CEB0B39ED910FFBE /* seam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seam.h; path = TesseractOCR/include/tesseract/seam.h; sourceTree = "<group>"; };
 		0A03DAEF59A30674AC654513FCA2460B /* tessclassifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessclassifier.h; path = TesseractOCR/include/tesseract/tessclassifier.h; sourceTree = "<group>"; };
-		0A26DC1DE16A4FBE1979BCE981229D2F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		0A3158FB5D400E3F650C50BD33E1EBCE /* bmf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmf.h; path = TesseractOCR/include/leptonica/bmf.h; sourceTree = "<group>"; };
 		0AB1ED1C9D5D6D8525602A8AF685FDC0 /* cube_line_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_line_object.h; path = TesseractOCR/include/tesseract/cube_line_object.h; sourceTree = "<group>"; };
 		0AB3A79EC0A723DD026EFF8A78EAE331 /* ocrfeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrfeatures.h; path = TesseractOCR/include/tesseract/ocrfeatures.h; sourceTree = "<group>"; };
 		0B8A1C995B7C122ED772D2ED34B4542C /* bmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmp.h; path = TesseractOCR/include/leptonica/bmp.h; sourceTree = "<group>"; };
 		0C1C50DE8CCA88B4FD21B5887AF781CA /* mathfix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mathfix.h; path = TesseractOCR/include/tesseract/mathfix.h; sourceTree = "<group>"; };
-		0C7C808B766EE18CB44F3956D60957BB /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		0CD182DF2CE00EACF9B1382D1071B795 /* language_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = language_model.h; path = TesseractOCR/include/tesseract/language_model.h; sourceTree = "<group>"; };
 		0CF713EFFE535DF8C0EC3E19047A1C5A /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = TesseractOCR/include/tesseract/util.h; sourceTree = "<group>"; };
+		0D1789019BB9B9D4047F4B976C147D6E /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		0D4D8CB71FD06A9EDF3FBDA67A701871 /* werd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = werd.h; path = TesseractOCR/include/tesseract/werd.h; sourceTree = "<group>"; };
 		0D9E05246854282C8C396F071A196F86 /* pdblock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pdblock.h; path = TesseractOCR/include/tesseract/pdblock.h; sourceTree = "<group>"; };
 		0DBE9E22BCABE6074967CE0FA9ECF8B2 /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = TesseractOCR/include/leptonica/heap.h; sourceTree = "<group>"; };
@@ -460,7 +459,6 @@
 		13913335552D75CCCF45BC44ECD2CD06 /* kdpair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdpair.h; path = TesseractOCR/include/tesseract/kdpair.h; sourceTree = "<group>"; };
 		139191D3FE0BB5DF1BA528C69C50B0D7 /* mastertrainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mastertrainer.h; path = TesseractOCR/include/tesseract/mastertrainer.h; sourceTree = "<group>"; };
 		13D3567875126A7D016A8050F95FA030 /* cutoffs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cutoffs.h; path = TesseractOCR/include/tesseract/cutoffs.h; sourceTree = "<group>"; };
-		141626EA5AD660D092F81FAD18285AB2 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		143F7BF995BF2D3934FDD01CB508B99A /* ptra.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ptra.h; path = TesseractOCR/include/leptonica/ptra.h; sourceTree = "<group>"; };
 		14AC8D01FA3844CAF08BB8195EB0AC8F /* indexmapbidi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = indexmapbidi.h; path = TesseractOCR/include/tesseract/indexmapbidi.h; sourceTree = "<group>"; };
 		14BCC0B8E90D2A42E26A01BBFEFF3AC6 /* helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = helpers.h; path = TesseractOCR/include/tesseract/helpers.h; sourceTree = "<group>"; };
@@ -475,10 +473,11 @@
 		1A4E057CF197C9268A196DDDCF4B6B82 /* recog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = recog.h; path = TesseractOCR/include/leptonica/recog.h; sourceTree = "<group>"; };
 		1A9B1B4BB7549108683FC84CF80A1D78 /* ccstruct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccstruct.h; path = TesseractOCR/include/tesseract/ccstruct.h; sourceTree = "<group>"; };
 		1AEDC6339C93BDA948303CE8642DFDC8 /* tesscallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tesscallback.h; path = TesseractOCR/include/tesseract/tesscallback.h; sourceTree = "<group>"; };
+		1BEAFA644267B93A6EA6CBB243144AED /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		1C86579AC4535ABCC568D9CEB25F1DFD /* rejctmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rejctmap.h; path = TesseractOCR/include/tesseract/rejctmap.h; sourceTree = "<group>"; };
+		1CF51DBC886DD475486836E42375BA61 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		1D7F36D5AB4BA9CAC1F41D198C2ED09F /* cubeclassifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cubeclassifier.h; path = TesseractOCR/include/tesseract/cubeclassifier.h; sourceTree = "<group>"; };
 		1DAA79DBD4993D5CCD8EBC8635729D13 /* cube_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_object.h; path = TesseractOCR/include/tesseract/cube_object.h; sourceTree = "<group>"; };
-		1E561836B9B7A47CD054A0B0975B4B92 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		1E68B8450FD3B3A4F4F743D292FF8F9A /* dawg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dawg.h; path = TesseractOCR/include/tesseract/dawg.h; sourceTree = "<group>"; };
 		1ECB8D4B46AFA3C24275E603BB7F0547 /* structures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = structures.h; path = TesseractOCR/include/tesseract/structures.h; sourceTree = "<group>"; };
 		1EF1776925B5756ADF3ED66E9E1A70AD /* stepblob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stepblob.h; path = TesseractOCR/include/tesseract/stepblob.h; sourceTree = "<group>"; };
@@ -488,9 +487,11 @@
 		22EC38855F8395BF17C1A4C28AADFF71 /* tuning_params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tuning_params.h; path = TesseractOCR/include/tesseract/tuning_params.h; sourceTree = "<group>"; };
 		22F45CF77C9BC3B126DF9D7EBF57D787 /* cube_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_utils.h; path = TesseractOCR/include/tesseract/cube_utils.h; sourceTree = "<group>"; };
 		230F493A64715212C30D40C8A7B4118A /* vecfuncs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vecfuncs.h; path = TesseractOCR/include/tesseract/vecfuncs.h; sourceTree = "<group>"; };
+		2365D6A4A737276467F8E7B0EC9C1D4E /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		2429C6DB2E3A42F1B3103388B5514C8D /* watershed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = watershed.h; path = TesseractOCR/include/leptonica/watershed.h; sourceTree = "<group>"; };
 		24736F16D694F07421CA17EEC60FF051 /* normmatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = normmatch.h; path = TesseractOCR/include/tesseract/normmatch.h; sourceTree = "<group>"; };
 		24AC2E9B620D2CB2A1839462AB83675B /* boxchar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = boxchar.h; path = TesseractOCR/include/tesseract/boxchar.h; sourceTree = "<group>"; };
+		24F1017F2F95F75A016623D8DE279DBA /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		253074D8BC433A69A6C321B14339E0F7 /* cutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cutil.h; path = TesseractOCR/include/tesseract/cutil.h; sourceTree = "<group>"; };
 		25576A7263D6B66FBC8074E58EC11E40 /* sudoku.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sudoku.h; path = TesseractOCR/include/leptonica/sudoku.h; sourceTree = "<group>"; };
 		255E249F66F1548C2E8340FD28ED6248 /* TesseractOCRiOS-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TesseractOCRiOS-Private.xcconfig"; sourceTree = "<group>"; };
@@ -503,12 +504,12 @@
 		28A10C52721AAFF25C7A9C4B1812642B /* osdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = osdetect.h; path = TesseractOCR/include/tesseract/osdetect.h; sourceTree = "<group>"; };
 		28C8BF87E20F22D228DB099F13858F4D /* points.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = points.h; path = TesseractOCR/include/tesseract/points.h; sourceTree = "<group>"; };
 		28F261C84B94E533A2315412E2D2EA0C /* linlsq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = linlsq.h; path = TesseractOCR/include/tesseract/linlsq.h; sourceTree = "<group>"; };
+		290C93B195BA6D4DD1062D315069AF63 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		2A4180FD52ACE43BAD5C646216A1BC9E /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
 		2D6906E234D2DCF16E049F47CB7F9D0C /* blckerr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blckerr.h; path = TesseractOCR/include/tesseract/blckerr.h; sourceTree = "<group>"; };
-		2E18F96B969BECCF3BAF9C5B28D65B23 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
 		2E3B1B3FC3CB5E0EAA1AB8C1FF5C3F9B /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = TesseractOCR/include/leptonica/list.h; sourceTree = "<group>"; };
 		2ED0172C9F1D702263CF5B9DAE098AD4 /* classify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = classify.h; path = TesseractOCR/include/tesseract/classify.h; sourceTree = "<group>"; };
 		2F40AA586FA60EC69D45B48F9770460E /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		300872A22426116C3ECCDD80AE5DB930 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
 		3072CF235ABF66CB5CCFF9584099B0C4 /* stderr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stderr.h; path = TesseractOCR/include/tesseract/stderr.h; sourceTree = "<group>"; };
 		312826FD88CA0C8705B88D3F25CF1B10 /* pango_font_info.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pango_font_info.h; path = TesseractOCR/include/tesseract/pango_font_info.h; sourceTree = "<group>"; };
 		3200A0574AC27F1AC018E8FCDDDD1FB3 /* matrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = TesseractOCR/include/tesseract/matrix.h; sourceTree = "<group>"; };
@@ -522,6 +523,8 @@
 		36974D0A4A046B155BA203E73AF419BC /* cube_reco_context.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_reco_context.h; path = TesseractOCR/include/tesseract/cube_reco_context.h; sourceTree = "<group>"; };
 		37BD910328271465DA101B856B23CA27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		3820EFDEBF45240A7F230461A9981480 /* G8TesseractParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = G8TesseractParameters.m; path = TesseractOCR/G8TesseractParameters.m; sourceTree = "<group>"; };
+		38E5BCA2641115D12F7FB21BEC7207C8 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		392A3A8087ACD9963454BBA49E4C2517 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		3953B435A52D27C1DC6F24E37F0B1E09 /* char_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_set.h; path = TesseractOCR/include/tesseract/char_set.h; sourceTree = "<group>"; };
 		39D397D4178E90C11338A634F482703C /* conv_net_classifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conv_net_classifier.h; path = TesseractOCR/include/tesseract/conv_net_classifier.h; sourceTree = "<group>"; };
 		3B2516752E639971B86E356A49FBDB8F /* word_unigrams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = word_unigrams.h; path = TesseractOCR/include/tesseract/word_unigrams.h; sourceTree = "<group>"; };
@@ -529,14 +532,14 @@
 		3C44014DB8FCE8C8EBC72E98638000F7 /* search_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = search_object.h; path = TesseractOCR/include/tesseract/search_object.h; sourceTree = "<group>"; };
 		3C757012CBB4D01B74BBEE2ECB850B4E /* intfeaturespace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intfeaturespace.h; path = TesseractOCR/include/tesseract/intfeaturespace.h; sourceTree = "<group>"; };
 		3CDF28CC9C8FFAB5D22D6FB58DD8ECAE /* freetype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = freetype.h; path = TesseractOCR/include/leptonica/freetype.h; sourceTree = "<group>"; };
-		3D0E2A82F3A182A3A871C9216298800C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		3DA1E484C50C6A022DA82F0BB705FDBF /* ocrblock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrblock.h; path = TesseractOCR/include/tesseract/ocrblock.h; sourceTree = "<group>"; };
-		3DA417514961CEED96A0576B5CD54276 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		3E65097DF7620A3E3FD640C75EDBCD98 /* blamer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blamer.h; path = TesseractOCR/include/tesseract/blamer.h; sourceTree = "<group>"; };
+		3EE9D82A7E6B824CF1316DBE1060C9CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		3F090F596889A8E82584E4DE2F434DD8 /* fixspace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fixspace.h; path = TesseractOCR/include/tesseract/fixspace.h; sourceTree = "<group>"; };
+		3F0A823E51C4315DD2B75A9A94C39D2B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		3F8929C4DD1BA106A431F5C5842ABE47 /* cube_search_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_search_object.h; path = TesseractOCR/include/tesseract/cube_search_object.h; sourceTree = "<group>"; };
-		3FD97EF004C5B660A13ABDE6F2D875E0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		400BE78047F47126814D505BEF6924AC /* gplot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gplot.h; path = TesseractOCR/include/leptonica/gplot.h; sourceTree = "<group>"; };
+		40AEABDFA041D2BF2CF4A1D9EED95AAF /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		420F39528CA6407CDF949286E4BB7E60 /* dewarp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dewarp.h; path = TesseractOCR/include/leptonica/dewarp.h; sourceTree = "<group>"; };
 		421462DBA0C65B7EA43385537C09553A /* scrollview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scrollview.h; path = TesseractOCR/include/tesseract/scrollview.h; sourceTree = "<group>"; };
 		42291F617476B69D737BC2DBC11DC6D7 /* unicharmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unicharmap.h; path = TesseractOCR/include/tesseract/unicharmap.h; sourceTree = "<group>"; };
@@ -548,12 +551,9 @@
 		43D3F4F0AEF952663D3E53889B594A06 /* beam_search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = beam_search.h; path = TesseractOCR/include/tesseract/beam_search.h; sourceTree = "<group>"; };
 		43D8AC8F43D88C9BF40720570BA0B569 /* oclkernels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = oclkernels.h; path = TesseractOCR/include/tesseract/oclkernels.h; sourceTree = "<group>"; };
 		43E0DB73BCDEA2E05A527CD21CCCA774 /* gap_map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gap_map.h; path = TesseractOCR/include/tesseract/gap_map.h; sourceTree = "<group>"; };
-		449D15961CD2662802C78DCA9D2298DC /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		4500BA6EF110DB05A62441490FA874BF /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		4594F53CC644FAFC55B05545ED548285 /* lm_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lm_state.h; path = TesseractOCR/include/tesseract/lm_state.h; sourceTree = "<group>"; };
 		45FA230BD6056D844B5255746B647889 /* classifier_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = classifier_factory.h; path = TesseractOCR/include/tesseract/classifier_factory.h; sourceTree = "<group>"; };
 		465816BFF3087A9D1CCFC451B5FE28C8 /* opencl_device_selection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opencl_device_selection.h; path = TesseractOCR/include/tesseract/opencl_device_selection.h; sourceTree = "<group>"; };
-		465FE682DAA7B1DAE5313F49EF9BEC75 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		46640E1DCD37E6FB55975D201845B687 /* boxread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = boxread.h; path = TesseractOCR/include/tesseract/boxread.h; sourceTree = "<group>"; };
 		46B2272CC63D96EBA3D640264FF40C06 /* G8RecognizedBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = G8RecognizedBlock.m; path = TesseractOCR/G8RecognizedBlock.m; sourceTree = "<group>"; };
 		46F91656E0C62D66B07E3FCB4E4D7DD7 /* word_altlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = word_altlist.h; path = TesseractOCR/include/tesseract/word_altlist.h; sourceTree = "<group>"; };
@@ -566,6 +566,7 @@
 		4D358F21C65C63F147F5AB49231F9E90 /* lsterr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsterr.h; path = TesseractOCR/include/tesseract/lsterr.h; sourceTree = "<group>"; };
 		4D90906FA9A2F98E2092AD734CDC7F91 /* commontraining.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = commontraining.h; path = TesseractOCR/include/tesseract/commontraining.h; sourceTree = "<group>"; };
 		4DBE80E101F51BB1CC23D3D2268D49DA /* pgedit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pgedit.h; path = TesseractOCR/include/tesseract/pgedit.h; sourceTree = "<group>"; };
+		4F7EBD24EFF2614F76C7B98444B445C6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		4FE6E57076C6EA1FDF98F6FE7C65271D /* cjkpitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cjkpitch.h; path = TesseractOCR/include/tesseract/cjkpitch.h; sourceTree = "<group>"; };
 		50C0B7527A48053E0B22D7222107C04B /* scanedg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanedg.h; path = TesseractOCR/include/tesseract/scanedg.h; sourceTree = "<group>"; };
 		50C55709BCF6F8AE1FD35184CACC5ED6 /* baselinedetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = baselinedetect.h; path = TesseractOCR/include/tesseract/baselinedetect.h; sourceTree = "<group>"; };
@@ -574,7 +575,10 @@
 		532091E5920AA9857E71ED24CFD28C26 /* underlin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = underlin.h; path = TesseractOCR/include/tesseract/underlin.h; sourceTree = "<group>"; };
 		535E718D55A18B562D6014593302C980 /* clst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clst.h; path = TesseractOCR/include/tesseract/clst.h; sourceTree = "<group>"; };
 		54BB8BD7D40D82CE5ABEFF40776185BE /* callcpp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = callcpp.h; path = TesseractOCR/include/tesseract/callcpp.h; sourceTree = "<group>"; };
+		54BFE7DAF2636D061608B4B84D084D47 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5793F817C141EBE4E7BBB8A5FE1FF5DF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		580F5D24CF73D49DD907120F86B2A9C1 /* jbclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jbclass.h; path = TesseractOCR/include/leptonica/jbclass.h; sourceTree = "<group>"; };
+		59700AF49CBE6C01FBD063A26FE8F83E /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		598D75758B0717386A3B1C2B88DDC90F /* word_size_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = word_size_model.h; path = TesseractOCR/include/tesseract/word_size_model.h; sourceTree = "<group>"; };
 		5BA1192A02A9A0050F4F068400AAD8F3 /* tessbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessbox.h; path = TesseractOCR/include/tesseract/tessbox.h; sourceTree = "<group>"; };
 		5BF7CBCFA03D219A695F896622A38806 /* bitvec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bitvec.h; path = TesseractOCR/include/tesseract/bitvec.h; sourceTree = "<group>"; };
@@ -582,28 +586,33 @@
 		5C384EBC674221B8912A3F901BD078DA /* ndminx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ndminx.h; path = TesseractOCR/include/tesseract/ndminx.h; sourceTree = "<group>"; };
 		5C39B22D2041ABC497EAF1800875D076 /* char_samp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_samp.h; path = TesseractOCR/include/tesseract/char_samp.h; sourceTree = "<group>"; };
 		5E6E9EC2A2DCF3D8E85EA43EF3EB275E /* trainingsample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = trainingsample.h; path = TesseractOCR/include/tesseract/trainingsample.h; sourceTree = "<group>"; };
+		5EC71B0D41ED0B45AEDE067C96C3FB92 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		5EF2C0A40259F90E35943AE70E83165A /* intproto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intproto.h; path = TesseractOCR/include/tesseract/intproto.h; sourceTree = "<group>"; };
+		5F65B0638426F82802E69C2225AF3EA6 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		5F7ADE3D852376CEFD2E286A6CB17954 /* detlinefit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = detlinefit.h; path = TesseractOCR/include/tesseract/detlinefit.h; sourceTree = "<group>"; };
 		60E751B543641423FCCC2FBF87435942 /* openclwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openclwrapper.h; path = TesseractOCR/include/tesseract/openclwrapper.h; sourceTree = "<group>"; };
+		61BE9E7422F4E52187F267408E1CE9F2 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		62800A4C4C8A0ACBBB67C790A5C579AD /* UIImage+G8Filters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+G8Filters.h"; path = "TesseractOCR/UIImage+G8Filters.h"; sourceTree = "<group>"; };
+		628CB62ACEC04561E355113701D16024 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		62A835BF918A87820C6FB8D730498BBF /* array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = array.h; path = TesseractOCR/include/leptonica/array.h; sourceTree = "<group>"; };
+		637CC3B085F0D7145C336936566587FE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		63A42745DFE8041F8D23A8130067FF47 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		6469062098A95666CEC1E418D0B5CF57 /* neural_net.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = neural_net.h; path = TesseractOCR/include/tesseract/neural_net.h; sourceTree = "<group>"; };
+		649E23DEFA2198E97F83377BDE8E6DED /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
 		64C0A6F9E6F97016B2385A5B5881BCCC /* ocrpara.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrpara.h; path = TesseractOCR/include/tesseract/ocrpara.h; sourceTree = "<group>"; };
 		64D2FBC08474293FA20B0356D952C856 /* polyblk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = polyblk.h; path = TesseractOCR/include/tesseract/polyblk.h; sourceTree = "<group>"; };
+		64E4EC1B3CEC7DB1452A1A0092801A63 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		659959B584D8B8EC69543F27D8A4968A /* stopper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stopper.h; path = TesseractOCR/include/tesseract/stopper.h; sourceTree = "<group>"; };
 		6667955D9609D1F48DD051C20D561EF6 /* svmnode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = svmnode.h; path = TesseractOCR/include/tesseract/svmnode.h; sourceTree = "<group>"; };
 		68A79B29D603AB08449D381C9FAC441A /* sorthelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sorthelper.h; path = TesseractOCR/include/tesseract/sorthelper.h; sourceTree = "<group>"; };
 		69BB2BEDA71C1A7833C700A2A8007606 /* bits16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bits16.h; path = TesseractOCR/include/tesseract/bits16.h; sourceTree = "<group>"; };
-		69D77F8D6F8BC4F4910BB7109E747E27 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		69EEFD0CE7C96CC8EA7A4E3CA93E59B5 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AACA23DB28DB6EC433C5F5A8A5CED21 /* ratngs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ratngs.h; path = TesseractOCR/include/tesseract/ratngs.h; sourceTree = "<group>"; };
 		6B031A53739C1CD5FF86A7EB2D5D47E0 /* imagefind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imagefind.h; path = TesseractOCR/include/tesseract/imagefind.h; sourceTree = "<group>"; };
-		6C31C2EC809A41AC86E189E69917E35A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		6B6A8C892A35BC1D71CA3C37D53F31FF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		6C4D6DE6736046DF3B1D72EE0AF10682 /* polyaprx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = polyaprx.h; path = TesseractOCR/include/tesseract/polyaprx.h; sourceTree = "<group>"; };
 		6C57525780D0098465A52E8F439A686A /* mutableiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutableiterator.h; path = TesseractOCR/include/tesseract/mutableiterator.h; sourceTree = "<group>"; };
 		6CFB3A3EB2F1E014E0141BB6A128C766 /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = TesseractOCR/include/tesseract/render.h; sourceTree = "<group>"; };
-		6EA85934C22288589E9F4C94B371ED67 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		7050F9BB7C7556B37F0B033AAAD372F7 /* emalloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = emalloc.h; path = TesseractOCR/include/tesseract/emalloc.h; sourceTree = "<group>"; };
 		71850AFEC7276EC8397D2A01FC5FD660 /* intmatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intmatcher.h; path = TesseractOCR/include/tesseract/intmatcher.h; sourceTree = "<group>"; };
 		718DCCC7A3DB13AEE4E87A5884391CCE /* textord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = textord.h; path = TesseractOCR/include/tesseract/textord.h; sourceTree = "<group>"; };
@@ -611,9 +620,10 @@
 		72A9C65CD52DF3875A229E1751A57CC5 /* makerow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = makerow.h; path = TesseractOCR/include/tesseract/makerow.h; sourceTree = "<group>"; };
 		7337227E6C9A99BD1AF83E0DCCE070D3 /* cube_tuning_params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_tuning_params.h; path = TesseractOCR/include/tesseract/cube_tuning_params.h; sourceTree = "<group>"; };
 		7391232EC88DEB2091FB671495C5234D /* config_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_auto.h; path = TesseractOCR/include/leptonica/config_auto.h; sourceTree = "<group>"; };
-		747F7AF6BD45A9A36CD185C7028B2911 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		74B9BA32FF0044DFCC60FC9175E05744 /* gettimeofday.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gettimeofday.h; path = TesseractOCR/include/tesseract/gettimeofday.h; sourceTree = "<group>"; };
 		757B7ECCF9A3FBDC8F528D906D28F7B0 /* altlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = altlist.h; path = TesseractOCR/include/tesseract/altlist.h; sourceTree = "<group>"; };
+		75BD6F958B99AA9719488FC056E21855 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		76194BAC729366D4B4D1BF9643CD2800 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		78DDD09B4C3D9EE7907560FEB085CF56 /* tess_lang_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tess_lang_model.h; path = TesseractOCR/include/tesseract/tess_lang_model.h; sourceTree = "<group>"; };
 		7931E8BCED735B9754386F910DDC22E0 /* alltypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alltypes.h; path = TesseractOCR/include/leptonica/alltypes.h; sourceTree = "<group>"; };
 		79A6FB2CD8E3A10508EAE9C6D9703956 /* ipoints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ipoints.h; path = TesseractOCR/include/tesseract/ipoints.h; sourceTree = "<group>"; };
@@ -621,7 +631,6 @@
 		7A1B793E8A641A050DEC4A9660E6E56F /* stringrenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stringrenderer.h; path = TesseractOCR/include/tesseract/stringrenderer.h; sourceTree = "<group>"; };
 		7B3309F3CB983E3CEF2ACB6CA61FF428 /* liblept.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblept.a; path = TesseractOCR/lib/liblept.a; sourceTree = "<group>"; };
 		7BB9D70EA8EDC339216588BEB9CAF987 /* tlog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tlog.h; path = TesseractOCR/include/tesseract/tlog.h; sourceTree = "<group>"; };
-		7D4000CAD9AC9F0045D5410441915F6E /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
 		7FACCBBA5548DB9C7F971D9628EA68B6 /* workingpartset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workingpartset.h; path = TesseractOCR/include/tesseract/workingpartset.h; sourceTree = "<group>"; };
 		7FC7E1079B9E7C5B2E8A9EC5FBAE200D /* tabfind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tabfind.h; path = TesseractOCR/include/tesseract/tabfind.h; sourceTree = "<group>"; };
 		80BF7CA0130AA89865F0032FB5921592 /* olutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = olutil.h; path = TesseractOCR/include/tesseract/olutil.h; sourceTree = "<group>"; };
@@ -629,13 +638,13 @@
 		822434C1F057C62555E0BFF60D9DACCD /* blobs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blobs.h; path = TesseractOCR/include/tesseract/blobs.h; sourceTree = "<group>"; };
 		82A4E558B857C931D5FE10D8514F14E7 /* char_samp_enum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_samp_enum.h; path = TesseractOCR/include/tesseract/char_samp_enum.h; sourceTree = "<group>"; };
 		8318228637B28CA8618DE89DAD606E35 /* G8Tesseract.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8Tesseract.h; path = TesseractOCR/G8Tesseract.h; sourceTree = "<group>"; };
-		847BA73BA35D69A6B454AC0D293F0BCC /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		85AC413FC548594DFCA1F4CD381C7264 /* feature_hybrid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = feature_hybrid.h; path = TesseractOCR/include/tesseract/feature_hybrid.h; sourceTree = "<group>"; };
 		85B4155AE50F249C8A7A6B479FB36D83 /* ligature_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ligature_table.h; path = TesseractOCR/include/tesseract/ligature_table.h; sourceTree = "<group>"; };
 		85DE592D59B1F1C4E6ABB02A9D40E517 /* unicharset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unicharset.h; path = TesseractOCR/include/tesseract/unicharset.h; sourceTree = "<group>"; };
 		8617E20206BC9E61C6DD5B1BD646DB58 /* bitvector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bitvector.h; path = TesseractOCR/include/tesseract/bitvector.h; sourceTree = "<group>"; };
 		86D7A21DBBB71FBF607E70886F064228 /* endianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endianness.h; path = TesseractOCR/include/leptonica/endianness.h; sourceTree = "<group>"; };
 		87BD8DA97B5B16C09ED7D9F3729A981B /* char_altlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_altlist.h; path = TesseractOCR/include/tesseract/char_altlist.h; sourceTree = "<group>"; };
+		886176E7C1F2C69CD2A6C212CDD6312F /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		88D78E946FC6259778AEB90729BCBCF3 /* regutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = regutils.h; path = TesseractOCR/include/leptonica/regutils.h; sourceTree = "<group>"; };
 		89BC178E9CE3FA3A6257999E02F6E76A /* chopper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chopper.h; path = TesseractOCR/include/tesseract/chopper.h; sourceTree = "<group>"; };
 		8BDF7F24525D5DA1B06A11F1C95A01A3 /* fileio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileio.h; path = TesseractOCR/include/tesseract/fileio.h; sourceTree = "<group>"; };
@@ -649,7 +658,7 @@
 		8FA011EC17AA3F77C68FCB543BED6AA6 /* findseam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = findseam.h; path = TesseractOCR/include/tesseract/findseam.h; sourceTree = "<group>"; };
 		903B19A24A23E0BFCAD0B43B58CCEB84 /* colpartition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = colpartition.h; path = TesseractOCR/include/tesseract/colpartition.h; sourceTree = "<group>"; };
 		9045AAAB96F01871CF0A58BD7F5CA26E /* classifier_base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = classifier_base.h; path = TesseractOCR/include/tesseract/classifier_base.h; sourceTree = "<group>"; };
-		9273E7F80B5858FBF123FF7613B047EF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		90CF2119A8AB99F20D9B6C4B37C049FD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		935F4B9FA684B64740C1D52D1C62D852 /* bmp_8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmp_8.h; path = TesseractOCR/include/tesseract/bmp_8.h; sourceTree = "<group>"; };
 		9362D0240E3D897C50F158249C452F70 /* tesseract_cube_combiner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tesseract_cube_combiner.h; path = TesseractOCR/include/tesseract/tesseract_cube_combiner.h; sourceTree = "<group>"; };
 		93E3017CA1514B154141C8187549E1F6 /* pix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pix.h; path = TesseractOCR/include/leptonica/pix.h; sourceTree = "<group>"; };
@@ -659,6 +668,7 @@
 		9836A9B886D75775367E04FD09EB9843 /* boxword.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = boxword.h; path = TesseractOCR/include/tesseract/boxword.h; sourceTree = "<group>"; };
 		98CF0BFF38FBAF2CDED8D3DB35F4AE78 /* strokewidth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strokewidth.h; path = TesseractOCR/include/tesseract/strokewidth.h; sourceTree = "<group>"; };
 		9903DF10DCD524D95F13421410507938 /* shapeclassifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shapeclassifier.h; path = TesseractOCR/include/tesseract/shapeclassifier.h; sourceTree = "<group>"; };
+		9942A390633AE34628D1ECAAB443E40D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		999F7491CC00B5D9731F25C574AB8987 /* TesseractOCRiOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TesseractOCRiOS.xcconfig; sourceTree = "<group>"; };
 		99A0CDB676492C4F126F78EF23CE4316 /* float2int.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = float2int.h; path = TesseractOCR/include/tesseract/float2int.h; sourceTree = "<group>"; };
 		99FCE052F1926B3D52B731B27CB2DBCC /* efio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = efio.h; path = TesseractOCR/include/tesseract/efio.h; sourceTree = "<group>"; };
@@ -667,17 +677,15 @@
 		9B7BEB7E1EDF443DB0BFA8819F8E4633 /* tabvector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tabvector.h; path = TesseractOCR/include/tesseract/tabvector.h; sourceTree = "<group>"; };
 		9B93393E0FBEFA4EC9E43FB35BC6FCCB /* morph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = morph.h; path = TesseractOCR/include/leptonica/morph.h; sourceTree = "<group>"; };
 		9C6B320100A87A6C77570A035981E3B9 /* config_auto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config_auto.h; path = TesseractOCR/include/tesseract/config_auto.h; sourceTree = "<group>"; };
-		9C864F42387E13B49574257522C76400 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		9CED8472F6DC865DF78D8949C59A8EC6 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E001095AA8954BB1FF210059C3C801C /* G8RecognizedBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8RecognizedBlock.h; path = TesseractOCR/G8RecognizedBlock.h; sourceTree = "<group>"; };
+		9F379CCF9CB0CDABAE51BCD86BCAB794 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		A0960AB17BA9638F676C063CFEAB0899 /* flexfx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = flexfx.h; path = TesseractOCR/include/tesseract/flexfx.h; sourceTree = "<group>"; };
 		A0AF86EAF3DB77927DB5C36B683C5601 /* mf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mf.h; path = TesseractOCR/include/tesseract/mf.h; sourceTree = "<group>"; };
 		A0BA7A5E54E9304609E4257D57C80791 /* object_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object_cache.h; path = TesseractOCR/include/tesseract/object_cache.h; sourceTree = "<group>"; };
 		A1FBFF03545DE9D756A39ED1182EDAA2 /* arrayaccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arrayaccess.h; path = TesseractOCR/include/leptonica/arrayaccess.h; sourceTree = "<group>"; };
 		A280AC213684CB601432256D106503E8 /* genericheap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = genericheap.h; path = TesseractOCR/include/tesseract/genericheap.h; sourceTree = "<group>"; };
-		A301E89F23C3C6ACAB4A2519966638B1 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		A436890574711E6D6C69B7178E836981 /* rect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rect.h; path = TesseractOCR/include/tesseract/rect.h; sourceTree = "<group>"; };
-		A4521C005D48C198D6978085DFDF2269 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		A4B8EFEEBDC86DC6CA4A492E46AE177E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		A4BAFB705047DC74285249A069C9F4F6 /* paragraphs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = paragraphs.h; path = TesseractOCR/include/tesseract/paragraphs.h; sourceTree = "<group>"; };
 		A54047C5DAC43EB7A5557F5B5F30919F /* TesseractOCR.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TesseractOCR.h; path = TesseractOCR/TesseractOCR.h; sourceTree = "<group>"; };
 		A5702474899B6842BB4ED5CE75F45A3B /* blkocc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blkocc.h; path = TesseractOCR/include/tesseract/blkocc.h; sourceTree = "<group>"; };
@@ -691,10 +699,8 @@
 		AC0437B4DAD8198ABA3641EE19329811 /* ccutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccutil.h; path = TesseractOCR/include/tesseract/ccutil.h; sourceTree = "<group>"; };
 		AC7412AC4B2907F61A816295D3F20D26 /* G8RecognitionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = G8RecognitionOperation.m; path = TesseractOCR/G8RecognitionOperation.m; sourceTree = "<group>"; };
 		ACE44884DF59379F517D489B30CB4479 /* trie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = trie.h; path = TesseractOCR/include/tesseract/trie.h; sourceTree = "<group>"; };
+		AD18A217FFC7A44013BF4A4C0EAF964F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		AD304DC72F157C2E9F99CD9F812854B6 /* word_list_lang_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = word_list_lang_model.h; path = TesseractOCR/include/tesseract/word_list_lang_model.h; sourceTree = "<group>"; };
-		AD325578DBB04E51DD25F93F68FBF62D /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		AD951F02AE3CA68F422DA08C4719893E /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		AE2F75F0957DC369F2805F962F62239A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		AF5E52AA7D82F54F3391DBEB337FD843 /* pageres.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pageres.h; path = TesseractOCR/include/tesseract/pageres.h; sourceTree = "<group>"; };
 		AF86BB8217A77E4B6DD60EC55A1A018A /* blobgrid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blobgrid.h; path = TesseractOCR/include/tesseract/blobgrid.h; sourceTree = "<group>"; };
 		B0D2C2CAE72B47565AA03E9706BB10C2 /* bbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bbuffer.h; path = TesseractOCR/include/leptonica/bbuffer.h; sourceTree = "<group>"; };
@@ -704,7 +710,6 @@
 		B2CAFE5F7DAEFD92B8469D03497A11BE /* unichar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unichar.h; path = TesseractOCR/include/tesseract/unichar.h; sourceTree = "<group>"; };
 		B356F9D81AFEAD585D7FE5C88D14ACD5 /* sortflts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sortflts.h; path = TesseractOCR/include/tesseract/sortflts.h; sourceTree = "<group>"; };
 		B371A17C529B26E69AD81C809302B71A /* publictypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = publictypes.h; path = TesseractOCR/include/tesseract/publictypes.h; sourceTree = "<group>"; };
-		B3EE8EFDA9BA000FC5BDB119DF87F571 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		B4B96848D5617C0F1F3665C9CCC23F16 /* dict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dict.h; path = TesseractOCR/include/tesseract/dict.h; sourceTree = "<group>"; };
 		B4BC2180F1549ABBFBDBFA371383F168 /* lang_mod_edge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lang_mod_edge.h; path = TesseractOCR/include/tesseract/lang_mod_edge.h; sourceTree = "<group>"; };
 		B521FB8872C4D010E643C70BA95F5C7D /* thresholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thresholder.h; path = TesseractOCR/include/tesseract/thresholder.h; sourceTree = "<group>"; };
@@ -713,15 +718,15 @@
 		B6AE0CBDAF59C5BD82D6CCF3B02C6955 /* tablefind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tablefind.h; path = TesseractOCR/include/tesseract/tablefind.h; sourceTree = "<group>"; };
 		B7B2E191872D091556AFCA27F44E16D6 /* intfx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intfx.h; path = TesseractOCR/include/tesseract/intfx.h; sourceTree = "<group>"; };
 		B89DEBD64EEB95773E31CDD5E35CA7EE /* normstrngs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = normstrngs.h; path = TesseractOCR/include/tesseract/normstrngs.h; sourceTree = "<group>"; };
+		B8C5858DE9B08055A061CFB2C1EDFF36 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAA9C4D5C8778E6ECF13C2C840921845 /* kdtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdtree.h; path = TesseractOCR/include/tesseract/kdtree.h; sourceTree = "<group>"; };
 		BBD46A681A83A41F9CDA611AB7AFE503 /* G8Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8Constants.h; path = TesseractOCR/G8Constants.h; sourceTree = "<group>"; };
 		BC41DFBD6D34B0123E9A2FC7E219976B /* coutln.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coutln.h; path = TesseractOCR/include/tesseract/coutln.h; sourceTree = "<group>"; };
-		BC9E74DA37E2DFBEBDF78F2D50E04E43 /* AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		BCFAB014E6FC02CA768EDA6346349C1D /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		BEA5F4ADA422FBFBFEA6DA200BCB4958 /* quadlsq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = quadlsq.h; path = TesseractOCR/include/tesseract/quadlsq.h; sourceTree = "<group>"; };
 		BEE5E07F6EFD717C550DC5B3F2A408CE /* hashfn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hashfn.h; path = TesseractOCR/include/tesseract/hashfn.h; sourceTree = "<group>"; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF9B240B741B0B02C4ED1A7839D181CE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		BFA392589D88255F505784097482EAC2 /* basedir.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = basedir.h; path = TesseractOCR/include/tesseract/basedir.h; sourceTree = "<group>"; };
 		BFA9EDE46D3885B8FD5570ABDD059E24 /* clusttool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clusttool.h; path = TesseractOCR/include/tesseract/clusttool.h; sourceTree = "<group>"; };
 		C13A9F2CDF71920496FE9C125A5D21B6 /* strcasestr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strcasestr.h; path = TesseractOCR/include/tesseract/strcasestr.h; sourceTree = "<group>"; };
@@ -735,7 +740,6 @@
 		C64F18C3F653EFD932BBD248A721A6A2 /* neuron.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = neuron.h; path = TesseractOCR/include/tesseract/neuron.h; sourceTree = "<group>"; };
 		C8138DCE5EB5CFC1197E46B4EF16BEFC /* platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = platform.h; path = TesseractOCR/include/tesseract/platform.h; sourceTree = "<group>"; };
 		CB3B805B5AF9021CD9BA4F2AACAC9280 /* outfeat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = outfeat.h; path = TesseractOCR/include/tesseract/outfeat.h; sourceTree = "<group>"; };
-		CB6294DF51738458364A74E073B8F165 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		CBB26C1271EE542CA940F4E14CE55C1D /* cached_file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cached_file.h; path = TesseractOCR/include/tesseract/cached_file.h; sourceTree = "<group>"; };
 		CBC28B251F87843F0B3F258B3B336BEE /* docqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = docqual.h; path = TesseractOCR/include/tesseract/docqual.h; sourceTree = "<group>"; };
 		CBEF9D51B2172F0421A3F42E6053DD50 /* adaptive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = adaptive.h; path = TesseractOCR/include/tesseract/adaptive.h; sourceTree = "<group>"; };
@@ -743,17 +747,17 @@
 		CCB0948996D06BAEA64BCEF2B596BF92 /* wordseg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = wordseg.h; path = TesseractOCR/include/tesseract/wordseg.h; sourceTree = "<group>"; };
 		CCB8F7E26A486F58BA2D7DA7B48C3EBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		CCFE57939A6B443C64620B2DEA3E3347 /* apitypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = apitypes.h; path = TesseractOCR/include/tesseract/apitypes.h; sourceTree = "<group>"; };
-		CD598E2E0D2FBD2CC747B5034AD73A34 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		CD1F9849BF5426609027CDB9D0FF8C02 /* AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
 		CE2DBCA3F0C4A006A0CA2987D55BC05A /* edgloop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = edgloop.h; path = TesseractOCR/include/tesseract/edgloop.h; sourceTree = "<group>"; };
-		CE7C370F9E8BC599899B1181D126BFDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		CEAE799A21B41489085EF8B3C99DAF7D /* mfx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mfx.h; path = TesseractOCR/include/tesseract/mfx.h; sourceTree = "<group>"; };
 		CECE6DD5B7B6DFC760C08CD3F24A81A7 /* paramsd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = paramsd.h; path = TesseractOCR/include/tesseract/paramsd.h; sourceTree = "<group>"; };
 		CF196ECFEE2BB9825E4DA8EE841CDE5F /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = TesseractOCR/include/leptonica/stack.h; sourceTree = "<group>"; };
 		D092025D752B0142B9F3727C83B69977 /* intfeaturedist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intfeaturedist.h; path = TesseractOCR/include/tesseract/intfeaturedist.h; sourceTree = "<group>"; };
+		D0E38A4741DB404F28267D5C50F8D7CE /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		D10E11C9FAA8DB20069B3D1B8DFE2F8C /* normfeat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = normfeat.h; path = TesseractOCR/include/tesseract/normfeat.h; sourceTree = "<group>"; };
 		D1ACADB75142EEAE305C30B6A25F7CB8 /* tessvars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessvars.h; path = TesseractOCR/include/tesseract/tessvars.h; sourceTree = "<group>"; };
 		D1DFC6D42FC6EE308BCA5EC70886009F /* host.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = host.h; path = TesseractOCR/include/tesseract/host.h; sourceTree = "<group>"; };
-		D3219F7CB61E30E0D7D47BB4BC12F776 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		D2FE2E3FBCD60DE0CE6EF013E972A4EB /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		D392F1A86240FBF7CEBF42F6E6E9ED8C /* string_32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_32.h; path = TesseractOCR/include/tesseract/string_32.h; sourceTree = "<group>"; };
 		D45753B56FB6EA5B4A5304C9C261D58D /* nwmain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nwmain.h; path = TesseractOCR/include/tesseract/nwmain.h; sourceTree = "<group>"; };
 		D515D0AF2BD2A45FE4FFD5E3E122C7B7 /* normalis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = normalis.h; path = TesseractOCR/include/tesseract/normalis.h; sourceTree = "<group>"; };
@@ -773,28 +777,24 @@
 		DE0609E252614F0B230617E87EF81B17 /* freelist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = freelist.h; path = TesseractOCR/include/tesseract/freelist.h; sourceTree = "<group>"; };
 		DE73F78D7457C163BD02B44A6585D162 /* params_training_featdef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params_training_featdef.h; path = TesseractOCR/include/tesseract/params_training_featdef.h; sourceTree = "<group>"; };
 		DE9D5FF643B8886E13F4A10B9B50C214 /* protos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = protos.h; path = TesseractOCR/include/tesseract/protos.h; sourceTree = "<group>"; };
-		DEEEE2359228087E58CCDE54F300C250 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		DF39208C1F1C7116526D23B6B98C657D /* oldbasel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = oldbasel.h; path = TesseractOCR/include/tesseract/oldbasel.h; sourceTree = "<group>"; };
+		DF678B52A8DCCE6DE260044A56E05CCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		DF6AE92DB8F995E63B7E5E3419940076 /* fpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fpoint.h; path = TesseractOCR/include/tesseract/fpoint.h; sourceTree = "<group>"; };
 		E01A855B983CF6186DEE907EA6E686BE /* trainingsampleset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = trainingsampleset.h; path = TesseractOCR/include/tesseract/trainingsampleset.h; sourceTree = "<group>"; };
 		E0F92B18717E71FC758BE1B492711F48 /* edgblob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = edgblob.h; path = TesseractOCR/include/tesseract/edgblob.h; sourceTree = "<group>"; };
 		E2BCBAA5D4256588A8A27300FE53AAAA /* universalambigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = universalambigs.h; path = TesseractOCR/include/tesseract/universalambigs.h; sourceTree = "<group>"; };
 		E361BD39B1033265EA7F52381878A734 /* scanutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanutils.h; path = TesseractOCR/include/tesseract/scanutils.h; sourceTree = "<group>"; };
 		E58BFAB6C43D2073E13FEEA230EB07AC /* shapetable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shapetable.h; path = TesseractOCR/include/tesseract/shapetable.h; sourceTree = "<group>"; };
-		E5EFEDB348DB773B7D2802947C4B05D7 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		E742F198322A56FC6BC5D3038F7C6491 /* blobclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blobclass.h; path = TesseractOCR/include/tesseract/blobclass.h; sourceTree = "<group>"; };
 		E74A7C9A3D5E603E607BE50166FD84DF /* UIImage+G8FixOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+G8FixOrientation.m"; path = "TesseractOCR/UIImage+G8FixOrientation.m"; sourceTree = "<group>"; };
 		E75E0994C9C100432D1EAADEFF5B010C /* con_comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = con_comp.h; path = TesseractOCR/include/tesseract/con_comp.h; sourceTree = "<group>"; };
 		E8AB278D97F53006393A96C0FFBFDE7A /* serialis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = serialis.h; path = TesseractOCR/include/tesseract/serialis.h; sourceTree = "<group>"; };
 		E97737DA1779A2A960B7953836B148ED /* ccnontextdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccnontextdetect.h; path = TesseractOCR/include/tesseract/ccnontextdetect.h; sourceTree = "<group>"; };
-		EA598CCC434F2602D1F8BC4FC41A9706 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		EACC0463181D87885AB7F11F2AB9FDEB /* secname.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secname.h; path = TesseractOCR/include/tesseract/secname.h; sourceTree = "<group>"; };
-		EBBCDE329987C080F0A43146CC9DB007 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		EBE8ADAF3B1FD8D1755A2721B2F176BB /* feature_bmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = feature_bmp.h; path = TesseractOCR/include/tesseract/feature_bmp.h; sourceTree = "<group>"; };
 		EC9FA36544DB8143274625F5A60A17D0 /* params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params.h; path = TesseractOCR/include/tesseract/params.h; sourceTree = "<group>"; };
 		ECB5134B7C13B309776B05537707F462 /* alignedblob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alignedblob.h; path = TesseractOCR/include/tesseract/alignedblob.h; sourceTree = "<group>"; };
 		ECF485D84F3D74EE7924E339670529A7 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = TesseractOCR/include/tesseract/version.h; sourceTree = "<group>"; };
-		ED31279AA696A5990AC3FBEFB63E58AA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		ED3EBFEBA1755E80986F33E8E58A55A9 /* search_column.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = search_column.h; path = TesseractOCR/include/tesseract/search_column.h; sourceTree = "<group>"; };
 		EDA0E38AA589343372B619F9432C5D30 /* unicity_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unicity_table.h; path = TesseractOCR/include/tesseract/unicity_table.h; sourceTree = "<group>"; };
 		EDB2B6ADCC7E7FC4DD430C728D6361A8 /* allheaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allheaders.h; path = TesseractOCR/include/leptonica/allheaders.h; sourceTree = "<group>"; };
@@ -802,8 +802,8 @@
 		F4C8B0CAB79EC6347B12180CB7F869E5 /* pitsync1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pitsync1.h; path = TesseractOCR/include/tesseract/pitsync1.h; sourceTree = "<group>"; };
 		F4F11DFDE33184FDF96458A00A857E24 /* colpartitiongrid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = colpartitiongrid.h; path = TesseractOCR/include/tesseract/colpartitiongrid.h; sourceTree = "<group>"; };
 		F577EC13D2F68341A857B4E1DB0B3304 /* topitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = topitch.h; path = TesseractOCR/include/tesseract/topitch.h; sourceTree = "<group>"; };
+		F5B9671FA99673EF4880851BDF66F816 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		F5DC0BC86DB86EBC448136D54A4FBBF8 /* statistc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = statistc.h; path = TesseractOCR/include/tesseract/statistc.h; sourceTree = "<group>"; };
-		F668D4A28C44D1A56A54AD9CB22E1842 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		F67FE54D5A1E60754E4F8FA187E7C334 /* associate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = associate.h; path = TesseractOCR/include/tesseract/associate.h; sourceTree = "<group>"; };
 		F6985AC1C0D66B18CAE8A643F04E7E4B /* drawtord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawtord.h; path = TesseractOCR/include/tesseract/drawtord.h; sourceTree = "<group>"; };
 		F7A708DD4C9CFD2D4FDC781B713CEA7A /* hpdsizes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hpdsizes.h; path = TesseractOCR/include/tesseract/hpdsizes.h; sourceTree = "<group>"; };
@@ -835,24 +835,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A05A4AFDAD1FB688C268D8EDD74746EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				327EB445EAFBBC2D9C2DFCD9BB2151AD /* CoreGraphics.framework in Frameworks */,
-				A675A1EB95768D1B85A078842F6AEFE5 /* Foundation.framework in Frameworks */,
-				459D32D61084183A67DADD7B2FCF41FE /* MobileCoreServices.framework in Frameworks */,
-				4388ED3B62F931F2207B8FE309E69A4E /* Security.framework in Frameworks */,
-				3D99E602AC6BD3768EC91490E4BC5A03 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D119514FD6C56E39985CA3474B59E14A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1269B1BFDEE82F8C17708DE3CA142C3E /* Foundation.framework in Frameworks */,
 				459AD3F7B2683AE463638C577199A648 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43D7A43AA75B79F1B09C045B2917AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCC9359D3895DE4BA378EEFAFA9B771 /* CoreGraphics.framework in Frameworks */,
+				0375372E3FA105098566832105949E59 /* Foundation.framework in Frameworks */,
+				FAA302F9DA4560C128FE7D21EFBC757D /* MobileCoreServices.framework in Frameworks */,
+				118B8D6F144918900564B702C991B11D /* Security.framework in Frameworks */,
+				B0E0BD92C61E175BFAAF5C36BFA64409 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,12 +882,12 @@
 		1C25F410912679F7009527BA170EC7AB /* NSURLConnection */ = {
 			isa = PBXGroup;
 			children = (
-				0029DD524D6B346628B60ACB2AF98538 /* AFHTTPRequestOperation.h */,
-				EBBCDE329987C080F0A43146CC9DB007 /* AFHTTPRequestOperation.m */,
-				6EA85934C22288589E9F4C94B371ED67 /* AFHTTPRequestOperationManager.h */,
-				E5EFEDB348DB773B7D2802947C4B05D7 /* AFHTTPRequestOperationManager.m */,
-				6C31C2EC809A41AC86E189E69917E35A /* AFURLConnectionOperation.h */,
-				300872A22426116C3ECCDD80AE5DB930 /* AFURLConnectionOperation.m */,
+				3F0A823E51C4315DD2B75A9A94C39D2B /* AFHTTPRequestOperation.h */,
+				24F1017F2F95F75A016623D8DE279DBA /* AFHTTPRequestOperation.m */,
+				AD18A217FFC7A44013BF4A4C0EAF964F /* AFHTTPRequestOperationManager.h */,
+				F5B9671FA99673EF4880851BDF66F816 /* AFHTTPRequestOperationManager.m */,
+				637CC3B085F0D7145C336936566587FE /* AFURLConnectionOperation.h */,
+				63A42745DFE8041F8D23A8130067FF47 /* AFURLConnectionOperation.m */,
 			);
 			name = NSURLConnection;
 			sourceTree = "<group>";
@@ -895,8 +895,8 @@
 		5217397DD80BE4835EB0C5F34B8BEDBC /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				449D15961CD2662802C78DCA9D2298DC /* AFSecurityPolicy.h */,
-				ED31279AA696A5990AC3FBEFB63E58AA /* AFSecurityPolicy.m */,
+				628CB62ACEC04561E355113701D16024 /* AFSecurityPolicy.h */,
+				BF9B240B741B0B02C4ED1A7839D181CE /* AFSecurityPolicy.m */,
 			);
 			name = Security;
 			sourceTree = "<group>";
@@ -913,10 +913,10 @@
 		78421CDBB2C2A01662C0A95ADC1C7134 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				051A457A5282CEF9D2074ACDFACFADF9 /* AFURLRequestSerialization.h */,
-				AE2F75F0957DC369F2805F962F62239A /* AFURLRequestSerialization.m */,
-				1E561836B9B7A47CD054A0B0975B4B92 /* AFURLResponseSerialization.h */,
-				AD325578DBB04E51DD25F93F68FBF62D /* AFURLResponseSerialization.m */,
+				5793F817C141EBE4E7BBB8A5FE1FF5DF /* AFURLRequestSerialization.h */,
+				021750F5825230C91B84B554EC123B79 /* AFURLRequestSerialization.m */,
+				4F7EBD24EFF2614F76C7B98444B445C6 /* AFURLResponseSerialization.h */,
+				B8C5858DE9B08055A061CFB2C1EDFF36 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
@@ -949,7 +949,7 @@
 		99A71FB485879FA3A6F27B92E1697165 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				D3219F7CB61E30E0D7D47BB4BC12F776 /* AFNetworking.h */,
+				40AEABDFA041D2BF2CF4A1D9EED95AAF /* AFNetworking.h */,
 				1C25F410912679F7009527BA170EC7AB /* NSURLConnection */,
 				AE5BA2A2EBF57FD9395954796CFDC10F /* NSURLSession */,
 				EAF4F161EC50F85D7198D2167379DFD4 /* Reachability */,
@@ -973,10 +973,10 @@
 		AE5BA2A2EBF57FD9395954796CFDC10F /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				465FE682DAA7B1DAE5313F49EF9BEC75 /* AFHTTPSessionManager.h */,
-				747F7AF6BD45A9A36CD185C7028B2911 /* AFHTTPSessionManager.m */,
-				09AF3B47DA08E56CB9D96B45AC1490F9 /* AFURLSessionManager.h */,
-				4500BA6EF110DB05A62441490FA874BF /* AFURLSessionManager.m */,
+				1CF51DBC886DD475486836E42375BA61 /* AFHTTPSessionManager.h */,
+				078077385C36FE30B70726A059CF4238 /* AFHTTPSessionManager.m */,
+				38E5BCA2641115D12F7FB21BEC7207C8 /* AFURLSessionManager.h */,
+				D0E38A4741DB404F28267D5C50F8D7CE /* AFURLSessionManager.m */,
 			);
 			name = NSURLSession;
 			sourceTree = "<group>";
@@ -984,7 +984,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69EEFD0CE7C96CC8EA7A4E3CA93E59B5 /* libAFNetworking.a */,
+				9CED8472F6DC865DF78D8949C59A8EC6 /* libAFNetworking.a */,
 				CC3C888B9AC1EF68C66F32DFBA4E7151 /* libPods.a */,
 				FF083D681A53EBCB474307382BDABD59 /* libTesseractOCRiOS.a */,
 			);
@@ -1003,8 +1003,8 @@
 			isa = PBXGroup;
 			children = (
 				2F40AA586FA60EC69D45B48F9770460E /* AFNetworking.xcconfig */,
-				BC9E74DA37E2DFBEBDF78F2D50E04E43 /* AFNetworking-Private.xcconfig */,
-				141626EA5AD660D092F81FAD18285AB2 /* AFNetworking-dummy.m */,
+				CD1F9849BF5426609027CDB9D0FF8C02 /* AFNetworking-Private.xcconfig */,
+				886176E7C1F2C69CD2A6C212CDD6312F /* AFNetworking-dummy.m */,
 				32BA480284924B959CED798E7C56C7FC /* AFNetworking-prefix.pch */,
 			);
 			name = "Support Files";
@@ -1014,11 +1014,11 @@
 		DC3C9AFE6BE4B17F9949D74C04D9458C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CE7C370F9E8BC599899B1181D126BFDE /* CoreGraphics.framework */,
+				DF678B52A8DCCE6DE260044A56E05CCB /* CoreGraphics.framework */,
 				092076739DB9293374614B12867254CB /* Foundation.framework */,
-				3FD97EF004C5B660A13ABDE6F2D875E0 /* MobileCoreServices.framework */,
-				B3EE8EFDA9BA000FC5BDB119DF87F571 /* Security.framework */,
-				3D0E2A82F3A182A3A871C9216298800C /* SystemConfiguration.framework */,
+				90CF2119A8AB99F20D9B6C4B37C049FD /* MobileCoreServices.framework */,
+				3EE9D82A7E6B824CF1316DBE1060C9CE /* Security.framework */,
+				9F379CCF9CB0CDABAE51BCD86BCAB794 /* SystemConfiguration.framework */,
 				DAB49A20BD41A2B6738BB78914B877C8 /* UIKit.framework */,
 			);
 			name = iOS;
@@ -1380,8 +1380,8 @@
 		EAF4F161EC50F85D7198D2167379DFD4 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				9273E7F80B5858FBF123FF7613B047EF /* AFNetworkReachabilityManager.h */,
-				A4B8EFEEBDC86DC6CA4A492E46AE177E /* AFNetworkReachabilityManager.m */,
+				6B6A8C892A35BC1D71CA3C37D53F31FF /* AFNetworkReachabilityManager.h */,
+				54BFE7DAF2636D061608B4B84D084D47 /* AFNetworkReachabilityManager.m */,
 			);
 			name = Reachability;
 			sourceTree = "<group>";
@@ -1389,23 +1389,23 @@
 		EEE6C14B2F2FC72CF76637F593318926 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F668D4A28C44D1A56A54AD9CB22E1842 /* AFNetworkActivityIndicatorManager.h */,
-				69D77F8D6F8BC4F4910BB7109E747E27 /* AFNetworkActivityIndicatorManager.m */,
-				CB6294DF51738458364A74E073B8F165 /* UIActivityIndicatorView+AFNetworking.h */,
-				9C864F42387E13B49574257522C76400 /* UIActivityIndicatorView+AFNetworking.m */,
-				7D4000CAD9AC9F0045D5410441915F6E /* UIAlertView+AFNetworking.h */,
-				2E18F96B969BECCF3BAF9C5B28D65B23 /* UIAlertView+AFNetworking.m */,
-				CD598E2E0D2FBD2CC747B5034AD73A34 /* UIButton+AFNetworking.h */,
-				847BA73BA35D69A6B454AC0D293F0BCC /* UIButton+AFNetworking.m */,
-				EA598CCC434F2602D1F8BC4FC41A9706 /* UIImageView+AFNetworking.h */,
-				0A26DC1DE16A4FBE1979BCE981229D2F /* UIImageView+AFNetworking.m */,
-				3DA417514961CEED96A0576B5CD54276 /* UIKit+AFNetworking.h */,
-				0C7C808B766EE18CB44F3956D60957BB /* UIProgressView+AFNetworking.h */,
-				BCFAB014E6FC02CA768EDA6346349C1D /* UIProgressView+AFNetworking.m */,
-				A301E89F23C3C6ACAB4A2519966638B1 /* UIRefreshControl+AFNetworking.h */,
-				A4521C005D48C198D6978085DFDF2269 /* UIRefreshControl+AFNetworking.m */,
-				AD951F02AE3CA68F422DA08C4719893E /* UIWebView+AFNetworking.h */,
-				DEEEE2359228087E58CCDE54F300C250 /* UIWebView+AFNetworking.m */,
+				1BEAFA644267B93A6EA6CBB243144AED /* AFNetworkActivityIndicatorManager.h */,
+				0D1789019BB9B9D4047F4B976C147D6E /* AFNetworkActivityIndicatorManager.m */,
+				D2FE2E3FBCD60DE0CE6EF013E972A4EB /* UIActivityIndicatorView+AFNetworking.h */,
+				392A3A8087ACD9963454BBA49E4C2517 /* UIActivityIndicatorView+AFNetworking.m */,
+				649E23DEFA2198E97F83377BDE8E6DED /* UIAlertView+AFNetworking.h */,
+				2A4180FD52ACE43BAD5C646216A1BC9E /* UIAlertView+AFNetworking.m */,
+				290C93B195BA6D4DD1062D315069AF63 /* UIButton+AFNetworking.h */,
+				08CD1B607BE58622CEC94255BDAD38D4 /* UIButton+AFNetworking.m */,
+				9942A390633AE34628D1ECAAB443E40D /* UIImageView+AFNetworking.h */,
+				64E4EC1B3CEC7DB1452A1A0092801A63 /* UIImageView+AFNetworking.m */,
+				59700AF49CBE6C01FBD063A26FE8F83E /* UIKit+AFNetworking.h */,
+				5F65B0638426F82802E69C2225AF3EA6 /* UIProgressView+AFNetworking.h */,
+				5EC71B0D41ED0B45AEDE067C96C3FB92 /* UIProgressView+AFNetworking.m */,
+				2365D6A4A737276467F8E7B0EC9C1D4E /* UIRefreshControl+AFNetworking.h */,
+				61BE9E7422F4E52187F267408E1CE9F2 /* UIRefreshControl+AFNetworking.m */,
+				75BD6F958B99AA9719488FC056E21855 /* UIWebView+AFNetworking.h */,
+				76194BAC729366D4B4D1BF9643CD2800 /* UIWebView+AFNetworking.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -1413,32 +1413,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6DDAF1CB1191F252C22BFCEC0B1601B5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01B645F5688D123908DA09A5F35174D7 /* AFHTTPRequestOperation.h in Headers */,
-				5E6D9A1973F40D98F54DE40EACD258E3 /* AFHTTPRequestOperationManager.h in Headers */,
-				8A125E9E73CB233F495D5982C1CB5329 /* AFHTTPSessionManager.h in Headers */,
-				AB46EC24A5CCC82D267C7A07656D0508 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				45A04F8CA9A028723B4B4A4A570269ED /* AFNetworkReachabilityManager.h in Headers */,
-				CC1187FFFE65FB1B8665F35F07705DFD /* AFNetworking.h in Headers */,
-				A8F14237C1036125187E5F46DD7536A7 /* AFSecurityPolicy.h in Headers */,
-				85F4F7AE3D156733039577FE69090E1C /* AFURLConnectionOperation.h in Headers */,
-				34CB96159E539C0F87E121630C9D9A12 /* AFURLRequestSerialization.h in Headers */,
-				D559F774EF9AD1CA12E3AEFDEC448E84 /* AFURLResponseSerialization.h in Headers */,
-				1C35A6A374907F5C309321B67D6ACB5A /* AFURLSessionManager.h in Headers */,
-				8E894D5C6851231A040A48D0C328A450 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				BEFF6DA5258CC9E7A12FEF172561DB05 /* UIAlertView+AFNetworking.h in Headers */,
-				5BAD633A14E1C6732C7976D50A2C0311 /* UIButton+AFNetworking.h in Headers */,
-				26CC134097F3EFCECBD7B061F001B82D /* UIImageView+AFNetworking.h in Headers */,
-				FD99A4352D54962EE3744D640936AE76 /* UIKit+AFNetworking.h in Headers */,
-				F80D620CAD0F8830405736944B501CBC /* UIProgressView+AFNetworking.h in Headers */,
-				2A27E1A951E44E0447555DD07A5F57C4 /* UIRefreshControl+AFNetworking.h in Headers */,
-				F0D47AC09FA94452D050958618AA5F5C /* UIWebView+AFNetworking.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DBDA8ECEBB6D240099EF6F3DA69B196D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1784,6 +1758,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC785C3CA8E13AD19C062D0A4A6ECC6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EA90281BC45C3D3390241B78255D5E /* AFHTTPRequestOperation.h in Headers */,
+				F1047EF6B1A307AD47A07823BE18D3E9 /* AFHTTPRequestOperationManager.h in Headers */,
+				16A8E95459939AB6F1C042FCAAB13C0E /* AFHTTPSessionManager.h in Headers */,
+				46CC7F55DDB88D02283D08C434B2F784 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				FB71B023680317983EA5AD2064181A0D /* AFNetworkReachabilityManager.h in Headers */,
+				42B44D1B3147DF7A282D2F1B2A6FD9E8 /* AFNetworking.h in Headers */,
+				00018E97C3E85C17FDBADF4FA744E2E9 /* AFSecurityPolicy.h in Headers */,
+				D097B622C717AFB69365585275DCA3DF /* AFURLConnectionOperation.h in Headers */,
+				58937D44AC295247EC9C2E59907ECBDB /* AFURLRequestSerialization.h in Headers */,
+				6D34BB848B788061074A10A383E17000 /* AFURLResponseSerialization.h in Headers */,
+				F24D600BE281585A2E9C404A3512E03B /* AFURLSessionManager.h in Headers */,
+				29AFFFFAC783B78016DD0E26DEB88A00 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				A58CC12E3AEF838BA3BCE303E4A19764 /* UIAlertView+AFNetworking.h in Headers */,
+				D5DE426D65678CD90742E0903B2B6A76 /* UIButton+AFNetworking.h in Headers */,
+				F30516A7C9D437AEC42F8D3C22B251FE /* UIImageView+AFNetworking.h in Headers */,
+				30CAD4E065F4C0DB0AB88D967274C3A8 /* UIKit+AFNetworking.h in Headers */,
+				9D13D27174191CBC5586DB7BC1AE1D0A /* UIProgressView+AFNetworking.h in Headers */,
+				D3D4356975A828FB5B103E84CE5AC041 /* UIRefreshControl+AFNetworking.h in Headers */,
+				BA43E4650A5E753A534C4E3E1E5374FD /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1797,8 +1797,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				014FD6ACC36F12A7AC6592844FAAF294 /* PBXTargetDependency */,
-				0C3560303E005F6396738B1E6A7E805F /* PBXTargetDependency */,
+				BE5481C711F4C9CCB99739D056E3137A /* PBXTargetDependency */,
+				606CE7924FA0839B62C62D15E09F0E2D /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -1822,13 +1822,13 @@
 			productReference = FF083D681A53EBCB474307382BDABD59 /* libTesseractOCRiOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		95BD61F1B65F5EFFC0E8F03107A42BE6 /* AFNetworking */ = {
+		AA22A47E23827169AD294B51A5FBAA82 /* AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57A393CCBF435669146F94471B0B63CE /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildConfigurationList = 93BD4EEC4FCB0CAE91E4A9B767CFC3E2 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				A2AD4B7E773F77230292B7239862F88A /* Sources */,
-				A05A4AFDAD1FB688C268D8EDD74746EC /* Frameworks */,
-				6DDAF1CB1191F252C22BFCEC0B1601B5 /* Headers */,
+				AA9C08AA3AB7537E5535776CC47FDE17 /* Sources */,
+				D43D7A43AA75B79F1B09C045B2917AD2 /* Frameworks */,
+				FC785C3CA8E13AD19C062D0A4A6ECC6C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1836,7 +1836,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 69EEFD0CE7C96CC8EA7A4E3CA93E59B5 /* libAFNetworking.a */;
+			productReference = 9CED8472F6DC865DF78D8949C59A8EC6 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1860,7 +1860,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95BD61F1B65F5EFFC0E8F03107A42BE6 /* AFNetworking */,
+				AA22A47E23827169AD294B51A5FBAA82 /* AFNetworking */,
 				60C4EFE8ED73BA658BC889166DA05B5C /* Pods */,
 				767A8F62EE74321E0B51ABCDFAC31DE6 /* TesseractOCRiOS */,
 			);
@@ -1882,28 +1882,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2AD4B7E773F77230292B7239862F88A /* Sources */ = {
+		AA9C08AA3AB7537E5535776CC47FDE17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62AF971C9DFE38240D121894CCF27C2 /* AFHTTPRequestOperation.m in Sources */,
-				6E6E46E9494D08334F365E1F17104849 /* AFHTTPRequestOperationManager.m in Sources */,
-				3E6D77E213AFBF2BC8B08FF37EC12C5D /* AFHTTPSessionManager.m in Sources */,
-				05EF9F34E3436D51D3DD4EF1B3AE1244 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				D2F6077B41691E490DDE95FF48A0CF81 /* AFNetworkReachabilityManager.m in Sources */,
-				F3068A882A5527589E0B5EC48D275ADC /* AFNetworking-dummy.m in Sources */,
-				08A42253984CCA9C3E703ECCC3E5E715 /* AFSecurityPolicy.m in Sources */,
-				9D88DE8FB3F90CC2BB2C340278D081FB /* AFURLConnectionOperation.m in Sources */,
-				8D192C1CAEE8965B4B48A2B53518EC32 /* AFURLRequestSerialization.m in Sources */,
-				F89AAB20A91CCBB2D701D5ABFE480CE6 /* AFURLResponseSerialization.m in Sources */,
-				78CA813B9D0DA58F192BB8BC672DD6E7 /* AFURLSessionManager.m in Sources */,
-				BEC1DC30EC3F9E7E7DAE7068BB8ED2ED /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				77FA5ED966AFE2BE4431C39797AD312C /* UIAlertView+AFNetworking.m in Sources */,
-				71E402EFD3ACCB4A8428A1428EBD93D1 /* UIButton+AFNetworking.m in Sources */,
-				C60996711F78C47F45F156A798711E40 /* UIImageView+AFNetworking.m in Sources */,
-				8A3207B65E0D1E599D054EAB1B0A5F2B /* UIProgressView+AFNetworking.m in Sources */,
-				EB21198BDBB09A27C854A4B18D6F4A93 /* UIRefreshControl+AFNetworking.m in Sources */,
-				7E710E986240569F30A51109D004DE3E /* UIWebView+AFNetworking.m in Sources */,
+				B67535F21E9958CA8040197578052C09 /* AFHTTPRequestOperation.m in Sources */,
+				197353D27E153C5EAB8E3B177B6A06DC /* AFHTTPRequestOperationManager.m in Sources */,
+				5DEB2033BC41EAD335F91F98946008E5 /* AFHTTPSessionManager.m in Sources */,
+				31E1208056CB1267114A0037B377E9A0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				0BAFD9679174D120F878975AC881E41B /* AFNetworkReachabilityManager.m in Sources */,
+				8DC48F5BB67DC0FC1343AA94BC9F175F /* AFNetworking-dummy.m in Sources */,
+				0C667E2368C2AB33A3F845BA4C11CF0D /* AFSecurityPolicy.m in Sources */,
+				5F62D58ED27E48B07366797C6A9C35EA /* AFURLConnectionOperation.m in Sources */,
+				324D7A486525FCF278ECF63DDDEE13E3 /* AFURLRequestSerialization.m in Sources */,
+				9EB2EE71CC123992B3AA70F5AB838556 /* AFURLResponseSerialization.m in Sources */,
+				5DA4A8772A0B7B2A21E489E9CA578553 /* AFURLSessionManager.m in Sources */,
+				3B02322B6481E78272A1DD30ADC9310D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				74DEB99674F76F0C1940E0276E565867 /* UIAlertView+AFNetworking.m in Sources */,
+				AAD9626CD05EA1031F54D1383C08C828 /* UIButton+AFNetworking.m in Sources */,
+				F3460CF5FBA1D695679DBCAE154AE232 /* UIImageView+AFNetworking.m in Sources */,
+				158A28415DD3C7A167509ADF94830357 /* UIProgressView+AFNetworking.m in Sources */,
+				ED3D60AE0C9981DC3BDB51673D29BE01 /* UIRefreshControl+AFNetworking.m in Sources */,
+				05446357C5E2D29B6B81DDFB9AF4069F /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1918,17 +1918,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		014FD6ACC36F12A7AC6592844FAAF294 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 95BD61F1B65F5EFFC0E8F03107A42BE6 /* AFNetworking */;
-			targetProxy = 7CD24B7D647C596CFF4BCE97455C7999 /* PBXContainerItemProxy */;
-		};
-		0C3560303E005F6396738B1E6A7E805F /* PBXTargetDependency */ = {
+		606CE7924FA0839B62C62D15E09F0E2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TesseractOCRiOS;
 			target = 767A8F62EE74321E0B51ABCDFAC31DE6 /* TesseractOCRiOS */;
-			targetProxy = 577D7EEE443116819391681AE34FF578 /* PBXContainerItemProxy */;
+			targetProxy = BAB88742415F63C2688F03BCAB54368C /* PBXContainerItemProxy */;
+		};
+		BE5481C711F4C9CCB99739D056E3137A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = AA22A47E23827169AD294B51A5FBAA82 /* AFNetworking */;
+			targetProxy = 1E65F720B3E5799D2572F2399CA86642 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1948,22 +1948,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		1D76D607AF5C6C38E5C2F6A30A821DC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC9E74DA37E2DFBEBDF78F2D50E04E43 /* AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		38E2064B18EEF4A86BC312124FDDEBDF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1997,22 +1981,6 @@
 			};
 			name = Release;
 		};
-		6EFBFA0AD74828F5EFD34E70FAA3DB2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC9E74DA37E2DFBEBDF78F2D50E04E43 /* AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		8CCEFE330BE24DFD288F0DAAAFC59157 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCB8F7E26A486F58BA2D7DA7B48C3EBA /* Pods.release.xcconfig */;
@@ -2028,6 +1996,22 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		92A8051FF7CAB271D5B29D85C3D36D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1F9849BF5426609027CDB9D0FF8C02 /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		9EB645C612834738B99727720210C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2067,6 +2051,22 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		E1368A7A52A026AB4C0AB4FEA2800BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1F9849BF5426609027CDB9D0FF8C02 /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2114,11 +2114,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57A393CCBF435669146F94471B0B63CE /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+		93BD4EEC4FCB0CAE91E4A9B767CFC3E2 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EFBFA0AD74828F5EFD34E70FAA3DB2D /* Debug */,
-				1D76D607AF5C6C38E5C2F6A30A821DC0 /* Release */,
+				92A8051FF7CAB271D5B29D85C3D36D24 /* Debug */,
+				E1368A7A52A026AB4C0AB4FEA2800BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
