@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor whiteColor];
     
     
 
@@ -59,7 +60,9 @@
         return maxScans;
     }
     else{
-       return cardCount;
+ 
+       //return cardCount;
+        return 5;
     }
     
 }
