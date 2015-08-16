@@ -3,7 +3,7 @@
 //  MTG Recognizer
 //
 //  Created by Omega Tango - Carlos on 2/14/15.
-//  Copyright (c) 2015 TTU Software Engineering. All rights reserved.
+//  Copyright (c) 2015 Omega Tango. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -69,32 +69,14 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                     session.sessionPreset = AVCaptureSessionPreset1280x720; //Or other preset supported by the input device
                     
                     AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
-                    //previewLayer.frame = CGRectMake(0.0, 0.0, self.previewView.frame.size.width, self.previewView.frame.size.height);
-                    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                    //previewLayer.frame = self.previewView.bounds;
-                    //previewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
-                    //previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-                    //NSLog(@"1: The previewLayer frame has width %f and height %f", previewLayer.frame.size.width, previewLayer.frame.size.height);
-                    //NSLog(@"1: The UIScreenSize has width %f and height %f", [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
                     UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width*(20.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(80.0f/568.0f), [[UIScreen mainScreen] bounds].size.width*(280.0f/320.0f), [[UIScreen mainScreen] bounds].size.height*(35.0f/568.0f))];
-                    //NSLog(@"1: The RECTANGLE SIZE has width %f and height %f", rectangle.frame.size.width, rectangle.frame.size.height);
-                    //NSLog(@"1: The RECTANGLE ORIGIN has x %f and y %f", rectangle.frame.origin.x, rectangle.frame.origin.y);
                     rectangle.backgroundColor = [UIColor colorWithRed:10.0 green:230.0 blue:50.0 alpha:0.7f];
                     [self.previewView addSubview:rectangle];
                     [self.previewView.layer addSublayer:previewLayer];
                     
-                    //PageContentViewController *pcVC;
-                    //CGRect parentbounds = pcVC.view.bounds;
-                    //self.previewView.bounds = parentbounds;
-                    
                     // Setup the preview view
                     [[self previewView] setSession:session];
-                    
     
-                    
-                    // In general it is not safe to mutate an AVCaptureSession or any of its inputs, outputs, or connections from multiple threads at the same time.
-                    // Why not do all of this on the main queue?
-                    // -[AVCaptureSession startRunning] is a blocking call which can take a long time. We dispatch session setup to the sessionQueue so that the main queue isn't blocked (which keeps the UI responsive).
                     
                     dispatch_queue_t sessionQueue = dispatch_queue_create("session queue", DISPATCH_QUEUE_SERIAL);
                     [self setSessionQueue:sessionQueue];
@@ -116,13 +98,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                             [session addInput:photoDeviceInput];
                             [self setVideoDeviceInput:photoDeviceInput];
                             
-                            /*dispatch_async(dispatch_get_main_queue(), ^{
-                             // Why are we dispatching this to the main queue?
-                             // Because AVCaptureVideoPreviewLayer is the backing layer for AVCamPreviewView and UIView can only be manipulated on main thread.
-                             // Note: As an exception to the above rule, it is not necessary to serialize video orientation changes on the AVCaptureVideoPreviewLayer’s connection with other session manipulation.
-                             
-                             [[(AVCaptureVideoPreviewLayer *)[[self previewView] layer] connection] setVideoOrientation:(AVCaptureVideoOrientation)[self interfaceOrientation]];
-                             });*/
                         }
                         
                         
@@ -137,40 +112,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                             [session startRunning];
                         }
                     });
-                    
-                    
-                    //AVCaptureOutput *output = [[AVCaptureStillImageOutput alloc] init];
-                    //[session addOutput:output];
-                    
-                    
-                    
-                    /*UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-                     
-                     //Error for simulator when testing
-                     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-                     
-                     UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                     message:@"Device has no camera"
-                     delegate:nil
-                     cancelButtonTitle:@"OK"
-                     otherButtonTitles: nil];
-                     
-                     [myAlertView show];
-                     
-                     }
-                     else {
-                     picker.delegate = self;
-                     picker.allowsEditing = NO;
-                     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-                     [self presentViewController:picker animated:YES completion:NULL];
-                     //[self.view addSubview:picker.view];
-                     
-                     }*/
-                    //end moved code
-
-
-    
-    
     
 }
 
@@ -192,10 +133,10 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         [self setRuntimeErrorHandlingObserver:[[NSNotificationCenter defaultCenter] addObserverForName:AVCaptureSessionRuntimeErrorNotification object:[self session] queue:nil usingBlock:^(NSNotification *note) {
             mainVC *strongSelf = weakSelf;
             dispatch_async([strongSelf sessionQueue], ^{
-                // Manually restarting the session since it must have been stopped due to an error.
+
                 NSLog(@"Manually restarting the session since it must have been stopped due to an error.");
                 [[strongSelf session] startRunning];
-                //[[strongSelf recordButton] setTitle:NSLocalizedString(@"Record", @"Recording button record title") forState:UIControlStateNormal];
+ 
             });
         }]];
         [[self session] startRunning];
@@ -256,14 +197,12 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         dispatch_async(dispatch_get_main_queue(), ^{
             if (isRunning)
             {
-                //[[self cameraButton] setEnabled:YES];
-                //[[self recordButton] setEnabled:YES];
+
                 [[self stillButton] setEnabled:YES];
             }
             else
             {
-                //[[self cameraButton] setEnabled:NO];
-                //[[self recordButton] setEnabled:NO];
+
                 [[self stillButton] setEnabled:NO];
             }
         });
@@ -373,7 +312,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     // create a new CGImageRef from our context with the modified pixels
     CGImageRef image = CGBitmapContextCreateImage(context);
     
-    // we're done with the context, color space, and pixels
+    //done with the context, color space, and pixels
     CGContextRelease(context);
     CGColorSpaceRelease(colorSpace);
     free(pixels);
@@ -383,7 +322,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                                                  scale:img.scale
                                            orientation:UIImageOrientationUp];
     
-    // we're done with image now too
+    //done with image now too
     CGImageRelease(image);
     
     return resultUIImage;
@@ -462,8 +401,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             AFHTTPRequestOperation *AFoperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
             AFoperation.responseSerializer = [AFJSONResponseSerializer serializer];
             
-            //AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-            //[manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
             [AFoperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFoperation, id responseObject) {
                 //NSLog(@"Inside AF Operation completion block");
                 NSDictionary *jsonResults = (NSDictionary *)responseObject;
@@ -475,7 +413,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                     [cardDetailVC view];
                     cardDetailVC.cardTitle.text = [[jsonResults valueForKey:@"name"] objectAtIndex:0];
                     cardDetailVC.cardDetails.text = [[jsonResults valueForKey:@"description"] objectAtIndex:0];
-                    //UIImage *cardImg = [self apiRequestCardImage:[[jsonResults valueForKey:@"id"] objectAtIndex:0]];
                     
                     NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/content/hi_res_card_images/%@.jpg",[[jsonResults valueForKey:@"id"] objectAtIndex:0]];
                     NSURL *url = [NSURL URLWithString:urlstring];
@@ -486,7 +423,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                     AFgetImage.responseSerializer = [AFImageResponseSerializer serializer];
                     
                     [AFgetImage setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFgetImage, id responseObject) {
-                        //NSLog(@"Inside get image success block");
+          
                         //NSLog(@"responseObject is %@", responseObject);
                         UIImage *cardImage = responseObject;
                         cardDetailVC.cardImage.image = cardImage;
@@ -499,7 +436,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                         
                         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:updatedetailsDictionary];
                         
-                        [cardScans setObject:data forKey:[NSString stringWithFormat:@"%ld", index]]; //put data in UserDefaults
+                        [cardScans setObject:data forKey:[NSString stringWithFormat:@"%ld", (long)index]]; //put data in UserDefaults
                         [cardScans setInteger:index forKey:@"cardIndex"]; //update cardCount
                         [cardScans synchronize];
                         
@@ -514,7 +451,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                         //retrieve
                             NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
                             NSInteger index = [cardScans integerForKey:@"cardIndex"];
-                            NSData *dataRetrieved = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", index]];
+                            NSData *dataRetrieved = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", (long)index]];
                             NSDictionary *storedResults = [NSKeyedUnarchiver unarchiveObjectWithData:dataRetrieved];
                         
                             NSLog(@"stored Results are %@", storedResults);
@@ -523,14 +460,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Card not found." message:@"Please try your scan again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
                     [alert show];
                 }
-                /*if ([responseObject isKindOfClass:[NSDictionary class]]){
-                    NSLog(@"Made it inside if!");
-                    NSLog(@"JSON: %@", responseObject);
-                }
-                else {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Results Found" message:@"Lighting can affect the results of the search." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
-                    [alert show];
-                }*/
                 
             } failure:^(AFHTTPRequestOperation *AFoperation, NSError *error) {
                     NSLog(@"AFHTTPReuqest failed with error %@", error);
@@ -590,13 +519,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 }*/
 
 -(void)showCardDetailsVC:(cardDetailVC *)viewController andCardDetails: (NSDictionary *)detailsDictionary{
-    
-    //NSLog(@"inside showCardDetailsVC");
-    //NSLog(@"Title of card is %@", [[detailsDictionary valueForKey:@"name"] objectAtIndex:0]);
-    //NSLog(@"details Dictionary is: %@", detailsDictionary);
-    //viewController.cardTitle.text = [[detailsDictionary valueForKey:@"name"] objectAtIndex:0];
-    //viewController.cardDetails.text = [[detailsDictionary valueForKey:@"description"] objectAtIndex:0];
-    //viewController.cardImage.image = [self apiRequestCardImage:[detailsDictionary valueForKey:@"id"]];
+
     
 
     

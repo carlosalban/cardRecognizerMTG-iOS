@@ -1,2 +1,2 @@
-pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
+pod 'TesseractOCRiOS', '4.0.0'
 pod "AFNetworking", "~> 2.0"

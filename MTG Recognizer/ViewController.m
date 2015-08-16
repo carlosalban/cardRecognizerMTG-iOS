@@ -3,7 +3,7 @@
 //  MTG Recognizer
 //
 //  Created by Omega Tango - Carlos on 2/14/15.
-//  Copyright (c) 2015 TTU Software Engineering. All rights reserved.
+//  Copyright (c) 2015 Omega Tango. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -40,7 +40,6 @@
 
     
     UIPageControl *pageControl = [UIPageControl appearance];
-    //pageControl.currentPage = 1;
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor whiteColor];
@@ -74,17 +73,7 @@
     thisControl.hidden = true;
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40);
     
-    //Used to remove pagination dots
-    /*NSArray *subviews = self.pageViewController.view.subviews;
-    UIPageControl *thisControl = nil;
-    for (int i=0; i<[subviews count]; i++) {
-        if ([[subviews objectAtIndex:i] isKindOfClass:[UIPageControl class]]) {
-            thisControl = (UIPageControl *)[subviews objectAtIndex:i];
-        }
-    }
-    
-    thisControl.hidden = true;
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40);*/
+ 
 }
 
 - (void)didReceiveMemoryWarning {

@@ -3,7 +3,7 @@
 //  MTG Recognizer
 //
 //  Created by Omega Tango - Carlos on 2/19/15.
-//  Copyright (c) 2015 TTU Software Engineering. All rights reserved.
+//  Copyright (c) 2015 Omega Tango. All rights reserved.
 //
 
 #import "leftVC.h"
@@ -23,8 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //lastScans = @[@"Scan1",@"Scan2",@"Scan3"];
-    //lastScansDetails = @[@"detail1",@"detail2",@"detail3"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -37,7 +35,7 @@
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger maxScansSaved = [cardScans integerForKey:@"selectedMax"];
     maxScans = maxScansSaved;
-    NSLog(@"Max scans is %ld", maxScans);
+    NSLog(@"Max scans is %ld", (unsigned long)maxScans);
     [self.tableView reloadData];
 }
 
@@ -55,7 +53,7 @@
     
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger cardCount = [cardScans integerForKey:@"cardIndex"];
-    NSLog(@"Card count is %ld", cardCount);
+    NSLog(@"Card count is %ld", (long)cardCount);
     
     if (cardCount > maxScans){
         return maxScans;
@@ -83,16 +81,15 @@
     
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger cardIndex = [cardScans integerForKey:@"cardIndex"];
-    //for (int i = 0; i < cardIndex; i++) {
     NSData *data = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", cardIndex - indexPath.row]];
     NSDictionary *jsonResults = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    NSLog(@"cardIndex is %ld Json Results are %@", cardIndex, jsonResults);
+    NSLog(@"cardIndex is %ld Json Results are %@", (long)cardIndex, jsonResults);
     
     cell.titleLabel.text = [jsonResults objectForKey:@"name"];
     cell.descriptionText.text = [jsonResults objectForKey:@"description"];
     cell.imagePreview.image = [jsonResults objectForKey:@"image"];
 
-    //}
+
        return cell;
 }
 
@@ -116,19 +113,10 @@
 
 
 -(void)viewDidLayoutSubviews{
-    //CGFloat height = MIN(self.view.bounds.size.height, self.tablewView.contentSize.height);
-    //self.
+    
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
