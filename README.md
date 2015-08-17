@@ -6,7 +6,7 @@ iOS App that uses optical character recognition to query DB and return details o
 
 Past scans is empty by default until scans are made. Working on adding button to clear past scans as well as to indicate empty card history.
 
-OCR needs more work on training. 
+OCR needs more work on training. API doesn't seem very reliable. If you get a network error, check if the API is down (address below).
 
 Programmed by Carlos G. Alban
 
