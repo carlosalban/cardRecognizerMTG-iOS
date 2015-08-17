@@ -102,7 +102,7 @@
     NSInteger cardIndex = [cardScans integerForKey:@"cardIndex"];
     NSData *data = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", cardIndex - indexPath.row]];
     NSDictionary *jsonResults = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    NSLog(@"JSON: %@", jsonResults);
+    //NSLog(@"JSON: %@", jsonResults);
     
     cardDetailVC *cardDetailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"cardDetailVC"];
     [cardDetailVC view];
