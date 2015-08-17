@@ -19,13 +19,9 @@
     // Override point for customization after application launch.
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger cardCount = [cardScans integerForKey:@"cardIndex"];
-    [cardScans setInteger:3 forKey:@"selectedMax"];
+    [cardScans setInteger:10 forKey:@"selectedMax"];
     NSLog(@"cardIndex in App Delegate is %ld", (long)cardCount);
-    /*if (idCount == 0){
-        [cardScans setInteger:0 forKey:@"id"];
-        [cardScans synchronize];
-        NSLog(@"idCount is nil. Set to 0");
-    }*/
+
 
     
     return YES;

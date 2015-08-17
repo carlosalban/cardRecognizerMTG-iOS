@@ -297,20 +297,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="cardDoneButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmj-d8-DJu">
-                                <rect key="frame" x="260" y="540" width="70" height="40"/>
-                                <color key="backgroundColor" red="0.04366245065892406" green="0.15574175327920933" blue="0.56784643308080807" alpha="0.44" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="253" y="526" width="94" height="54"/>
+                                <color key="backgroundColor" red="0.28623560860000002" green="0.59796463820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QYg-89-XOm"/>
                                     <constraint firstAttribute="width" constant="70" id="fJM-au-aZf"/>
-                                    <constraint firstAttribute="width" constant="70" id="sqi-Vf-Hi3"/>
-                                    <constraint firstAttribute="height" constant="40" id="wfm-nb-djt"/>
+                                    <constraint firstAttribute="width" constant="94" id="sqi-Vf-Hi3"/>
+                                    <constraint firstAttribute="height" constant="54" id="wfm-nb-djt"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Done">
                                             <attributes>
-                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <font key="NSFont" size="22" name="HelveticaNeue-Light"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -414,9 +414,9 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.91251541026216054" green="0.96189777535960719" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jmj-d8-DJu" firstAttribute="top" secondItem="60a-UD-txh" secondAttribute="bottom" constant="20" id="6Hl-hv-S2y"/>
+                            <constraint firstItem="Jmj-d8-DJu" firstAttribute="top" secondItem="60a-UD-txh" secondAttribute="bottom" constant="6" id="6Hl-hv-S2y"/>
                             <constraint firstAttribute="centerX" secondItem="60a-UD-txh" secondAttribute="centerX" constant="-8" id="8Pr-mz-JeH"/>
                             <constraint firstItem="60a-UD-txh" firstAttribute="top" secondItem="wh7-zX-kL2" secondAttribute="bottom" constant="-13" id="ECX-aV-4uf"/>
                             <constraint firstAttribute="centerX" secondItem="Kdq-lI-kAK" secondAttribute="centerX" constant="5" id="M1l-9A-aj8"/>
@@ -425,7 +425,7 @@
                             </constraint>
                             <constraint firstItem="Kdq-lI-kAK" firstAttribute="top" secondItem="coY-FP-J7X" secondAttribute="bottom" constant="22" id="QOc-Br-aLI"/>
                             <constraint firstItem="wh7-zX-kL2" firstAttribute="top" secondItem="Kdq-lI-kAK" secondAttribute="bottom" constant="8" symbolic="YES" id="RF2-rs-9eH"/>
-                            <constraint firstAttribute="centerX" secondItem="Jmj-d8-DJu" secondAttribute="centerX" constant="5" id="b7w-1a-dOV"/>
+                            <constraint firstAttribute="centerX" secondItem="Jmj-d8-DJu" secondAttribute="centerX" id="b7w-1a-dOV"/>
                             <constraint firstItem="Kdq-lI-kAK" firstAttribute="top" secondItem="coY-FP-J7X" secondAttribute="bottom" constant="22" id="pmP-R8-MA2"/>
                         </constraints>
                         <variation key="heightClass=regular">

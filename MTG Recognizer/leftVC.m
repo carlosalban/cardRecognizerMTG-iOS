@@ -61,8 +61,8 @@
     }
     else{
  
-       //return cardCount;
-        return 5;
+       return cardCount;
+
     }
     
 }
