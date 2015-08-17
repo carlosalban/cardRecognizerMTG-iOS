@@ -29,10 +29,6 @@
     self.maxCardStepper.stepValue = 1;
     
     self.scrollView.contentInset = UIEdgeInsetsZero;
-    //NSLog(@"maxCardStepper frame is %@", self.maxCardStepper.description);
-    //NSLog(@"contentView frame is %@", self.contentView.description);
-    NSLog(@"scrollView frame is %@", self.scrollView.description);
-    
 
 }
 

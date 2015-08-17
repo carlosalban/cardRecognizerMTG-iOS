@@ -20,7 +20,7 @@
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger cardCount = [cardScans integerForKey:@"cardIndex"];
     [cardScans setInteger:10 forKey:@"selectedMax"];
-    NSLog(@"cardIndex in App Delegate is %ld", (long)cardCount);
+    //NSLog(@"cardIndex in App Delegate is %ld", (long)cardCount);
 
 
     

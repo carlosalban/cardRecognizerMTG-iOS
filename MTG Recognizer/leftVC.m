@@ -36,7 +36,7 @@
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger maxScansSaved = [cardScans integerForKey:@"selectedMax"];
     maxScans = maxScansSaved;
-    NSLog(@"Max scans is %ld", (unsigned long)maxScans);
+    //NSLog(@"Max scans is %ld", (unsigned long)maxScans);
     [self.tableView reloadData];
 }
 
@@ -54,7 +54,7 @@
     
     NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
     NSInteger cardCount = [cardScans integerForKey:@"cardIndex"];
-    NSLog(@"Card count is %ld", (long)cardCount);
+    //NSLog(@"Card count is %ld", (long)cardCount);
     
     if (cardCount > maxScans){
         return maxScans;
@@ -74,7 +74,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellID = @"CustomCell";
-    NSLog(@"indexPath.row is %ld", indexPath.row+1);
+    //NSLog(@"indexPath.row is %ld", indexPath.row+1);
     
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
@@ -86,7 +86,7 @@
     NSInteger cardIndex = [cardScans integerForKey:@"cardIndex"];
     NSData *data = [cardScans objectForKey:[NSString stringWithFormat:@"%ld", cardIndex - indexPath.row]];
     NSDictionary *jsonResults = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    NSLog(@"cardIndex is %ld Json Results are %@", (long)cardIndex, jsonResults);
+    //NSLog(@"cardIndex is %ld Json Results are %@", (long)cardIndex, jsonResults);
     
     cell.titleLabel.text = [jsonResults objectForKey:@"name"];
     cell.descriptionText.text = [jsonResults objectForKey:@"description"];

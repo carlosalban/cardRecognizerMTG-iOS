@@ -391,7 +391,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         NSString *trimmedReplacement = [[recognizedText componentsSeparatedByCharactersInSet:charactersToRemove] componentsJoinedByString:@""];
         
         
-        NSLog(@"Trimmed replacelment: %@", trimmedReplacement);
+        //NSLog(@"Trimmed replacelment: %@", trimmedReplacement);
         
         if (![trimmedReplacement isEqualToString:@""] && ![trimmedReplacement isEqualToString:nil]){
             NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/search/%@?start=0&limit=1",trimmedReplacement];
@@ -489,34 +489,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 }
 
 
-/*-(UIImage *)apiRequestCardImage:(NSString *)cardID{
-    
-    NSLog(@"cardID is %@", cardID);
-    NSString *urlstring = [NSString stringWithFormat:@"http://api.mtgdb.info/content/hi_res_card_images/%@.jpg",cardID];
-    NSLog(@"urlstring is %@", urlstring);
-    NSURL *url = [NSURL URLWithString:urlstring];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    __block UIImage *cardImage = nil;
 
-    
-    AFHTTPRequestOperation *AFgetImage = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    AFgetImage.responseSerializer = [AFImageResponseSerializer serializer];
-    
-    [AFgetImage setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *AFgetImage, id responseObject) {
-        NSLog(@"Inside get image success block");
-        NSLog(@"responseObject is %@", responseObject);
-        cardImage = responseObject;
-        
- 
-    } failure:^(AFHTTPRequestOperation *AFgetImage, NSError *error) {
-        NSLog(@"Network Error while grabbing image: %@", error);
-    }];
-    [AFgetImage start];
-    
-    NSLog(@"return cardImage is %@", cardImage);
-    return cardImage;
-    
-}*/
 
 -(void)showCardDetailsVC:(cardDetailVC *)viewController andCardDetails: (NSDictionary *)detailsDictionary{
 
