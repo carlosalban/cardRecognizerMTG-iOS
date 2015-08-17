@@ -39,7 +39,7 @@
 
 - (IBAction)stepperPressed:(UIStepper *)sender{
     
-    NSLog(@"Stepper pressed!");
+    //NSLog(@"Stepper pressed!");
     self.maxCards = sender.value;
     self.maxCardLabel.text = [NSString stringWithFormat:@"%lu", self.maxCards];
     
