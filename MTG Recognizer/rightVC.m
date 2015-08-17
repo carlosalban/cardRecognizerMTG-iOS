@@ -16,29 +16,30 @@
     
     
     NSUInteger maxScansInt;
+    
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
     self.maxCards = 10;
     self.maxCardStepper.userInteractionEnabled = YES;
     self.maxCardStepper.minimumValue = 10;
     self.maxCardStepper.maximumValue = 30;
     self.maxCardStepper.stepValue = 1;
     
-
-}
-
--(void)viewWillAppear:(BOOL)animated{
+    self.scrollView.contentInset = UIEdgeInsetsZero;
+    //NSLog(@"maxCardStepper frame is %@", self.maxCardStepper.description);
+    //NSLog(@"contentView frame is %@", self.contentView.description);
+    NSLog(@"scrollView frame is %@", self.scrollView.description);
     
-    NSUserDefaults *cardScans = [NSUserDefaults standardUserDefaults];
-    NSInteger maxScansSaved = [cardScans integerForKey:@"selectedMax"];
-    maxScansInt = maxScansSaved;
-  
+
 }
+
+-(void)viewDidLayoutSubviews{
+    
+}
+
 
 - (IBAction)stepperPressed:(UIStepper *)sender{
     

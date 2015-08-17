@@ -14,6 +14,10 @@
 @property (assign, nonatomic) NSUInteger maxCards;
 @property (strong, nonatomic) IBOutlet UILabel *maxCardLabel;
 @property (strong, nonatomic) IBOutlet UIStepper *maxCardStepper;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+
+
 - (IBAction)stepperPressed:(UIStepper *)sender;
 
 
