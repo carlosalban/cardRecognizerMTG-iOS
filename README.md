@@ -1,6 +1,6 @@
 # cardRecognizerMTGiOS
 
-Magic the Gathering Card Recognizer
+Magic the Gathering Card Recognizer. Disclaimer: I wrote this code at the university level!
 
 iOS App that uses optical character recognition to query DB and return details of the card. Snapchat style app flow created with IB and code.
 
